@@ -34,7 +34,7 @@ gulp.task('fonts', function() {
 })
 
 gulp.task('css', function() {
-  return gulp.src('src/stylesheets/~.scss')
+  return gulp.src('src/stylesheets/styles.scss')
     .pipe( 
       sass( { 
         includePaths: ['src/stylesheets'].concat(bourbon),
