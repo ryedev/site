@@ -85,7 +85,7 @@ gulp.task('build', ['images','js','css','templates', 'fonts']);
 
 gulp.task('deploy', ['build'], function() {
   gulp.src("dist/**/*")
-    .pipe(deploy('git@github.com:ryedev/website.git', 'origin'));
+    .pipe(deploy('git@github.com:ryedev/site.git', 'origin'));
 });
 
 // Default Task
