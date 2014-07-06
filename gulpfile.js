@@ -81,6 +81,8 @@ gulp.task('watch', function () {
 
 });
 
+gulp.task('serve', ['watch','express'])
+
 gulp.task('build', ['images','js','css','templates', 'fonts']);
 
 gulp.task('deploy', ['build'], function() {
