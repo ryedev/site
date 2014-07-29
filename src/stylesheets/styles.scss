@@ -1,4 +1,103 @@
-h1 {
-  color:green;
-  font-size:300px;
+// CSS reset on body margin & padding
+body { margin:0; padding:0; }
+
+
+
+/*  _  _     ___     ___     ___     ___     ___   
+   | || |   | __|   /   \   |   \   | __|   | _ \  
+   | __ |   | _|    | - |   | |) |  | _|    |   /  
+   |_||_|   |___|   |_|_|   |___/   |___|   |_|_\  
+   |"""""|_|"""""|_|"""""|_|"""""|_|"""""|_|"""""| 
+"`-0-0-'"`-0-0-'"`-0-0-'"`-0-0-'"`-0-0-'"`-0-0-' */
+
+/* Make Header stay in place */
+.header {
+  @extend .row;
+
+  padding: 15px 0 0;
+  height:80px;
+  left:0; 
+  top:0; 
+
+  ul {
+    margin: 0;
+    text-align:center;
+    padding:0;
+
+    li {
+      display: inline-block;
+      list-style-type: none;
+      margin-right: 10px;
+      margin-bottom: 6px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    @media (min-width:660px) {
+      display:inline-block;
+    }
+  }
+
+  .logo {
+    @extend .col-xs-6;
+    @extend .col-xs-offset-3;
+    @extend .col-sm-2;
+    @extend .col-sm-offset-0;
+    @extend .col-md-1;
+    text-align:center;
+  
+    img {
+      width: 100%;
+      min-width: 90px;
+      max-width: 180px;
+    }
+
+    @media (min-width:660px) {
+      display:inline-block;
+    }
+
+  }
+
+  .nav {
+    @extend .col-xs-12;
+    @extend .col-md-8;
+
+    font-size: 16px;
+    margin: 0;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+
+    a {
+      color: black;
+      font-size:17px;
+      font-weight:900;
+
+      &:hover,
+      &.active {
+        border-bottom: 3px solid black;
+        text-decoration: none;
+      }
+    }
+
+    // accounts for issues with alignment when line breaks
+    ul {
+      margin-bottom: 20px;
+
+      @media (min-width:768px) {
+        margin-left: -18px;
+      }
+
+      /* Medium devices (desktops, 992px and up) */
+      @media (min-width: 992px) { 
+        padding-left: 20px;
+      }
+    }  
+
+
+    @media (max-width: 992px){
+      margin: -10px 0 -8px 0;
+    }
+  }
 }
