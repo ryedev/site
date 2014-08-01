@@ -34,8 +34,12 @@
       -o-transition: background .6s;
     }
 
-    @media (min-width: 700px) {
+    @media (min-width: 778px) {
       display:inline-block;
+    }
+
+    @media (max-width: 1000px) {
+      right:60px
     }
   }
 
@@ -88,5 +92,13 @@
         border-bottom: 2px solid $grey;
       }
     }
+  }
+
+  @media (min-width: 700px) {
+    padding-left:60px;
+  }
+
+  @media (min-width: 1000px) {
+    padding-left:0px
   }
 }  
