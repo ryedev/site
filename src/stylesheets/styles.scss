@@ -1,1 +1,29 @@
+@font-face {
+  font-family: 'CourierPrime';
+  src: url('/fonts/Courier_Prime_Bold.ttf') format('truetype')
+}
 
+.header {
+  font-family: 'CourierPrime';
+
+  .logo {
+    display:inline-block;
+  }
+
+  .nav {
+    display:inline-block;
+
+    ul{
+
+      li {
+        display:inline-block;
+        padding-right:20px
+      }
+    }
+
+    a {
+
+    }
+  }
+ 
+}  
