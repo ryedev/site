@@ -1,1 +1,108 @@
+@import "colors";
 
+@font-face {
+  font-family: 'CourierPrime';
+  src: url('/fonts/Courier_Prime_Bold.ttf') format('truetype')
+}
+
+//  _   _                _           
+// | | | |              | |          
+// | |_| | ___  __ _  __| | ___ _ __ 
+// |  _  |/ _ \/ _` |/ _` |/ _ \ '__|
+// | | | |  __/ (_| | (_| |  __/ |   
+// \_| |_/\___|\__,_|\__,_|\___|_|   
+// ascii- DOOM
+
+.header {
+  margin-top:20px;
+  font-family: 'CourierPrime';
+  position:relative;
+
+  .cta {
+    background:url('/images/cta.png');
+    background-size:cover;
+    height:50px; 
+    width:150px; 
+    position: absolute; 
+    right: 00px;
+    top:10px;
+    display:none;
+    transition: background .3s;
+    -webkit-transition: background .3s;
+    -moz-transition: background .3s;
+    -o-transition: background .3s;
+
+
+    &:hover {
+      background:url('/images/cta-red.png');
+      background-size:cover;
+      transition: background .6s;
+      -webkit-transition: background .6s;
+      -moz-transition: background .6s;
+      -o-transition: background .6s;
+    }
+
+    @media (min-width: 778px) {
+      display:inline-block;
+    }
+
+    @media (max-width: 1025px) {
+      right:60px
+    }
+  }
+
+  .logo {
+    display:inline-block;
+    height:80px;
+    text-align: center;
+    margin-bottom:20px;
+
+    img {
+      height:100%;
+    }
+    
+    @media (max-width:778px) {
+      text-align: center;
+      width: 100%;
+    }
+  }
+
+  .nav {
+    display:inline-block;
+
+    ul{
+      display:inline-block; 
+      list-style-type:none;
+      text-align:center;
+
+      li {
+        display:inline-block;
+        padding-right:20px;
+
+        @media (max-width:778px) {
+          padding:0px 10px;
+        }
+      }
+    }
+  @media (max-width:778px) {
+    text-align: center;
+    width: 100%;
+  }
+
+    a {
+      color: $grey;
+
+      &:hover {
+        border-bottom: 2px solid $grey;
+      }
+    }
+  }
+
+  @media (min-width: 778px) {
+    padding-left:60px;
+  }
+
+  @media (min-width: 1025px) {
+    padding-left:0px
+  }
+}  
