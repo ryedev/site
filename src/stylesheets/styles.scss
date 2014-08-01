@@ -53,7 +53,7 @@
       height:100%;
     }
     
-    @media (max-width:700px) {
+    @media (max-width:778px) {
       text-align: center;
       width: 100%;
     }
@@ -71,16 +71,12 @@
         display:inline-block;
         padding-right:20px;
 
-        &:last-child {
-          padding-right:0px;
-        }
-
-        @media (max-width:700px) {
+        @media (max-width:778px) {
           padding:0px 10px;
         }
       }
     }
-  @media (max-width:700px) {
+  @media (max-width:778px) {
     text-align: center;
     width: 100%;
   }
@@ -94,7 +90,7 @@
     }
   }
 
-  @media (min-width: 700px) {
+  @media (min-width: 778px) {
     padding-left:60px;
   }
 
