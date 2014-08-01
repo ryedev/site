@@ -2,11 +2,14 @@ extends layouts/main
 block content
 
   .row
-    .header.small-12(style="border: 1px solid black")
-      .logo: img(src="/images/mock-logo.png" style="height: 60px;")
+    .header.small-12
+      .logo: img(src="/images/mock-logo.png")
       .nav
-        ul(style="display:inline-block; list-style-type:none;")
+        ul
           li: a(href="") About
           li: a(href="") Case Studies
           li: a(href="") Contact
+
+      a(href"#"): .cta
+
 
