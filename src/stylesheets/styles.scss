@@ -90,10 +90,10 @@
   }
 
     a {
-      color: $grey;
+      color: $rye-medium-grey;
 
       &:hover {
-        border-bottom: 2px solid $grey;
+        border-bottom: 2px solid $rye-medium-grey;
       }
     }
   }
@@ -124,7 +124,7 @@
     transform:translateY(-50%);
     width: 90%;
     z-index:2;
-    color: $grey;
+    color: $rye-medium-grey;
 
     h1 {
       color:white;
