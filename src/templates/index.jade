@@ -2,14 +2,17 @@ extends layouts/main
 block content
 
   .row
-    .header.small-12
-      .logo: img(src="/images/mock-logo.png")
-      .nav
-        ul
-          li: a(href="") About
-          li: a(href="") Case Studies
-          li: a(href="") Contact
+   .header.small-12
+     .logo: img(src="/images/rye-logo.png" alt="Rye Development")
+     .nav
+       ul
+         li: a(href="") About
+         li: a(href="") Case Studies
+         li: a(href="") Contact
 
-      a(href"#"): .cta
-
-
+     a(href"#"): .cta
+  
+  .row(style="width:100%; max-width:100%")
+    .large-12.columns
+      #slider      
+        img(src="/images/header-mock.jpg" style="width:100%; max-height:400px; background-size:cover")
