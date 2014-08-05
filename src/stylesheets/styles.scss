@@ -162,9 +162,10 @@
   width: 100%;
 }
 
-// .footerTitle {
-//   display: block;
-// }
+.footerTitle {
+  display: block;
+  margin-bottom: 10px;
+}
 
 .footerBody {
   display: block;
@@ -185,7 +186,7 @@
 .ryeImage {
   display: inline-block;
   background: url('/images/ryeLeaves.jpg');
-  margin-right: 10px;
+  margin-left: 10px;
   height: 200px;
   width: 80px;
   background-size: 80px 200px;
@@ -199,7 +200,7 @@
 .iphoneImage {
   display: inline-block;
   background: url('/images/iphone.png');
-  margin-left: -40px;
+  margin-right: -40px;
   height: 200px;
   width: 220px;
   background-size: 220px 200px;
