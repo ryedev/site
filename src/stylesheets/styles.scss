@@ -165,6 +165,11 @@
 .footerTitle {
   display: block;
   margin-bottom: 10px;
+
+  @media (max-width:800px) {
+    font-size: 0.8rem;   
+    }
+
 }
 
 .footerBody {
@@ -173,12 +178,20 @@
   font-size: 0.8rem;
   line-height: 1.2rem;
   margin-bottom: 15px;
+
+  @media (max-width:800px) {
+    min-height: 80px;    
+    }
+
+    @media (max-width:500px) {
+    min-height: 150px; 
+    }
 }
 
 .footerLeft {
   display: inline-block;
   width: 43%;
-  margin-left: 8%;
+  margin-left: 5%;
   border-right: 1px solid #9E918B;
 
 }
@@ -191,7 +204,7 @@
   width: 80px;
   background-size: 80px 200px;
 
-    @media (max-width:500px) {
+    @media (max-width:900px) {
     display:none;
     }
 
@@ -205,7 +218,7 @@
   width: 220px;
   background-size: 220px 200px;
 
-    @media (max-width:500px) {
+    @media (max-width:900px) {
     display:none;
     }
 
@@ -213,29 +226,44 @@
 
 .footerContent {
   display: inline-block;
+  vertical-align: top;
+  margin-top: 40px;
   width: 65%;
 
-    @media (min-width: 778px) {
-      width: 55%;
-    }
+  @media (max-width:900px) {
+    padding-left: 5%;
+    width: 93%;
+  }
 
-    @media (max-width: 1025px) {
-      width: 55%;
-    }
+  @media (max-width:800px) {
+    height: 200px;    
+  }
+
+  @media (max-width:500px) {
+    margin-top: 0px;
+    height: 280px;
+  }
 
   .ctaSmall {
     background:url('/images/cta.png');
-    background-size:cover;
+    background-size: cover;
     margin-bottom: 25px;
-    height:50px; 
-    width:150px; 
+    height: 50px; 
+    width: 150px; 
     right: 00px;
-    top:10px;
-    display:none;
+    top: 10px;
+    display: block;
     transition: background .3s;
     -webkit-transition: background .3s;
     -moz-transition: background .3s;
     -o-transition: background .3s;
+
+    @media (max-width:500px) {
+    height: 40px;
+    width: 120px;
+    background-size: 120px 40px;
+
+  }
 
 
     &:hover {
@@ -245,45 +273,49 @@
       -webkit-transition: background .6s;
       -moz-transition: background .6s;
       -o-transition: background .6s;
-    }
-
-    @media (min-width: 778px) {
-      display:inline-block;
-    }
-
-    @media (max-width: 1025px) {
-      background-size:100px 40px;
-      height:40px;
-      width: 100px;
     }
   }
 }
 
-.footerContentRight {
+.footerContentLeft {
   display: inline-block;
+  vertical-align: top;
+  margin-top: 40px;
   width: 45%;
 
-    @media (min-width: 778px) {
-      width: 35%;
-    }
+  @media (max-width:900px) {
+    padding-left: 5%;
+    width: 93%;
+  }
 
-    @media (max-width: 1025px) {
-      width: 35%;
+  @media (max-width:800px) {
+  height: 200px;    
+  }
+
+  @media (max-width:500px) {
+    margin-top: 0px;
+    height: 280px;
     }
 
   .ctaSmall {
     background:url('/images/cta.png');
     background-size:cover;
     margin-bottom: 25px;
-    height:50px; 
-    width:150px; 
+    height: 50px; 
+    width: 150px; 
     right: 00px;
-    top:10px;
-    display:none;
+    top: 10px;
+    display: block;
     transition: background .3s;
     -webkit-transition: background .3s;
     -moz-transition: background .3s;
     -o-transition: background .3s;
+
+    @media (max-width:500px) {
+    height: 40px;
+    width: 120px;
+    background-size: 120px 40px;
+  }
 
 
     &:hover {
@@ -293,16 +325,6 @@
       -webkit-transition: background .6s;
       -moz-transition: background .6s;
       -o-transition: background .6s;
-    }
-
-    @media (min-width: 778px) {
-      display:inline-block;
-    }
-
-    @media (max-width: 1025px) {
-      background-size:100px 40px;
-      height:40px;
-      width: 100px;
     }
   }
 }
@@ -310,6 +332,11 @@
 .footerRight {
   display: inline-block;
   width: 48%;
+
+  @media (max-width:900px) {
+    margin-left: 5%;
+    width: 43%;
+    }
 }
 
 .footerBottom {
