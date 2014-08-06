@@ -158,11 +158,11 @@
   width: 100%;
 }
 
-.footerContainer {
+.footer-container {
   width: 100%;
 }
 
-.footerTitle {
+.footer-title {
   display: block;
   margin-bottom: 10px;
 
@@ -172,7 +172,7 @@
 
 }
 
-.footerBody {
+.footer-body {
   display: block;
   color: $rye-light-grey;
   font-size: 0.8rem;
@@ -188,7 +188,7 @@
     }
 }
 
-.footerLeft {
+.footer-left {
   display: inline-block;
   width: 43%;
   margin-left: 5%;
@@ -196,7 +196,7 @@
 
 }
 
-.ryeImage {
+.rye-image {
   display: inline-block;
   background: url('/images/ryeLeaves.jpg');
   margin-left: 10px;
@@ -210,7 +210,7 @@
 
 }
 
-.iphoneImage {
+.iphone-image {
   display: inline-block;
   background: url('/images/iphone.png');
   margin-right: -40px;
@@ -224,7 +224,7 @@
 
 }
 
-.footerContent {
+.footer-content {
   display: inline-block;
   vertical-align: top;
   margin-top: 40px;
@@ -244,7 +244,7 @@
     height: 280px;
   }
 
-  .ctaSmall {
+  .cta-small {
     background:url('/images/cta.png');
     background-size: cover;
     margin-bottom: 25px;
@@ -277,7 +277,7 @@
   }
 }
 
-.footerContentLeft {
+.footer-content-left {
   display: inline-block;
   vertical-align: top;
   margin-top: 40px;
@@ -297,7 +297,7 @@
     height: 280px;
     }
 
-  .ctaSmall {
+  .cta-small {
     background:url('/images/cta.png');
     background-size:cover;
     margin-bottom: 25px;
@@ -329,7 +329,7 @@
   }
 }
 
-.footerRight {
+.footer-right {
   display: inline-block;
   width: 48%;
 
@@ -339,7 +339,7 @@
     }
 }
 
-.footerBottom {
+.footer-bottom {
   background-color: $rye-dark-grey;
   height: 200px;
 
@@ -348,7 +348,7 @@
   }
 }
 
-.stateImage {
+.state-image {
   float: right;
   margin-top: 25px;
   margin-right: 100px;
@@ -364,7 +364,7 @@
   }
 }
 
-.footerBottomContainer {
+.footer-bottom-container {
   float: right;
   margin-top: 70px;
   margin-right: 10px;
@@ -378,7 +378,7 @@
   }
 }
 
-.footerBottomText {
+.footer-bottom-text {
   display: block;
   color: #ffffff;
   font-size: 0.8rem;
@@ -387,7 +387,7 @@
 
 }
 
-.footerBottomBar {
+.footer-bottom-bar {
   background-color: $rye-really-dark-grey;
   height: 50px;
 }
