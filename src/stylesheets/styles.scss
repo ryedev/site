@@ -342,6 +342,10 @@
 .footerBottom {
   background-color: $rye-dark-grey;
   height: 200px;
+
+  @media (max-width:500px) {
+    height: 225px;
+  }
 }
 
 .stateImage {
@@ -352,12 +356,26 @@
   background-size: cover;
   height: 140px;
   width: 200px;
+
+  @media (max-width:500px) {
+    float: none;
+    display: block;
+    margin: 0px auto;
+  }
 }
 
 .footerBottomContainer {
   float: right;
   margin-top: 70px;
   margin-right: 10px;
+
+  @media (max-width:500px) {
+    float: none;
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+
+  }
 }
 
 .footerBottomText {
@@ -365,5 +383,11 @@
   color: #ffffff;
   font-size: 0.8rem;
   line-height: 1.2rem;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
+
+}
+
+.footerBottomBar {
+  background-color: $rye-really-dark-grey;
+  height: 50px;
 }
