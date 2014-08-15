@@ -5,6 +5,11 @@
   src: url('/fonts/Courier_Prime_Bold.ttf') format('truetype')
 }
 
+html {
+  position: relative;
+  min-height:100%;
+}
+
 //  _   _                _           
 // | | | |              | |          
 // | |_| | ___  __ _  __| | ___ _ __ 
@@ -168,6 +173,14 @@
   font-size: 0.8rem;
   line-height: 1.2rem;
   margin-bottom: 15px;
+}
+
+.footer-wrap {
+  height: 245px;
+  position: absolute;
+
+  bottom: 0;
+  width: 100%;
 }
 
 .rye-image {
