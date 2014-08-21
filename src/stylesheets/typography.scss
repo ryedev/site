@@ -1,0 +1,44 @@
+@font-face {
+  font-family: 'CourierPrime';
+  src: url('/fonts/Courier_Prime_Bold.ttf') format('truetype')
+}
+
+h1, h2, h3 {
+  font-family: 'Lato'
+}
+
+h4, h5, h6 {
+  font-family: 'CourierPrime'
+}
+
+/* Document level adjustments */
+html {
+  font-size: 17px;
+}
+@media (max-width: 900px) {
+  html { font-size: 15px; }
+}
+@media (max-width: 400px) {
+  html { font-size: 13px; }
+}
+
+
+/* Modules will scale with document */
+header {
+  font-size: 1.5rem;
+}
+footer {
+  font-size: 0.75rem;
+}
+
+
+/* Type will scale with modules */
+h1 {
+  font-size: 3em;
+}
+h2 {
+  font-size: 2.5em;
+}
+h3 {
+  font-size: 2em;
+}

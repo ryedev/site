@@ -1,0 +1,78 @@
+//  _   _                _           
+// | | | |              | |          
+// | |_| | ___  __ _  __| | ___ _ __ 
+// |  _  |/ _ \/ _` |/ _` |/ _ \ '__|
+// | | | |  __/ (_| | (_| |  __/ |   
+// \_| |_/\___|\__,_|\__,_|\___|_|   
+// ascii- DOOM
+
+header {
+  margin-top:20px;
+  font-family: 'CourierPrime';
+  position:relative;
+
+    @media (min-width: 778px) {
+      display:inline-block;
+    }
+
+    @media (max-width: 1025px) {
+      right:60px
+    }
+  
+
+  .logo {
+    display:inline-block;
+    height:80px;
+    text-align: center;
+    margin-bottom:20px;
+
+    img {
+      height:100%;
+    }
+    
+    @media (max-width:778px) {
+      text-align: center;
+      width: 100%;
+    }
+  }
+
+  .nav {
+    display:inline-block;
+
+    ul{
+      display:inline-block; 
+      list-style-type:none;
+      text-align:center;
+
+      li {
+        display:inline-block;
+        padding-right:20px;
+
+        @media (max-width:778px) {
+          padding:0px 10px;
+        }
+      }
+    }
+
+    @media (max-width:778px) {
+      text-align: center;
+      width: 100%;
+    }
+
+    a {
+      color: $rye-medium-gray;
+
+      &:hover {
+        border-bottom: 2px solid $rye-medium-gray;
+      }
+    }
+  }
+
+  @media (min-width: 778px) {
+    padding-left:60px;
+  }
+
+  @media (min-width: 1025px) {
+    padding-left:0px
+  }
+}
