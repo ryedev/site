@@ -5,6 +5,7 @@
   height: 440px;
   background: url('/images/header-mock.jpg');
   background-size: cover;
+  font-size: 1rem;
 
   .row {
     height: 100%;
@@ -25,14 +26,38 @@
 
   h1 {
     color: $white;
+    font-weight: 800;
+    line-height: 1.2em;
+    margin-bottom: 0;
   }
 
-  h4 {
+  h5 {
     color: $rye-beige;
+    display: inline-block;
+    margin-right: 2%;
   }
 
-  p {
-    font-size:20px;
+  .tm {
+    font-size: .5em;
+    position: relative;
+    bottom: 0.7em;
+  }
+
+  a {
+    color: $rye-yellow;
+    font-family: "Courier Prime";
+    margin-right: 1%;
+    font-weight: 600;
+    font-size: 1.1em;
+    border-bottom: none;
+    transition: border-bottom 1.2s ease;
+  
+    &:hover{
+      border-bottom: 3px solid $rye-yellow;
+      transition: border-bottom 0.2s ease;
+      color: $rye-dark-gray;
+    }
+
   }
 
 }

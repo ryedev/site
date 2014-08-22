@@ -1,18 +1,92 @@
-// Small screens
-
-/* Define mobile styles */
+// Define mobile styles
 @media only screen { 
+  header{
+    .logo{
+      margin-bottom: 2%;
+    }
+    nav{
+      li {
+        padding-top: 2%;
+        background: $rye-yellow;
+      }
+    }
+  }
 
+  .hero-banner {
+    height: 40%;
+    font-size: 0.75rem;
+    .overlay{
+      .row{
+        padding-top: 20px;
+        padding-right: 20%;
+        padding: 3% 20% 0 3%;
+      }
+    }
+  }
 } 
+// END MOBILE STYLES
 
-/* max-width 640px, mobile-only styles, use when QAing mobile issues */
+
+// max-width 640px, mobile-only styles, use when QAing mobile issues
 @media only screen and (max-width: 40em) { 
-
+// for QAin
 
 } 
+
+
+// SMALL SCREENS
+@media only screen and (min-width: 20.063em){
+  header{
+    .logo{
+      margin-bottom: 2%;
+    }
+    nav{
+      li {
+        padding-top: 5%;
+        // background: none;
+      }
+    }
+  }
+
+  .hero-banner {
+    height: 25%;
+    .overlay{
+      .row{
+        padding-top: 20px;
+      }
+    }
+  }
+}
 
 // Medium screens
-@media only screen and (min-width: 40.063em) { } /* min-width 641px, medium screens */
+/* min-width 641px, medium screens */
+@media only screen and (min-width: 40.063em) { 
+  header{
+    .logo{
+      margin-bottom: 2%;
+    }
+    nav{
+      li {
+        background: none;
+      }
+    }
+  }
+
+  .hero-banner{
+    height: 50%;
+    font-size: 1.1rem;
+    .overlay{
+      .row{
+        padding-top: 5%;
+      }
+    }
+  }
+
+  .cta{
+    display: inline-block;
+  }
+
+}
 
 @media only screen and (min-width: 40.063em) and (max-width: 64em) { } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
 

@@ -13,20 +13,18 @@ h4, h5, h6 {
 
 /* Document level adjustments */
 html {
-  font-size: 17px;
+  font-size: 18px;
 }
 @media (max-width: 900px) {
   html { font-size: 15px; }
 }
 @media (max-width: 400px) {
-  html { font-size: 13px; }
+  html { font-size: 10px; }
 }
 
 
 /* Modules will scale with document */
-header {
-  font-size: 1.5rem;
-}
+
 footer {
   font-size: 0.75rem;
 }
@@ -41,4 +39,16 @@ h2 {
 }
 h3 {
   font-size: 2em;
+}
+
+h4 {
+  font-size: 1.5em;
+}
+
+h5 {
+  font-size: 1em;
+}
+
+h6 {
+  font-size: 0.5em;
 }
