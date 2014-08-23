@@ -1,25 +1,14 @@
 // Define mobile styles
 @media only screen { 
-  header{
-    .logo{
-      margin-bottom: 2%;
-    }
-    nav{
-      li {
-        padding-top: 2%;
-        background: $rye-yellow;
-      }
-    }
-  }
-
   .hero-banner {
-    height: 40%;
+    height: 150px;
     font-size: 0.75rem;
     .overlay{
       .row{
         padding-top: 20px;
-        padding-right: 20%;
-        padding: 3% 20% 0 3%;
+        .headline {
+          width: 80%;
+        }
       }
     }
   }
@@ -36,20 +25,8 @@
 
 // SMALL SCREENS
 @media only screen and (min-width: 20.063em){
-  header{
-    .logo{
-      margin-bottom: 2%;
-    }
-    nav{
-      li {
-        padding-top: 5%;
-        // background: none;
-      }
-    }
-  }
-
   .hero-banner {
-    height: 25%;
+    height: 220px;
     .overlay{
       .row{
         padding-top: 20px;
@@ -61,23 +38,15 @@
 // Medium screens
 /* min-width 641px, medium screens */
 @media only screen and (min-width: 40.063em) { 
-  header{
-    .logo{
-      margin-bottom: 2%;
-    }
-    nav{
-      li {
-        background: none;
-      }
-    }
-  }
-
   .hero-banner{
-    height: 50%;
+    height: 400px;
     font-size: 1.1rem;
     .overlay{
       .row{
         padding-top: 5%;
+        .headline{
+          width: 65%;
+        }
       }
     }
   }
