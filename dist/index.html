@@ -9,7 +9,6 @@
         <link rel="stylesheet" href="stylesheets/main.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="/bower_components/jquery/dist/jquery.min.js"></script>
-        <script src="/scripts/jquery.fittext.js"></script>
       </head>
     </html>
   </head>
@@ -20,7 +19,7 @@
         <nav>
           <ul>
             <li><a href="">About</a></li>
-            <li><a href="">Case-Studies</a></li>
+            <li><a href="">Insight</a></li>
             <li><a href="">Contact</a></li>
           </ul>
         </nav><a href="#">
@@ -31,10 +30,9 @@
       <div style="width:100%; height:100%" class="overlay">
         <div class="row">
           <div class="small-12 columns">
-            <div class="headline">
-              <h1>Small-batch development for your Growing Ideas<span class="tm">™</span></h1>
-              <h5>Tell us how we can</h5><a><span>help grow</span></a>
-              <h5>your idea.</h5>
+            <div id="headline">
+              <h1 id="tagline">Small-batch development<br>for your Growing Ideas<span class="tm">™</span></h1>
+              <h5 id="sub-tag-text">Tell us how we can<a><span>help grow</span></a>your idea.</h5>
             </div>
           </div>
         </div>
@@ -44,6 +42,7 @@
   <!-- build:js scripts/vendor.js-->
   <!-- bower:js-->
   <script src="/bower_components/jquery/dist/jquery.js"></script>
+  <script src="/bower_components/FitText.js/jquery.fittext.js"></script>
   <!-- endbower-->
   <!-- endbuild-->
   <!-- build:js scripts/main.js-->

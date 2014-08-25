@@ -2,12 +2,17 @@
 @media only screen { 
   .hero-banner {
     height: 150px;
-    font-size: 0.75rem;
     .overlay{
+      padding-top: 30px; 
       .row{
-        padding-top: 20px;
-        .headline {
-          width: 80%;
+        #headline {
+          width: 90%;
+          a {
+            margin: 0 5px;
+            span {
+              font-family: "Courier Prime";
+            }
+          } 
         }
       }
     }
@@ -28,8 +33,14 @@
   .hero-banner {
     height: 220px;
     .overlay{
+      padding-top: 50px;
       .row{
-        padding-top: 20px;
+        #headline {
+          width: 80%;
+          a {
+            margin: 0 8px;
+          }
+        }
       }
     }
   }
@@ -40,12 +51,11 @@
 @media only screen and (min-width: 40.063em) { 
   .hero-banner{
     height: 400px;
-    font-size: 1.1rem;
     .overlay{
+      padding-top: 100px;
       .row{
-        padding-top: 5%;
-        .headline{
-          width: 65%;
+        #headline{
+          // width: 80%;
         }
       }
     }
@@ -60,7 +70,16 @@
 @media only screen and (min-width: 40.063em) and (max-width: 64em) { } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
 
 // Large screens
-@media only screen and (min-width: 64.063em) { } /* min-width 1025px, large screens */
+/* min-width 1025px, large screens */
+@media only screen and (min-width: 64.063em) { 
+  .hero-banner{
+    height: 400px;
+    .overlay{
+      .row{
+      }
+    }
+  }
+}
 
 @media only screen and (min-width: 64.063em) and (max-width: 90em) { } /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
 

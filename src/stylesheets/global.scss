@@ -1,5 +1,5 @@
 html * {
-  
+
 }
 
 .row{
@@ -17,7 +17,7 @@ html * {
 
   .row {
     height: 100%;
-    padding-top: 80px;
+    padding: 0 1.5%;
   }
 
   .overlay {
@@ -26,15 +26,16 @@ html * {
     height:100%;
     background-color:rgba(81, 20, 2, 0.57);
     z-index:1;
+    padding-top: 90px;
   }
 
-  .headline {
-    width: 65%;
-    padding-left: 4%;
+  #headline {
+    width: 80%;
   }
-  // @media (max-width:500px) {
-  //   display:none;
-  // }
+
+  #sub-tag {
+    width: 50%;
+  }
 
   h1 {
     color: $white;
@@ -45,12 +46,11 @@ html * {
 
   h5 {
     color: $rye-beige;
-    display: inline-block;
-    margin-right: 1.6%;
+    margin: 0;
   }
 
   .tm {
-    font-size: .5em;
+    font-size: 0.5em;
     position: relative;
     bottom: 0.7em;
   }
@@ -58,9 +58,9 @@ html * {
   a {
     color: $rye-yellow;
     font-family: "Courier Prime";
-    margin-right: 1%;
+    margin: 0 8px;
     font-weight: 600;
-    font-size: 1.1em;
+    font-size: 1em;
     border-bottom: none;
     transition: border-bottom 1.2s ease;
   
