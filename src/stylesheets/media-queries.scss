@@ -17,6 +17,27 @@
       }
     }
   }
+
+  .main-content {
+    padding: 4px 10px;
+    h2 {
+      // padding-top: 0;
+    }
+    .gif{
+      display: none;
+    }
+
+  }
+
+  .sub-content {
+    .iphone-image {
+      height: 128px;
+      width: 60px;
+      background-size: 60px 128px;
+      position: relative;
+      bottom: 24px;
+    }
+  }
 } 
 // END MOBILE STYLES
 
@@ -44,6 +65,10 @@
       }
     }
   }
+
+  .main-content {
+    // height: 72%;
+  }
 }
 
 // Medium screens
@@ -63,6 +88,16 @@
 
   .cta{
     display: inline-block;
+  }
+
+  .main-content {
+    .gif{
+      display: inline-block;
+    }
+
+    .gif-mobile {
+      display: none;
+    }
   }
 
 }
