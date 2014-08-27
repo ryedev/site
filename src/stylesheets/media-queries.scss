@@ -27,15 +27,42 @@
       display: none;
     }
 
+    p {
+      font-size: 1.1em;
+    }
+
   }
 
   .sub-content {
+
     .iphone-image {
       height: 128px;
       width: 60px;
       background-size: 60px 128px;
       position: relative;
-      bottom: 24px;
+      bottom: 27px;
+    }
+
+    .case-studies {
+
+      .content {
+        margin-left: 0;
+      }
+
+      h5 {
+        font-size: 1.3em;
+        display: inline-block;
+      }
+      a {
+        position: absolute;
+        right: 0px;
+        bottom: -22px;
+      }
+      p {
+        position: relative;
+        z-index: 20;
+        font-size: 1.2em;
+      }
     }
   }
 } 
@@ -68,6 +95,19 @@
 
   .main-content {
     // height: 72%;
+  }
+
+  .sub-content {
+    .case-studies {
+      p{
+        font-size: 1em;
+      }
+
+      a {
+        bottom: -10px;
+        right: -74px;
+      }
+    }
   }
 }
 

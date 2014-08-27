@@ -115,8 +115,9 @@ p {
 
 }
 
-
+// sub content work with and case study section
 .sub-content {
+  padding: 4px 10px;
 
   .iphone-image {
     display: inline-block;
@@ -144,9 +145,9 @@ p {
     display: inline-block;
     height: 30%;
     position: absolute;
-    bottom: 26px;
     left: 0;
     right: 0;
+    bottom: 21px;
     -webkit-box-shadow: inset 0 -18px 24px 6px rgba(255, 255, 255, 0.75);
     box-shadow: inset 0px -18px 24px 6px rgba(255, 255, 255, 0.75);
     z-index: 5;
@@ -166,8 +167,9 @@ p {
   }
 
   .case-studies{
+    padding: 0;
     .content{
-      margin-left: 10px;
+      padding-left: 0;
       vertical-align: top;
       display: inline-block;
     }
