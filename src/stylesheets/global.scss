@@ -80,12 +80,11 @@ p {
 
 // main content section of index
 .main-content {
-  background: url('/images/backgrounds/lightpaperfibers.png');
+  background: url('/images/backgrounds/exclusive_paper.png');
   border-bottom: 1px solid $rye-light-gray;
   padding-bottom: 4%;
 
   h2 {
-    color: $rye-dark-gray;
     text-transform: capitalize;
     padding-top: 30px;
     font-weight: 600;
@@ -95,7 +94,7 @@ p {
   .gif {
     float: right;
     width: 40%;
-    margin-left: 10px;
+    margin-left: 28px;
     margin-top: 6px;
 
     img {
@@ -118,7 +117,7 @@ p {
 
 // sub content work with and case study section
 .sub-content {
-  padding: 4px 10px;
+  padding: 4px 10px 30px;
 
   .case-studies{
     padding: 0;
@@ -159,7 +158,6 @@ p {
      
       h5 {
         margin: 10px 0 0 0;
-        color: $rye-dark-gray;
       }
 
       p {
@@ -175,7 +173,6 @@ p {
       display: inline-block;
       h5 {
         margin: 10px 0 0 0;
-        color: $rye-dark-gray;
       }
 
       p {

@@ -1,46 +1,5 @@
-
-
 .footer {
-  font-family: 'CourierPrime';
   width: 100%;
-}
-
-.footer-container {
-  width: 100%;
-}
-
-.footer-title {
-  display: block;
-  margin-bottom: 10px;
-
-  @media (max-width:800px) {
-    font-size: 0.8rem;   
-    }
-
-}
-
-.footer-body {
-  display: block;
-  color: $rye-light-gray;
-  font-size: 0.8rem;
-  line-height: 1.2rem;
-  margin-bottom: 15px;
-
-  @media (max-width:800px) {
-    min-height: 80px;    
-    }
-
-    @media (max-width:500px) {
-    min-height: 150px; 
-    }
-}
-
-.footer-left {
-  display: inline-block;
-  width: 43%;
-  margin-left: 5%;
-  border-right: 1px solid #9E918B;
-
 }
 
 .rye-image {
