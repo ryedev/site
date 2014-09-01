@@ -53,7 +53,7 @@ gulp.task('js', function() {
 });
 
 gulp.task('templates', function() {
-  return gulp.src('src/templates/pages/*.jade')
+  return gulp.src('src/templates/pages/**/*.jade')
     .pipe(jade({
       pretty: true
     }))
