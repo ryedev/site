@@ -1,0 +1,56 @@
+extends layouts/main
+block content
+  
+  include includes/header
+
+  .hero-banner
+    .overlay(style="width:100%; height:100%")
+      .row
+        .small-12.columns
+          #headline
+            h1#tagline Small-batch development<br>for your Growing Ideas<span class="tm">™</span>
+            h5#sub-tag-text Tell us how we can<a><span>help grow</span></a>your idea.
+
+  .main-content 
+    .row
+      h2#main-content-hl The who. The what. The why.
+      //- h5#main-content-sub-hl 
+      .gif
+        a(href='https://s3.amazonaws.com/uploads.hipchat.com/31349/802592/UlOyMX96CY22HHC/Success.gif', target='_blank'): img(src='/images/gif-still.png')
+        h6 How you will feel after project completion<br>(and our favorite gif)
+      p 
+        | <strong><em>Rye Development focuses on growing and fostering relationships in order to build web products for individuals and organizations that reflect the people behind them.</em></strong>
+      p
+        | We are a small team of designers, developers, and business minds rooted in Greenville, SC. Our passion for our big-little corner of the country is only rivaled by our love of web technologies and the industry as a whole. 
+      p
+        | We strive for the most enjoyable client experience by priding ourselves on our dependability and deliverables. Biodiesel Echo Park chia slow-carb before they sold out, Odd Future forage bitters brunch Carles master cleanse. Mlkshk master cleanse pour-over sriracha, Helvetica banh mi PBR&B art party Kickstarter sartorial whatever Godard. Gentrify selvage McSweeney's biodiesel mumblecore, meh vinyl American Apparel bitters pug fixie four loko wolf hashtag. Ugh squid ethnic hella Pinterest farm-to-table. Cred slow-carb sartorial, aesthetic ethnic Carles yr mlkshk forage occupy. Master cleanse lomo synth, Odd Future ethnic cornhole Austin craft beer hoodie banh mi. Authentic banjo High Life meggings hoodie, swag art party locavore raw denim bicycle rights sriracha ugh.
+        .gif-mobile
+          a(href='https://s3.amazonaws.com/uploads.hipchat.com/31349/802592/UlOyMX96CY22HHC/Success.gif', target="_blank"): img(src='/images/gif-still.png')
+          h6 How you will feel after project completion<br>(and our favorite gif)
+
+  .sub-content
+    .row
+      .small-12.medium-6.columns.case-studies
+        .left-img
+          .grain-image
+          .white-out-grain
+        .content
+          h5 Case-studies
+          p Want to see what we do? Take a glimpse at some of our work and hear what others have to say about us.
+          a: img(src="/images/buttons/case-studies-small-red.png")
+      .small-12.medium-6.columns.start-project
+        .right-img
+          .iphone-image
+          .white-out-phone
+        .content
+          h5 Start your project with Rye
+          p Text, email, phone, snail-mail, pigeon, etc. We love talking to people. Let's talk about how Rye can help you.
+          a: img(src='/images/buttons/work-with-small-red.png')
+
+  include includes/footer
+
+
+          
+
+
+
