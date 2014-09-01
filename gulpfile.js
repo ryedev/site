@@ -41,7 +41,6 @@ gulp.task('css', function() {
         errLogToConsole: true
       } ) )
     .pipe( csso() )
-    .pipe( gulp.dest('.tmp/stylesheets/') )
     .pipe( gulp.dest('dist/stylesheets/') )
     .pipe( livereload( server ));
 });
@@ -54,7 +53,7 @@ gulp.task('js', function() {
 });
 
 gulp.task('templates', function() {
-  return gulp.src('src/templates/*.jade')
+  return gulp.src('src/templates/pages/*.jade')
     .pipe(jade({
       pretty: true
     }))
