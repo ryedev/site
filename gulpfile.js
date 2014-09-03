@@ -310,7 +310,7 @@ gulp.task('watch', ['connect', 'serve'], function () {
   });
 
   gulp.watch('src/templates/**/*.jade', ['templates']);
-  gulp.watch('src/stylesheetss/**/*.scss', ['styles']);
+  gulp.watch('src/stylesheets/**/*.scss', ['styles']);
   gulp.watch('src/scripts/**/*.js', ['scripts']);
   gulp.watch('src/images/**/*', ['images']);
   gulp.watch('bower.json', ['wiredep']);
