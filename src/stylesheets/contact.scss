@@ -4,8 +4,8 @@
   background: url('/images/backgrounds/paper.png');
   background-size: 400px 400px;
   border-bottom: 1px solid $rye-light-gray;
-  padding-bottom: 6.35%;
-  padding-top: 6.35%;
+  padding-bottom: 120px;
+  padding-top: 120px;
   position: relative;
 
   .contact-info {
@@ -13,9 +13,9 @@
     background-size: cover;
     background-position: 0 -55px;
     height: 340px;
-    width: 400px;
+    max-width: 400px;
     position: relative;
-
+    margin: 0 auto;
 
     .overlay {
       position: absolute;
@@ -91,13 +91,12 @@
       text-align: right;
 
       h2 {
-        display: inline-block;
         border-bottom: 2px dashed $black;
         margin-bottom: 40px;
       }
 
       h4 {
-        display: inline-block;
+        
       }
 
       i {
