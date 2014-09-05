@@ -32,7 +32,6 @@ header {
 
       li {
         display:inline-block;
-        padding-right:20px;
 
         &:hover{
 
@@ -48,7 +47,6 @@ header {
         }
       }
     }
-
   }
 }
 
@@ -83,6 +81,7 @@ header {
         text-align: center;
         background: $rye-yellow;
         color: $white;
+        padding: 3px 20px 3px 0px;
         a{
           position: relative;
           left: 10px;
@@ -113,10 +112,9 @@ header {
     nav {
       ul{
         li{
-          // padding:0;
-          // padding-top: 5%;
+          padding:0;
+          
           background: $white;
-          // color: $rye-medium-gray;
           -webkit-transition: background 0.3s ease;
           -moz-transition: background 0.3s ease;
           -o-transition: background 0.3s ease;

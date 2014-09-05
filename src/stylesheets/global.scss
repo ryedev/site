@@ -245,7 +245,8 @@ p {
   .contact-info {
     background: url('/images/greenville-map.png') no-repeat;
     background-size: cover;
-    height: 400px;
+    background-position: 0 -55px;
+    height: 340px;
     width: 400px;
     position: relative;
 
@@ -258,7 +259,7 @@ p {
       left: 0;
       background: rgba(234, 162, 69, 0.6);
       padding: 30px;
-      padding-top:50%;
+      padding-top: 150px;
 
       .top-bar {
         height: 26%;

@@ -1,6 +1,26 @@
-footer
+.footer
   .footer-bottom
-    .state-image
-    .footer-bottom-text Marco! Polo!
-    .footer-bottom-text Marco! Polo!
+    .row
+      nav.mobile-nav
+        ul
+          li: a(href="/about") About
+          .spacer
+          li: a(href="/case-studies") Insight
+          .spacer
+          li: a(href="/contact") Contact
+      .social
+        i.ss-icon.ss-social-circle Twitter
+        .spacer
+        i.ss-icon.ss-social-circle Facebook
+        .spacer
+        i.ss-icon.ss-social-circle Email
+      .state-image
+
+      a(href='/')
+        .logo: img(src="/images/rye-logo.png" alt="Rye Development")
+      nav.main-footer-nav
+        ul
+          li: a(href="/about") About
+          li: a(href="/case-studies") Insight
+          li: a(href="/contact") Contact
   .footer-bottom-bar

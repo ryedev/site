@@ -1,185 +1,324 @@
-footer {
+.footer {
   width: 100%;
-}
 
-.rye-image {
-  display: inline-block;
-  background: url('/images/ryeLeaves.jpg');
-  margin-left: 10px;
-  height: 240px;
-  width: 80px;
-  background-size: 80px 240px;
+  .footer-bottom {
+    background-color: $rye-dark-gray;
+    height: 150px;
+    padding: 10px 26px;
+    position: relative;
 
-    @media (max-width:900px) {
-    display:none;
+    .logo {
+      display: inline-block;
+      vertical-align: top;
+      margin-top: 30px;
+      
+      img {
+        height: 90px;
+      }
     }
 
+    .mobile-nav {
+      display: none;
+    }
+
+    nav {
+      display: inline-block;
+
+      ul {
+        list-style-type: none;
+        text-align: center;
+        margin-left: 0;
+
+        li {
+          display:inline-block;
+
+          &:hover{
+
+          }
+          a {
+            color: $white;
+            font-size: 1em;
+            font-family: "CourierPrime";
+
+            &:hover {
+              color: $white;
+              border-bottom: 2px solid $white;
+            }
+          }
+        }
+      }
+    }
+
+    .social {
+      color: $white;
+      text-align: center;
+      font-size: 26px;
+    
+    }
+
+    .state-image {
+      display: inline-block;
+      background: url('/images/state.png') no-repeat;
+      background-size: contain;
+      height: 120px;
+      width: 200px;
+      position: absolute;
+      right: 0;
+      top: 15px;
+    }
+  }
+
+  .footer-bottom-bar {
+    background-color: $black;
+    height: 50px;
+  }
 }
 
-.footer-content {
-  display: inline-block;
-  vertical-align: top;
-  margin-top: 40px;
-  width: 65%;
-
-  @media (max-width:900px) {
-    padding-left: 5%;
-    width: 93%;
-  }
-
-  @media (max-width:800px) {
-    height: 200px;    
-  }
-
-  @media (max-width:500px) {
-    margin-top: 0px;
-    height: 280px;
-  }
-
-  .cta-small {
-    background:url('/images/cta.png');
-    background-size: cover;
-    margin-bottom: 25px;
-    height: 50px; 
-    width: 150px; 
-    right: 00px;
-    top: 10px;
-    display: block;
-    transition: background .3s;
-    -webkit-transition: background .3s;
-    -moz-transition: background .3s;
-    -o-transition: background .3s;
-
-    @media (max-width:500px) {
-    height: 40px;
-    width: 120px;
-    background-size: 120px 40px;
-
-  }
 
 
-    &:hover {
-      background:url('/images/cta-red.png');
-      background-size:cover;
-      transition: background .6s;
-      -webkit-transition: background .6s;
-      -moz-transition: background .6s;
-      -o-transition: background .6s;
+
+//               _     _ _        __ _         _           
+//   /\/\   ___ | |__ (_) | ___  / _\ |_ _   _| | ___  ___ 
+//  /    \ / _ \| '_ \| | |/ _ \ \ \| __| | | | |/ _ \/ __|
+// / /\/\ \ (_) | |_) | | |  __/ _\ \ |_| |_| | |  __/\__ \
+// \/    \/\___/|_.__/|_|_|\___| \__/\__|\__, |_|\___||___/
+//                                       |___/              
+
+@media only screen {
+  .footer {
+
+    .footer-bottom {
+      height: 200px;
+      padding: 10px 10px 0;
+
+      .logo {
+        
+        
+        img {
+          height: 60px;
+        }
+      }
+
+      .main-footer-nav {
+        display: none;
+      }
+
+      .mobile-nav {
+        display: block;
+        text-align: center;
+        font-family: "Courier Prime";
+      }
+
+      nav {
+        display: inline-block;
+
+        ul {
+          list-style-type: none;
+          text-align: center;
+          margin-left: 0;
+
+          li {
+            display:inline-block;
+
+            &:hover{
+
+            }
+            a {
+              color: $white;
+              font-size: 1.5em;
+              font-family: "CourierPrime";
+
+              &:hover {
+                color: $white;
+                border-bottom: 2px solid $white;
+              }
+            }
+          }
+        }
+      }
+
+      .state-image {
+        display: inline-block;
+        background: url('/images/state.png') no-repeat;
+        background-size: contain;
+        height: 90px;
+        width: 112px;
+        position: absolute;
+        right: 0;
+        top: 60px;
+        margin-top: 12px;
+      }
+    }
+
+    .footer-bottom-bar {
+      background-color: $black;
+      height: 50px;
     }
   }
 }
 
-.footer-content-left {
-  display: inline-block;
-  vertical-align: top;
-  margin-top: 40px;
-  width: 45%;
 
-  @media (max-width:900px) {
-    padding-left: 5%;
-    width: 93%;
-  }
 
-  @media (max-width:800px) {
-  height: 200px;    
-  }
 
-  @media (max-width:500px) {
-    margin-top: 0px;
-    height: 280px;
+
+//  __                 _ _   __                              
+// / _\_ __ ___   __ _| | | / _\ ___ _ __ ___  ___ _ __  ___ 
+// \ \| '_ ` _ \ / _` | | | \ \ / __| '__/ _ \/ _ \ '_ \/ __|
+// _\ \ | | | | | (_| | | | _\ \ (__| | |  __/  __/ | | \__ \
+// \__/_| |_| |_|\__,_|_|_| \__/\___|_|  \___|\___|_| |_|___/
+                                                          
+// Min-width 401px;
+@media only screen and (min-width: 20.063em){
+  .footer {
+
+    .footer-bottom {
+      height: 200px;
+
+      .logo {
+        
+        
+        img {
+          height: 60px;
+        }
+      }
+
+      .main-footer-nav {
+        display: none;
+      }
+
+      .mobile-nav {
+        display: block;
+        text-align: center;
+        font-family: "Courier Prime";
+      }
+
+      nav {
+        display: inline-block;
+
+        ul {
+          list-style-type: none;
+          text-align: center;
+          margin-left: 0;
+
+          li {
+            display:inline-block;
+
+            &:hover{
+
+            }
+            a {
+              color: $white;
+              font-size: 1.2em;
+              font-family: "CourierPrime";
+
+              &:hover {
+                color: $white;
+                border-bottom: 2px solid $white;
+              }
+            }
+          }
+        }
+      }
+
+      .state-image {
+        display: inline-block;
+        background: url('/images/state.png') no-repeat;
+        background-size: contain;
+        height: 90px;
+        width: 112px;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        margin-top: 12px;
+      }
     }
 
-  .cta-small {
-    background:url('/images/cta.png');
-    background-size:cover;
-    margin-bottom: 25px;
-    height: 50px; 
-    width: 150px; 
-    right: 00px;
-    top: 10px;
-    display: block;
-    transition: background .3s;
-    -webkit-transition: background .3s;
-    -moz-transition: background .3s;
-    -o-transition: background .3s;
-
-    @media (max-width:500px) {
-    height: 40px;
-    width: 120px;
-    background-size: 120px 40px;
+    .footer-bottom-bar {
+      background-color: $black;
+      height: 50px;
+    }
   }
 
 
-    &:hover {
-      background:url('/images/cta-red.png');
-      background-size:cover;
-      transition: background .6s;
-      -webkit-transition: background .6s;
-      -moz-transition: background .6s;
-      -o-transition: background .6s;
+}
+
+
+//                  _ _                   __                              
+//   /\/\   ___  __| (_)_   _ _ __ ___   / _\ ___ _ __ ___  ___ _ __  ___ 
+//  /    \ / _ \/ _` | | | | | '_ ` _ \  \ \ / __| '__/ _ \/ _ \ '_ \/ __|
+// / /\/\ \  __/ (_| | | |_| | | | | | | _\ \ (__| | |  __/  __/ | | \__ \
+// \/    \/\___|\__,_|_|\__,_|_| |_| |_| \__/\___|_|  \___|\___|_| |_|___/
+                                                                       
+/* min-width 641px, medium screens */
+@media only screen and (min-width: 40.063em) { 
+  .footer {
+
+    .footer-bottom {
+      padding: 10px 26px 10px 10px;
+
+      .logo {
+        margin-top: 0;
+        position: relative;
+        bottom: 10px;
+
+        img {
+          height: 110px;
+        }
+      }
+
+      nav {
+        ul {
+          text-align: right;
+          margin-bottom: 10px;
+        }
+      }
+
+      .social {
+        display: inline-block;
+        float: right;
+        text-align: right;
+        margin-bottom: 0px;
+      }
     }
   }
 }
 
-.footer-right {
-  display: inline-block;
-  width: 48%;
+//    __                        __                              
+//   / /  __ _ _ __ __ _  ___  / _\ ___ _ __ ___  ___ _ __  ___ 
+//  / /  / _` | '__/ _` |/ _ \ \ \ / __| '__/ _ \/ _ \ '_ \/ __|
+// / /__| (_| | | | (_| |  __/ _\ \ (__| | |  __/  __/ | | \__ \
+// \____/\__,_|_|  \__, |\___| \__/\___|_|  \___|\___|_| |_|___/
+//                 |___/                                        
+/* Min-width 1025px */
+@media only screen and (min-width: 60.063em) { 
+  .footer {
 
-  @media (max-width:900px) {
-    margin-left: 5%;
-    width: 43%;
+    .footer-bottom {
+      padding: 10px 36px 10px 26px;
+
+      .logo {
+        margin-top: 0;
+        position: relative;
+        bottom: 10px;
+
+        img {
+          height: 110px;
+        }
+      }
+
+      nav {
+        ul {
+          text-align: right;
+          margin-bottom: 10px;
+        }
+      }
+
+      .social {
+        display: inline-block;
+        float: right;
+        text-align: right;
+        margin-bottom: 0px;
+      }
     }
-}
-
-.footer-bottom {
-  background-color: $rye-dark-gray;
-  height: 200px;
-
-  @media (max-width:500px) {
-    height: 225px;
   }
-}
-
-.state-image {
-  float: right;
-  margin-top: 25px;
-  margin-right: 100px;
-  background: url('/images/state.jpg');
-  background-size: cover;
-  height: 140px;
-  width: 200px;
-
-  @media (max-width:500px) {
-    float: none;
-    display: block;
-    margin: 0px auto;
-  }
-}
-
-.footer-bottom-container {
-  float: right;
-  margin-top: 70px;
-  margin-right: 10px;
-
-  @media (max-width:500px) {
-    float: none;
-    display: block;
-    text-align: center;
-    margin-top: 20px;
-
-  }
-}
-
-.footer-bottom-text {
-  display: block;
-  color: #ffffff;
-  font-size: 0.8rem;
-  line-height: 1.2rem;
-  margin-bottom: 5px;
-
-}
-
-.footer-bottom-bar {
-  background-color: $black;
-  height: 50px;
 }
