@@ -52,7 +52,7 @@ gulp.task('templates', function() {
 // /____/\__/\__, /_/\___/____/  
 //          /____/               
 
-// Let's crunch *local* styles (non-ghost-shield) 
+// Let's crunch *local* styles  
 // in src/styles/main.scss and put them dist/styles
 gulp.task('styles', function () {
   return gulp.src('src/stylesheets/main.scss')
