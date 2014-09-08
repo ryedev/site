@@ -315,3 +315,5 @@ gulp.task('watch', ['connect', 'serve'], function () {
   gulp.watch('src/images/**/*', ['images']);
   gulp.watch('bower.json', ['wiredep']);
 });
+
+// work on build
