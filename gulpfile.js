@@ -210,7 +210,23 @@ gulp.task('cname', function () {
     .pipe($.size());
 });
 
+//          _ __                                 
+//    _____(_) /____        ____ ___  ____ _____ 
+//   / ___/ / __/ _ \______/ __ `__ \/ __ `/ __ \
+//  (__  ) / /_/  __/_____/ / / / / / /_/ / /_/ /
+// /____/_/\__/\___/     /_/ /_/ /_/\__,_/ .___/ 
+//                                      /_/      
 
+// After build-step-1 promise is resolved , we can
+// safely generate a sitemap and put it in dist
+gulp.task('sitemap', function () {
+  gulp.src('dist/**/*.html', {
+    read: false
+  }).pipe($.sitemap({
+      siteUrl: 'http://ryedev.com'
+  }))
+  .pipe(gulp.dest('dist'));
+});
 
 //     __          _ __    __        __                 
 //    / /_  __  __(_) /___/ /  _____/ /____  ____  _____
