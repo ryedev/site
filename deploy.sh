@@ -2,14 +2,14 @@
 set -o errexit #abort if any command fails
 
 deploy_directory=dist
-deploy_branch=gh-pages
+deploy_branch=master
 
 #if no user identity is already set in the current git environment, use this:
 default_username=deploy.sh
 default_email=
 
 #repository to deploy to. must be readable and writable.
-repo=git@github.com:ryedev/site.git
+repo=git@github.com:ryedev/ryedev.github.io.git
 
 if [[ $1 = "-v" || $1 = "--verbose" ]]; then
   verbose=true

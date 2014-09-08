@@ -34,7 +34,7 @@ var gulp = require('gulp'),
 // /___/                   
 
 // Let's take all of the jade templates, pre-process them,
-// and story them in .tmp
+// and story them in dist
 gulp.task('templates', function() {
   return gulp.src('src/templates/pages/**/*.jade')
   .pipe($.jade({
@@ -121,7 +121,7 @@ gulp.task('asset-build', ['templates', 'styles', 'scripts'], function () {
     // useref all the html, and look in app
     // for files references in the html
     .pipe($.useref.assets({
-      searchPath: ['app']
+      searchPath: ['src']
     }))
 
     // uglify if it's js, optimize if it's css
@@ -189,10 +189,10 @@ gulp.task('images-promise', ['images'], function(){
 
 // take fonts out of ghost-shield and move them to dist
 gulp.task('fonts', function () {
-  return gulp.src(['src/fonts/*'])
+  return gulp.src(['src/fonts/**/*'])
     .pipe($.filter('**/*.{eot,svg,ttf,woff}'))
     .pipe($.flatten())
-    .pipe(gulp.dest('dist/stylesheets'))
+    .pipe(gulp.dest('dist/fonts'))
     .pipe($.size());
 });
 
