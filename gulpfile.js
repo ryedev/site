@@ -82,6 +82,7 @@ gulp.task('scripts', function () {
   return gulp.src('src/scripts/**/*.js')
     .pipe($.jshint())
     .pipe($.jshint.reporter($.jshintStylish))
+    .pipe(gulp.dest('dist/scripts'))
     .pipe($.size());
 });
 
