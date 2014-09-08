@@ -93,6 +93,10 @@ gulp.task('bower-components', function () {
   .pipe(gulp.dest('dist/bower_components'))
 });
 
+gulp.task('vendor-styles', function(){
+  gulp.src('src/stylesheets/vendor/{,*/}*{,*/}*.*')
+  .pipe(gulp.dest('dist/stylesheets'))
+});
 
 //                         __     __          _ __    __
 //   ____ ______________  / /_   / /_  __  __(_) /___/ /
