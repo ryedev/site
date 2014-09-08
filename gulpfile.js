@@ -95,7 +95,7 @@ gulp.task('bower-components', function () {
 
 gulp.task('vendor-styles', function(){
   gulp.src('src/stylesheets/vendor/{,*/}*{,*/}*.*')
-  .pipe(gulp.dest('dist/stylesheets'))
+  .pipe(gulp.dest('dist/stylesheets/vendor'))
 });
 
 //                         __     __          _ __    __
