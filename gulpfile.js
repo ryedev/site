@@ -13,6 +13,7 @@ var gulp = require('gulp'),
   plumber = require('gulp-plumber'),
   exec = require('child_process').exec,
   Q = require('q'),
+  shell = require('gulp-shell'),
   // Asset compilation and image crunching
   // are long-running tasks. I'm using two
   // Q promises to relieve some pain.
@@ -334,3 +335,13 @@ gulp.task('watch', ['connect', 'serve'], function () {
 });
 
 // work on build
+
+gulp.task('sendit', shell.task([
+  'gulp build-step-2',
+  'cd dist',
+  'git init',
+  'git remote add origin git@github.com:ryedev/ryedev.github.io.git',
+  'git add --all',
+  'git commit \'wow, cool site bro\'',
+  'git push origin master'
+]))
