@@ -240,7 +240,7 @@ gulp.task('build-step-1', ['clean'], function(){
 
 // this task depends on build-step-1 to complete
 gulp.task('build-step-2', ['build-step-1'], function(){
-  // gulp.start('sitemap');
+  gulp.start('sitemap');
   gulp.start('images-promise');
   return imagesPromise.promise;
 });
