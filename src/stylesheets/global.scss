@@ -99,10 +99,12 @@ p {
 
     .gif-wrapper {
       margin-bottom: 8px;
-      transition: box-shadow 0.3s ease;
+      transition: all 1s ease;
 
       &:hover {
-        box-shadow: 0px 0px 23px 1px #000;
+        box-shadow: 0px 0px 1px 1px #000;
+        transform: scale(1.009);
+        transition: all 0.4s ease;
       }
     }
 
@@ -125,7 +127,7 @@ p {
       transition: box-shadow 0.3s ease;
 
       &:hover {
-        box-shadow: 0px 0px 23px 1px #000;
+        box-shadow: 0px 0px 3px 1px #000;
       }
 
       h6 {
@@ -187,6 +189,15 @@ p {
       p {
         color: $rye-light-gray;
       }
+
+      a {
+        img {
+          transition: all 0.3s ease;
+          &:hover {
+            margin-left: 6px;
+          }
+        }
+      }
     }
 
   }
@@ -205,6 +216,12 @@ p {
     }
 
     a {
+      img {
+        transition: all 0.3s ease;
+        &:hover {
+          margin-left: 6px;
+        }
+      }
 
     }
 

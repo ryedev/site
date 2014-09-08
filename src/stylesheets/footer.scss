@@ -50,9 +50,17 @@
     }
 
     .social {
-      color: $white;
       text-align: center;
       font-size: 26px;
+
+      a {
+        color: $white;
+        transition: all 0.3s ease;
+        
+        &:hover {
+          color: $rye-yellow;
+        }
+      }
     
     }
 
