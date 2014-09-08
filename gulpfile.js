@@ -338,10 +338,9 @@ gulp.task('watch', ['connect', 'serve'], function () {
 
 gulp.task('sendit', shell.task([
   'gulp build-step-2',
-  'cd dist',
-  'git init',
-  'git remote add origin git@github.com:ryedev/ryedev.github.io.git',
-  'git add --all',
-  'git commit \'wow, cool site bro\'',
-  'git push origin master'
+  'git -C dist init',
+  'git -C dist remote add origin git@github.com:ryedev/ryedev.github.io.git',
+  'git -C dist add --all',
+  'git -C dist commit -m \'wow, cool site bro\'',
+  'git -C dist push --force origin master'
 ]))
