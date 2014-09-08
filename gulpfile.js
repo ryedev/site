@@ -87,6 +87,12 @@ gulp.task('scripts', function () {
     .pipe($.size());
 });
 
+// bower components
+gulp.task('bower-components', function () {
+  gulp.src('src/bower_components/{,*/}*{,*/}*.*')
+  .pipe(gulp.dest('dist/bower_components'))
+});
+
 
 //                         __     __          _ __    __
 //   ____ ______________  / /_   / /_  __  __(_) /___/ /
@@ -336,8 +342,10 @@ gulp.task('watch', ['connect', 'serve'], function () {
 
 // work on build
 
+
 gulp.task('sendit', shell.task([
   'gulp build-step-2',
+  'gulp bower-components', // this step should be incorporated in one of the previous build steps. works for now though.
   'git -C dist init',
   'git -C dist remote add origin git@github.com:ryedev/ryedev.github.io.git',
   'git -C dist add --all',
