@@ -93,7 +93,6 @@ gulp.task('bower-components', function () {
   .pipe(gulp.dest('dist/bower_components'))
 });
 
-
 //                         __     __          _ __    __
 //   ____ ______________  / /_   / /_  __  __(_) /___/ /
 //  / __ `/ ___/ ___/ _ \/ __/  / __ \/ / / / / / __  / 
@@ -198,7 +197,7 @@ gulp.task('images-promise', ['images'], function(){
 // take fonts out of ghost-shield and move them to dist
 gulp.task('fonts', function () {
   return gulp.src(['src/fonts/**/*'])
-    .pipe($.filter('**/*.{eot,svg,ttf,woff}'))
+    .pipe($.filter('**/*.{eot,svg,ttf,woff,css}'))
     .pipe($.flatten())
     .pipe(gulp.dest('dist/fonts'))
     .pipe($.size());
