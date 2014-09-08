@@ -14,19 +14,20 @@ function toggleGif(){
   });
 }
 
-// thanks to james padolsey for help with this cross-browswer doc height
-$.getDocHeight = function(){
-     var D = document;
-     return Math.max(Math.max(D.body.scrollHeight,    D.documentElement.scrollHeight), Math.max(D.body.offsetHeight, D.documentElement.offsetHeight), Math.max(D.body.clientHeight, D.documentElement.clientHeight));
-};
-var docHeight = $.getDocHeight();
-console.log(docHeight);
 
 $(document).ready(function(){
   $('#tagline').fitText(1.2, { minFontSize: '22px', maxFontSize: '60px' });
   $('#sub-tag-text').fitText(3, { minFontSize: '10px', maxFontSize: '18px' });
   $('#main-content-hl').fitText(3, { minFontSize: '20px', maxFontSize: '56px' });
   $('#main-content-sub-hl').fitText(3, { minFontSize: '10px', maxFontSize: '18px' });
+  
+  // thanks to james padolsey for help with this cross-browswer doc height
+  $.getDocHeight = function(){
+       var D = document;
+       return Math.max(Math.max(D.body.scrollHeight,    D.documentElement.scrollHeight), Math.max(D.body.offsetHeight, D.documentElement.offsetHeight), Math.max(D.body.clientHeight, D.documentElement.clientHeight));
+  };
+  var docHeight = $.getDocHeight();
+  console.log(docHeight);
   
   toggleGif();
 
