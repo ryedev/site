@@ -1,0 +1,332 @@
+.footer {
+  width: 100%;
+
+  .footer-bottom {
+    background-color: $rye-dark-gray;
+    height: 150px;
+    padding: 10px 26px;
+    position: relative;
+
+    .logo {
+      display: none;
+      vertical-align: top;
+      margin-top: 30px;
+      
+      img {
+        height: 90px;
+      }
+    }
+
+    .mobile-nav {
+      display: none;
+    }
+
+    nav {
+      display: inline-block;
+
+      ul {
+        list-style-type: none;
+        text-align: center;
+        margin-left: 0;
+
+        li {
+          display:inline-block;
+
+          &:hover{
+
+          }
+          a {
+            color: $white;
+            font-size: 1em;
+            font-family: "CourierPrime";
+
+            &:hover {
+              color: $white;
+              border-bottom: 2px solid $white;
+            }
+          }
+        }
+      }
+    }
+
+    .social {
+      text-align: center;
+      font-size: 26px;
+
+      a {
+        color: $white;
+        transition: all 0.3s ease;
+        
+        &:hover {
+          color: $rye-yellow;
+        }
+      }
+    
+    }
+
+    .state-image {
+      display: inline-block;
+      background: url('/images/state.png') no-repeat;
+      background-size: contain;
+      height: 120px;
+      width: 200px;
+      position: absolute;
+      right: 0;
+      top: 15px;
+    }
+  }
+
+  .footer-bottom-bar {
+    background-color: $black;
+    height: 50px;
+  }
+}
+
+
+
+
+//               _     _ _        __ _         _           
+//   /\/\   ___ | |__ (_) | ___  / _\ |_ _   _| | ___  ___ 
+//  /    \ / _ \| '_ \| | |/ _ \ \ \| __| | | | |/ _ \/ __|
+// / /\/\ \ (_) | |_) | | |  __/ _\ \ |_| |_| | |  __/\__ \
+// \/    \/\___/|_.__/|_|_|\___| \__/\__|\__, |_|\___||___/
+//                                       |___/              
+
+@media only screen {
+  .footer {
+
+    .footer-bottom {
+      height: 200px;
+      padding: 10px 10px 0;
+
+      .logo {
+        
+        
+        img {
+          height: 60px;
+        }
+      }
+
+      .main-footer-nav {
+        display: none;
+      }
+
+      .mobile-nav {
+        display: block;
+        text-align: center;
+        font-family: "Courier Prime";
+      }
+
+      nav {
+        display: inline-block;
+
+        ul {
+          list-style-type: none;
+          text-align: center;
+          margin-left: 0;
+
+          li {
+            display:inline-block;
+
+            &:hover{
+
+            }
+            a {
+              color: $white;
+              font-size: 1.5em;
+              font-family: "CourierPrime";
+
+              &:hover {
+                color: $white;
+                border-bottom: 2px solid $white;
+              }
+            }
+          }
+        }
+      }
+
+      .state-image {
+        display: inline-block;
+        background: url('/images/state.png') no-repeat;
+        background-size: contain;
+        height: 90px;
+        width: 112px;
+        position: absolute;
+        right: 0;
+        top: 60px;
+        margin-top: 12px;
+      }
+    }
+
+    .footer-bottom-bar {
+      background-color: $black;
+      height: 50px;
+    }
+  }
+}
+
+
+
+
+
+//  __                 _ _   __                              
+// / _\_ __ ___   __ _| | | / _\ ___ _ __ ___  ___ _ __  ___ 
+// \ \| '_ ` _ \ / _` | | | \ \ / __| '__/ _ \/ _ \ '_ \/ __|
+// _\ \ | | | | | (_| | | | _\ \ (__| | |  __/  __/ | | \__ \
+// \__/_| |_| |_|\__,_|_|_| \__/\___|_|  \___|\___|_| |_|___/
+                                                          
+// Min-width 401px;
+@media only screen and (min-width: 20.063em){
+  .footer {
+
+    .footer-bottom {
+      height: 200px;
+
+      .logo {
+        
+        
+        img {
+          height: 60px;
+        }
+      }
+
+      .main-footer-nav {
+        display: none;
+      }
+
+      .mobile-nav {
+        display: block;
+        text-align: center;
+        font-family: "Courier Prime";
+      }
+
+      nav {
+        display: inline-block;
+
+        ul {
+          list-style-type: none;
+          text-align: center;
+          margin-left: 0;
+
+          li {
+            display:inline-block;
+
+            &:hover{
+
+            }
+            a {
+              color: $white;
+              font-size: 1.2em;
+              font-family: "CourierPrime";
+
+              &:hover {
+                color: $white;
+                border-bottom: 2px solid $white;
+              }
+            }
+          }
+        }
+      }
+
+      .state-image {
+        display: inline-block;
+        background: url('/images/state.png') no-repeat;
+        background-size: contain;
+        height: 90px;
+        width: 112px;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        margin-top: 12px;
+      }
+    }
+
+    .footer-bottom-bar {
+      background-color: $black;
+      height: 50px;
+    }
+  }
+
+
+}
+
+
+//                  _ _                   __                              
+//   /\/\   ___  __| (_)_   _ _ __ ___   / _\ ___ _ __ ___  ___ _ __  ___ 
+//  /    \ / _ \/ _` | | | | | '_ ` _ \  \ \ / __| '__/ _ \/ _ \ '_ \/ __|
+// / /\/\ \  __/ (_| | | |_| | | | | | | _\ \ (__| | |  __/  __/ | | \__ \
+// \/    \/\___|\__,_|_|\__,_|_| |_| |_| \__/\___|_|  \___|\___|_| |_|___/
+                                                                       
+/* min-width 641px, medium screens */
+@media only screen and (min-width: 40.063em) { 
+  .footer {
+
+    .footer-bottom {
+      padding: 10px 26px 10px 10px;
+
+      .logo {
+        margin-top: 0;
+        position: relative;
+        bottom: 10px;
+
+        img {
+          height: 110px;
+        }
+      }
+
+      nav {
+        ul {
+          text-align: right;
+          margin-bottom: 10px;
+        }
+      }
+
+      .social {
+        display: inline-block;
+        float: right;
+        text-align: right;
+        margin-bottom: 0px;
+      }
+    }
+  }
+}
+
+//    __                        __                              
+//   / /  __ _ _ __ __ _  ___  / _\ ___ _ __ ___  ___ _ __  ___ 
+//  / /  / _` | '__/ _` |/ _ \ \ \ / __| '__/ _ \/ _ \ '_ \/ __|
+// / /__| (_| | | | (_| |  __/ _\ \ (__| | |  __/  __/ | | \__ \
+// \____/\__,_|_|  \__, |\___| \__/\___|_|  \___|\___|_| |_|___/
+//                 |___/                                        
+/* Min-width 1025px */
+@media only screen and (min-width: 60.063em) { 
+  .footer {
+
+    .footer-bottom {
+      padding: 10px 36px 10px 26px;
+
+      .logo {
+        margin-top: 0;
+        position: relative;
+        bottom: 10px;
+
+        img {
+          height: 110px;
+        }
+      }
+
+      nav {
+        ul {
+          text-align: right;
+          margin-bottom: 10px;
+        }
+      }
+
+      .social {
+        display: inline-block;
+        float: right;
+        text-align: right;
+        margin-bottom: 0px;
+      }
+    }
+  }
+}

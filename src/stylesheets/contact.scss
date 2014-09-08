@@ -1,0 +1,111 @@
+//  contact page
+
+.contact-content {
+  background: url('/images/backgrounds/paper.png');
+  background-size: 400px 400px;
+  border-bottom: 1px solid $rye-light-gray;
+  padding-bottom: 120px;
+  padding-top: 120px;
+  position: relative;
+
+  .contact-info {
+    background: url('/images/greenville-map.png') no-repeat;
+    background-size: cover;
+    background-position: 0 -55px;
+    height: 340px;
+    max-width: 400px;
+    position: relative;
+    // margin: 0 auto;
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: rgba(234, 162, 69, 0.6);
+      padding: 30px;
+      padding-top: 150px;
+
+      .top-bar {
+        height: 26%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgba(42, 37, 34, 0.79);
+        z-index: 123;
+        width: 100%;
+
+        h3 {
+          color: #FFF;
+          text-transform: uppercase;
+          text-align: center;
+          font-size: 1.7em;
+          margin-top: 26px;
+          letter-spacing: 0.1em;
+        }
+      }
+
+      a {
+        display: inline-block;
+        color: $rye-dark-gray;
+
+        &:hover {
+          background: none;
+        }
+
+        i {
+          display: inline-block;
+          font-size: 40px;
+          position: relative;
+          top: 14px;
+          margin-right: 8px;
+          transition: all 0.2s ease;
+
+          &:hover {
+            color: #AF6200;
+            transition: all 0.2s ease;
+            cursor: pointer;
+          }
+        }
+
+        h5 {
+          display: inline-block;
+          font-size: 1.2em;
+          transition: all 0.2s ease;
+
+          &:hover {
+            color: #AF6200;
+            transition: all 0.2s ease;
+            cursor: pointer;
+          }
+        }  
+      }
+    }
+  }
+
+  .mailing-address {
+    text-align: right;
+
+    .address {
+      text-align: right;
+
+      h2 {
+        border-bottom: 2px dashed $black;
+        margin-bottom: 40px;
+      }
+
+      h4 {
+        
+      }
+
+      i {
+        display: inline-block;
+        font-size: 24px;
+        position: relative;
+        top: 7px;
+        right: 4px;
+      }
+    }
+  }
+}

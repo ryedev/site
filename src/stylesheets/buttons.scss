@@ -1,0 +1,23 @@
+.cta {
+  background:url('/images/cta.png');
+  background-size:cover;
+  height:50px; 
+  width:150px; 
+  position: absolute; 
+  right: 00px;
+  top:10px;
+  display:none;
+  transition: background .3s;
+  -webkit-transition: background .3s;
+  -moz-transition: background .3s;
+  -o-transition: background .3s;
+
+  &:hover {
+    background:url('/images/cta-red.png');
+    background-size:cover;
+    transition: background .6s;
+    -webkit-transition: background .6s;
+    -moz-transition: background .6s;
+    -o-transition: background .6s;
+  }
+}

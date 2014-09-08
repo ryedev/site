@@ -1,0 +1,32 @@
+extends ../../layouts/main
+block content
+  
+  include ../../includes/header
+
+  .contact-content
+    .row
+      .small-12.medium-6.column
+        .contact-info
+          .overlay 
+            .top-bar
+              h3 say hello
+            a(href="mailto:hello@ryedev.com?subject=Inquiry from our Site")
+              i.ss-icon.ss-social-circle Email
+              h5 hello@ryedev.com
+            br
+            a(href="https://twitter.com/ryedev" target="_blank")
+              i.ss-icon.ss-social-circle Twitter
+              h5 @RyeDev
+            br
+            a(href='https://www.facebook.com/ryedevelopment' target="_blank")
+              i.ss-icon.ss-social-circle Facebook
+              h5 hello@ryedev.com
+      .small-12.medium-6.column.mailing-address
+        .address
+          h2 Contact Information
+          h4 Rye Development, LLC
+          h4 10 Cureton St.
+          h4 Greenville, SC 29605
+          i.ss-icon.ss-standard phone
+          h4.inline-block (864)630-4203
+      
