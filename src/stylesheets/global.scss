@@ -1,5 +1,13 @@
-html * {
+html, 
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
 
+#wrapper {
+  min-height: 100%;
+  position: relative;
 }
 
 .row{
@@ -144,6 +152,7 @@ p {
 // sub content work with and case study section
 .sub-content {
   padding: 4px 10px 30px;
+  height: 490px;
 
   .case-studies{
     padding: 0;
