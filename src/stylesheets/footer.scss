@@ -55,7 +55,7 @@
         }
       }
 
-      .phone {
+      .phone-icon {
         color: $white;
         display: inline-block;
         position: relative;
@@ -99,7 +99,7 @@
 
   .footer-bottom-bar {
     background-color: $black;
-    height: 50px;
+    height: 30px;
   }
 }
 
@@ -145,7 +145,7 @@
           list-style-type: none;
           text-align: center;
           margin-left: 0;
-          margin-bottom: 10px;
+          margin-bottom: 0;
 
           li {
             display:inline-block;
@@ -173,12 +173,8 @@
         text-align: center;
         margin: 0 auto;
 
-        .phone {
-          font-size: 1.2em;
-        }
-      
-        h5 {
-          font-size: 1.2em;
+        i {
+          font-size: 0.7em;
         }
 
       }
@@ -187,19 +183,20 @@
         margin-bottom: 0;
       }
 
-      .phone {
-        font-size: 1.5em;
+      .phone-number {
+        margin-top: 8px;
+        h5 {
+          font-size: 1.4em;
+        }
+        .phone-icon {
+          font-size: 1.4em;
+        }
       }
 
       .state-image {
         display: none;
       }
 
-    }
-
-    .footer-bottom-bar {
-      background-color: $black;
-      height: 50px;
     }
   }
 }
@@ -239,48 +236,57 @@
         font-family: "Courier Prime";
       }
 
-      nav {
+      .links {
         display: inline-block;
+        width: 230px;
+        padding-left: 12px;
+        padding-top: 10px;
+        text-align: left;
 
-        ul {
-          list-style-type: none;
-          text-align: center;
-          margin-left: 0;
+        nav {
+          display: inline-block;
 
-          li {
-            display:inline-block;
+          ul {
+            list-style-type: none;
+            text-align: left;
+            margin-left: 0;
 
-            &:hover{
+            li {
+              display:inline-block;
 
-            }
-            a {
-              color: $white;
-              font-size: 1.2em;
-              font-family: "CourierPrime";
-
-              &:hover {
+              a {
                 color: $white;
-                border-bottom: 2px solid $white;
+                font-size: 1.2em;
+                font-family: "CourierPrime";
+
+                &:hover {
+                  color: $white;
+                  border-bottom: 2px solid $white;
+                }
               }
             }
           }
+        }
+
+        .social {
+          text-align: left;
+
+          i {
+            font-size: 0.7em;
+          }
+        }
+
+        h5 {
+          font-size: 1.2em;
         }
       }
 
       .state-image {
         background: url('/images/state.png') no-repeat;
         background-size: contain;
-        height: 106px;
-        width: 128px;
+        height: 96px;
+        width: 118px;
         display: inline-block;
-      }
-    
-
-      .links {
-        display: inline-block;
-        h5 {
-          font-size: 1.2em;
-        }
       }
 
       .footer-bottom-bar {
@@ -307,25 +313,53 @@
       padding: 10px 26px 10px 10px;
 
       .logo {
-        margin-top: 0;
-        position: relative;
-        bottom: 10px;
+        display: inline-block;
+        margin-top: 14px;
 
         img {
-          height: 110px;
+          height: 82px;
         }
       }
 
       nav {
         ul {
           text-align: right;
-          margin-bottom: 10px;
+          margin-bottom: 0;
         }
       }
 
-      .social {
-        display: inline-block;
+      .links {
+        width: 254px;
         text-align: right;
+        float: right;
+        padding-top: 10px;
+
+        .social {
+          display: inline-block;
+          text-align: right;
+          font-size: 1.5em;
+          margin-top: 8px;
+        
+          i {
+            font-size: 0.9em;
+          }
+        }
+
+        .phone-number {
+
+          i {
+            font-size: 1em;
+          }
+
+          h5 {
+            font-size: 1em;
+          }
+        }
+      }
+
+      .state-image {
+        margin-left: 16px;
+        margin-top: 6px;
       }
     }
   }
@@ -343,27 +377,40 @@
 
     .footer-bottom {
       padding: 10px 36px 10px 26px;
+      height: 135px;
 
       .logo {
-        margin-top: 0;
-        position: relative;
-        bottom: 10px;
+        margin-left: -10px;
 
         img {
-          height: 110px;
+          height: 90px;
         }
+
       }
 
-      nav {
-        ul {
-          text-align: right;
-          margin-bottom: 10px;
-        }
-      }
+      .links {
+          width: 308px;
+          padding-top: 10px;
 
-      .social {
-        display: inline-block;
-        text-align: right;
+        nav {
+          ul {
+            font-size: 0.9em;
+            text-align: right;
+          }
+        }
+        .social {
+          font-size: 1.2em;
+          margin-top: 6px;
+        }
+
+        .phone-number {
+          font-size: 0.9em;
+          margin-top: 10px;
+
+          i {
+            font-size: 0.9em;
+          }
+        }
       }
     }
   }

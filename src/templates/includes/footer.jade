@@ -1,6 +1,8 @@
 .footer
   .footer-bottom
     .row
+      a(href='/')
+        .logo: img(src="/images/rye-logo.png" alt="Rye Development")
       .state-image
       .links
         nav
@@ -12,20 +14,18 @@
             li: a(href="/contact") Contact
         .social
           a(href="https://www.twitter.com/ryedev" target="_blank")
-            i.ss-icon.ss-social-circle Twitter
+            i.ss-icon.ss-social Twitter
           .spacer
           a(href="https://www.facebook.com/ryedevelopment" target="_blank")
-            i.ss-icon.ss-social-circle Facebook
+            i.ss-icon.ss-social Facebook
           .spacer
           a(href="mailto:hello@ryedev.com?subject=Inquiry from our Site")
-            i.ss-icon.ss-social-circle Email
-        br
-        i.ss-icon.ss-standard.phone Phone
-        a(href="tel:+1-864-630-4203")
-          h5 (864)630-4203
+            i.ss-icon.ss-social Email
+        .phone-number
+          i.ss-icon.ss-standard.phone-icon Phone
+          a(href="tel:+1-864-630-4203")
+            h5 (864)630-4203
 
-      a(href='/')
-        .logo: img(src="/images/rye-logo.png" alt="Rye Development")
       //- nav.main-footer-nav
       //-   ul
       //-     li: a(href="/#main-content-hl") About
