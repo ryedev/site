@@ -12,7 +12,7 @@
     background: url('/images/greenville-map.png') no-repeat;
     background-size: cover;
     background-position: 0 -55px;
-    height: 340px;
+    height: 400px;
     max-width: 400px;
     position: relative;
     // margin: 0 auto;
@@ -26,6 +26,7 @@
       background: rgba(234, 162, 69, 0.6);
       padding: 30px;
       padding-top: 150px;
+      text-align: left;
 
       .top-bar {
         height: 26%;

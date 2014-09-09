@@ -27,11 +27,11 @@ $(document).ready(function(){
        return Math.max(Math.max(D.body.scrollHeight,    D.documentElement.scrollHeight), Math.max(D.body.offsetHeight, D.documentElement.offsetHeight), Math.max(D.body.clientHeight, D.documentElement.clientHeight));
   };
   var docHeight = $.getDocHeight();
-  console.log(docHeight);
+  // console.log(docHeight);
   
   toggleGif();
 
-  if(docHeight > 1000) {
-    $('.footer-bottom').find('.logo').css({display: 'inline-block'});
-  }
+  // if(docHeight > 1000) {
+  //   $('.footer-bottom').find('.logo').css({display: 'inline-block'});
+  // }
 });

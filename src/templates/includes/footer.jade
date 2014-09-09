@@ -1,29 +1,34 @@
 .footer
   .footer-bottom
     .row
-      nav.mobile-nav
-        ul
-          li: a(href="/#main-content-hl") About
+      .state-image
+      .links
+        nav
+          ul
+            li: a(href="/#main-content-hl") About
+            .spacer
+            li: a(href="/projects") Projects
+            .spacer
+            li: a(href="/contact") Contact
+        .social
+          a(href="https://www.twitter.com/ryedev" target="_blank")
+            i.ss-icon.ss-social-circle Twitter
           .spacer
-          li: a(href="/projects") Projects
+          a(href="https://www.facebook.com/ryedevelopment" target="_blank")
+            i.ss-icon.ss-social-circle Facebook
           .spacer
-          li: a(href="/contact") Contact
-      .social
-        a(href="https://www.twitter.com/ryedev" target="_blank")
-          i.ss-icon.ss-social-circle Twitter
-        .spacer
-        a(href="https://www.facebook.com/ryedevelopment" target="_blank")
-          i.ss-icon.ss-social-circle Facebook
-        .spacer
-        a(href="mailto:hello@ryedev.com?subject=Inquiry from our Site")
-          i.ss-icon.ss-social-circle Email
+          a(href="mailto:hello@ryedev.com?subject=Inquiry from our Site")
+            i.ss-icon.ss-social-circle Email
+        br
+        i.ss-icon.ss-standard.phone Phone
+        a(href="tel:+1-864-630-4203")
+          h5 (864)630-4203
 
       a(href='/')
         .logo: img(src="/images/rye-logo.png" alt="Rye Development")
-      nav.main-footer-nav
-        ul
-          li: a(href="/#main-content-hl") About
-          li: a(href="/projects") Projects
-          li: a(href="/contact") Contact
-      .state-image
+      //- nav.main-footer-nav
+      //-   ul
+      //-     li: a(href="/#main-content-hl") About
+      //-     li: a(href="/projects") Projects
+      //-     li: a(href="/contact") Contact
   .footer-bottom-bar

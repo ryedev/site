@@ -3,7 +3,6 @@
 
   .footer-bottom {
     background-color: $rye-dark-gray;
-    height: 150px;
     padding: 10px 26px;
     position: relative;
 
@@ -21,37 +20,57 @@
       display: none;
     }
 
-    nav {
+    .links {
       display: inline-block;
+      width: 310px;
+      text-align: right;
 
-      ul {
-        list-style-type: none;
-        text-align: center;
-        margin-left: 0;
+      nav {
+        display: inline-block;
 
-        li {
-          display:inline-block;
+        ul {
+          list-style-type: none;
+          text-align: center;
+          margin-left: 0;
 
-          &:hover{
+          li {
+            display:inline-block;
 
-          }
-          a {
-            color: $white;
-            font-size: 1em;
-            font-family: "CourierPrime";
+            &:hover{
 
-            &:hover {
+            }
+            a {
               color: $white;
-              border-bottom: 2px solid $white;
+              font-family: "CourierPrime";
+
+              &:hover {
+                color: $white;
+                border-bottom: 2px solid $white;
+              }
             }
           }
         }
+      }
+
+      .phone {
+        color: $white;
+        display: inline-block;
+        position: relative;
+        top: 4px;
+      }
+
+      h5 {
+        color: $white;
+        display: inline-block;
+        margin: 0;
       }
     }
 
     .social {
       text-align: center;
       font-size: 26px;
+      margin-bottom: 12px;
+      margin-top: 2px;
 
       a {
         color: $white;
@@ -70,9 +89,8 @@
       background-size: contain;
       height: 120px;
       width: 200px;
-      position: absolute;
-      right: 0;
-      top: 15px;
+      margin-left: 22px;
+      float: right;
     }
   }
 
@@ -96,11 +114,11 @@
   .footer {
 
     .footer-bottom {
-      height: 200px;
-      padding: 10px 10px 0;
+      padding: 10px 0;
+      height: 115px;
 
       .logo {
-        
+        display: none;
         
         img {
           height: 60px;
@@ -124,6 +142,7 @@
           list-style-type: none;
           text-align: center;
           margin-left: 0;
+          margin-bottom: 10px;
 
           li {
             display:inline-block;
@@ -133,7 +152,7 @@
             }
             a {
               color: $white;
-              font-size: 1.5em;
+              font-size: 1.7em;
               font-family: "CourierPrime";
 
               &:hover {
@@ -145,17 +164,34 @@
         }
       }
 
-      .state-image {
-        display: inline-block;
-        background: url('/images/state.png') no-repeat;
-        background-size: contain;
-        height: 90px;
-        width: 112px;
-        position: absolute;
-        right: 0;
-        top: 60px;
-        margin-top: 12px;
+      .links {
+        display: block;
+        width: 310px;
+        text-align: center;
+        margin: 0 auto;
+
+        .phone {
+          font-size: 1.2em;
+        }
+      
+        h5 {
+          font-size: 1.2em;
+        }
+
       }
+
+      .social {
+        margin-bottom: 0;
+      }
+
+      .phone {
+        font-size: 1.5em;
+      }
+
+      .state-image {
+        display: none;
+      }
+
     }
 
     .footer-bottom-bar {
@@ -180,10 +216,10 @@
   .footer {
 
     .footer-bottom {
-      height: 200px;
+      height: 130px;
 
       .logo {
-        
+        display: none;
         
         img {
           height: 60px;
@@ -229,24 +265,27 @@
       }
 
       .state-image {
-        display: inline-block;
         background: url('/images/state.png') no-repeat;
         background-size: contain;
-        height: 90px;
-        width: 112px;
-        position: absolute;
-        right: 0;
-        top: 75px;
-        margin-top: 12px;
+        height: 106px;
+        width: 128px;
+        display: inline-block;
+      }
+    
+
+      .links {
+        display: inline-block;
+        h5 {
+          font-size: 1.2em;
+        }
+      }
+
+      .footer-bottom-bar {
+        background-color: $black;
+        height: 50px;
       }
     }
-
-    .footer-bottom-bar {
-      background-color: $black;
-      height: 50px;
-    }
   }
-
 
 }
 
@@ -283,9 +322,7 @@
 
       .social {
         display: inline-block;
-        float: right;
         text-align: right;
-        margin-bottom: 0px;
       }
     }
   }
@@ -323,9 +360,7 @@
 
       .social {
         display: inline-block;
-        float: right;
         text-align: right;
-        margin-bottom: 0px;
       }
     }
   }
