@@ -24,7 +24,7 @@ header {
   }
 
   nav {
-
+  
     ul {
       list-style-type: none;
       text-align: center;
@@ -110,10 +110,11 @@ header {
       }
     }
     nav {
+      margin-top: 4px;
+
       ul{
         li{
           padding:0;
-          
           background: $white;
           -webkit-transition: background 0.3s ease;
           -moz-transition: background 0.3s ease;
@@ -125,7 +126,7 @@ header {
           }
           a{
             color: $rye-medium-gray;
-            font-size: 1em;
+            font-size: 1.2em;
             &:hover{
               border-bottom: 5% solid $rye-medium-gray;
               color: $rye-medium-gray;

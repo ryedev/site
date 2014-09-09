@@ -8,6 +8,7 @@
 @media only screen { 
   .hero-banner {
     height: 150px;
+
     .overlay{
       padding-top: 30px; 
       .row{
@@ -25,7 +26,7 @@
   }
 
   .main-content {
-    padding: 4px 10px;
+    padding: 4px 10px 20px;
     h2 {
       // padding-top: 0;
     }
@@ -40,7 +41,7 @@
     .gif-mobile {
 
       h6 {
-        font-size: 1em;
+        font-size: 0.9em;
         text-align: center;
       }
 
@@ -53,7 +54,7 @@
   }
 
   .sub-content {
-
+    height: 560px;
     .case-studies {
       text-align: center;
 
@@ -79,7 +80,7 @@
       }
 
       h5 {
-        font-size: 1.75em;
+        font-size: 1.7em;
         display: inline-block;
       }
       a {
@@ -109,7 +110,7 @@
       }
 
       h5 {
-        font-size: 1.7em;
+        font-size: 1.6em;
         display: inline-block;
       }
 
@@ -118,73 +119,6 @@
       }
     }
   }
-
-  //  contact page
-
-  .contact-content {
-    padding-bottom: 40px;
-    padding-top: 20px;
-    
-
-    .contact-info {
-
-      .overlay {
-
-        .top-bar {
-
-          h3 {
-          }
-        }
-
-        a {
-
-          &:hover {
-  
-          }
-
-          i {
-
-            &:hover {
-            }
-          }
-
-          h5 {
-
-
-            &:hover {
-
-            }
-          }  
-        }
-      }
-    }
-
-    .mailing-address {
-      text-align: right;
-
-      .address {
-        text-align: center;
-
-        h2 {
-          margin-top: 20px;
-          margin-bottom: 20px;
-        }
-
-        h4 {
-         
-        }
-
-        i {
-          display: inline-block;
-          font-size: 24px;
-          position: relative;
-          top: 7px;
-          right: 4px;
-        }
-      }
-    }
-  }
-
 } 
 // END MOBILE STYLES
 
@@ -203,7 +137,7 @@
 // \__/_| |_| |_|\__,_|_|_| \__/\___|_|  \___|\___|_| |_|___/
                                                           
 // Min-width 401px;
-@media only screen and (min-width: 20.063em){
+@media only screen and (min-width: 400px){
   .hero-banner {
     height: 220px;
     .overlay{
@@ -220,7 +154,8 @@
   }
 
   .main-content {
-    
+    padding-bottom: 30px;
+
     h2 {
       
     }
@@ -230,17 +165,18 @@
     }
 
     p {
-      font-size: 1em;
+      font-size: 1.3em;
     }
 
     .gif-mobile {
 
       h6 {
        font-size: 0.9em;
+       margin-top: 14px;
       }
 
       img {
-        
+        margin-bottom: 0;
       }
 
     }
@@ -248,14 +184,15 @@
   }
 
   .sub-content {
+
     .case-studies {
       .content {
         p{
-          font-size: 1em;
+          font-size: 1.3em;
         }
 
         h5 {
-          font-size: 1.3em;
+          font-size: 1.5em;
         }
       }
 
@@ -281,11 +218,11 @@
       .content {
 
         h5 {
-          font-size: 1.3em;
+          font-size: 1.5em;
         }
 
         p {
-          font-size: 1em;
+          font-size: 1.3em;
           text-align: center;
         }
         
@@ -307,7 +244,7 @@
 // \/    \/\___|\__,_|_|\__,_|_| |_| |_| \__/\___|_|  \___|\___|_| |_|___/
                                                                        
 /* min-width 641px, medium screens */
-@media only screen and (min-width: 40.063em) { 
+@media only screen and (min-width: 641px) { 
   .hero-banner{
     height: 400px;
     .overlay{
@@ -335,13 +272,13 @@
     }
 
     p {
-      font-size: 1em;
+      font-size: 1.4em;
     }
   }
 
   .sub-content {
     height: 370px;
-    padding-top: 20px;
+    padding: 20px 0 0 0 ;
 
     .case-studies {
       text-align: left;
@@ -351,6 +288,7 @@
 
         h5 {
           margin-top: 0;
+          font-size: 1.3em;
         }
 
         a{
@@ -359,7 +297,6 @@
 
         p {
           text-align: left;
-          font-size: 1em;
           margin-left: 0;
           width: 290px;
         }
@@ -375,7 +312,7 @@
 
         h5 {
           margin-top: 0;
-          font-size: 1.2em;
+          font-size: 1.3em;
         }
 
         p {
@@ -386,10 +323,6 @@
         }
       }
     }
-  }
-
-  .contact-content {
-    padding: 110px 0 142px;
   }
 
 }
@@ -407,7 +340,7 @@
 // \____/\__,_|_|  \__, |\___| \__/\___|_|  \___|\___|_| |_|___/
 //                 |___/                                        
 /* Min-width 1025px */
-@media only screen and (min-width: 64.063em) { 
+@media only screen and (min-width: 1025px) { 
   .hero-banner{
     height: 400px;
     .overlay{
@@ -420,7 +353,8 @@
     padding-bottom: 70px;
 
     p {
-      font-size: 0.9em;
+      font-size: 1.1em;
+      line-height: 1.4em;
     }
   }
 
@@ -454,7 +388,8 @@
 
         p {
           width: 300px;
-          font-size: 0.9em;
+          font-size: 1.2em;
+          line-height: 1.3em;
         }
 
         a {
@@ -485,7 +420,8 @@
         }
       
         p {
-          font-size: 0.9em;
+          font-size: 1.2em;
+          line-height: 1.3em;
         }
 
         a {

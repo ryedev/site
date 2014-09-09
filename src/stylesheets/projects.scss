@@ -59,6 +59,11 @@
 /* min-width 641px, medium screens */
 @media only screen and (min-width: 40.063em) {
   
+  .project-content {
+    h1 {
+      font-size: 3em;
+    }
+  }
 }
 
 
@@ -72,5 +77,9 @@
 //                 |___/                                        
 /* Min-width 1025px */
 @media only screen and (min-width: 60.063em) {
-  
+  .project-content {
+    h1 {
+      margin-top: 60px;
+    }
+  }
 }

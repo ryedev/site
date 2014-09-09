@@ -53,8 +53,8 @@ p {
   h1 {
     color: $white;
     font-weight: 800;
-    line-height: 1.2em;
-    margin-bottom: 0;
+    line-height: 1.05em;
+    margin-bottom: 6px;
   }
 
   h5 {
@@ -90,7 +90,6 @@ p {
 .main-content {
   background: url('/images/backgrounds/paper.png');
   border-bottom: 1px solid $rye-light-gray;
-  padding-bottom: 4%;
 
   h2 {
     text-transform: capitalize;
@@ -101,7 +100,7 @@ p {
 
   .gif {
     float: right;
-    width: 40%;
+    width: 46%;
     margin-left: 28px;
     margin-top: 6px;
 
@@ -112,7 +111,7 @@ p {
       &:hover {
         box-shadow: 0px 0px 1px 1px #000;
         transform: scale(1.009);
-        transition: all 0.4s ease;
+        transition: all 0.3s ease;
       }
     }
 
@@ -151,8 +150,8 @@ p {
 
 // sub content work with and case study section
 .sub-content {
-  padding: 4px 10px 30px;
-  height: 490px;
+  padding: 20px 30px 16px;
+  height: 520px;
 
   .case-studies{
     padding: 0;
