@@ -1,7 +1,5 @@
 'use strict';
 
-try{Typekit.load();}catch(e){}
-
 function toggleGif(){
   var img = '/images/gif-still.png';
   var gif = 'https://s3.amazonaws.com/uploads.hipchat.com/31349/802592/UlOyMX96CY22HHC/Success.gif';
