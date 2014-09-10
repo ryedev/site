@@ -3,6 +3,17 @@
   padding-bottom: 200px;
   padding-top: 40px;
 
+  .case-study {
+
+    .row {
+      border-bottom: 1px solid $rye-light-gray;
+    }
+
+    h1 {
+      margin-top: 20px;
+    }
+  }
+
   .screenshot {
     height: 250px;
     width: 100%;
@@ -23,10 +34,9 @@
 @media only screen {
 
   .project-content {
-    // height: 1220px;
 
     .case-study {
-      height: 1000px;
+      
     }
   }
 }
@@ -45,8 +55,6 @@
   .project-content {
 
     .case-study {
-      border-bottom: 1px solid $rye-light-gray;
-      height: 1060px;
 
       h1 {
         text-align: center;
@@ -142,7 +150,6 @@
   .project-content {
 
     .case-study {
-      height: 760px;
 
       h1 {
         text-align: left;
@@ -186,7 +193,7 @@
   .project-content {
 
     .case-study {
-      height: 790px;
+    
     }
   }
 }
