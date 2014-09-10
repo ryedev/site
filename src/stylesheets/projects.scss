@@ -3,9 +3,12 @@
   padding-bottom: 200px;
   padding-top: 40px;
 
-  h1 {
-    text-align: center;
-    margin-top: 12px;
+  .screenshot {
+    height: 250px;
+    width: 100%;
+    max-width: 350px;
+    background: url('http://placehold.it/250x250');
+    margin-bottom: 12px;
   }
 }
 
@@ -20,14 +23,12 @@
 @media only screen {
 
   .project-content {
-    height: 450px;
-  
-    h1 {
-      font-size: 2.3em;
+    height: 1220px;
 
+    .case-study {
+      height: 1000px;
     }
   }
-
 }
 
 
@@ -42,9 +43,89 @@
 @media only screen and (min-width: 20.063em) {
   
   .project-content {
-    height: 800px;
-  }
+    height: 1600px;
 
+    .case-study {
+      border-bottom: 1px solid $rye-light-gray;
+      height: 1060px;
+
+      h1 {
+        text-align: center;
+        font-size: 3em;
+        font-weight: 600;
+      }
+
+      h5 {
+        text-align: center;
+        font-size: 1.1em;
+
+        &:nth-of-type(2){
+          text-align: left;
+        }
+      }
+
+      p {
+        font-size: 1.2em;
+      }
+
+      .testimonial {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 12px;
+
+        .head-shot {
+          display: inline-block;
+          height: 80px;
+          width: 80px;
+          background: url('http://placehold.it/80x80');
+          border-radius: 50%;
+        }
+
+        .blurb {
+          width: 70%;
+          display: inline-block;
+          vertical-align: top;
+          margin: 6px 0 0 6px;
+
+          h4 {
+            font-size: 0.9em;
+            text-align: left;
+            margin-bottom: 0;
+          }
+
+          .client-name {
+            width: 50%;
+            display: inline-block;
+            float: right;
+            padding-right: 12px;
+            padding-top: 6px;
+
+            h5 {
+              font-size: 0.9em;
+              margin: 0;
+              margin-right: 0;
+              text-align: right;
+              // width: 70%;
+
+              &:nth-child(2) {
+                text-align: right;
+                padding-left: 17%;
+                margin: 0;
+              }
+            }
+          }
+        }
+      }
+
+      .conclusion {
+        margin-top: 12px;
+
+        h5 {
+          text-align: left;
+        }
+      }
+    }
+  }
 }
 
 
@@ -60,8 +141,34 @@
 @media only screen and (min-width: 40.063em) {
   
   .project-content {
-    h1 {
-      font-size: 3em;
+
+    .case-study {
+      height: 760px;
+
+      h1 {
+        text-align: left;
+        margin-bottom: -4px;
+      }
+
+      h5 {
+        text-align: left;
+        margin-bottom: 18px;
+      }
+
+      .testimonial {
+
+        .blurb {
+          width: 64%;
+
+          @media only screen and (min-width: 732px){
+            width: 70%;
+          }
+  
+          .client-name {
+            width: 88%;
+          }
+        }
+      }
     }
   }
 }
@@ -78,8 +185,9 @@
 /* Min-width 1025px */
 @media only screen and (min-width: 60.063em) {
   .project-content {
-    h1 {
-      margin-top: 60px;
+
+    .case-study {
+      height: 860px;
     }
   }
 }
