@@ -23,7 +23,7 @@
 @media only screen {
 
   .project-content {
-    height: 1220px;
+    // height: 1220px;
 
     .case-study {
       height: 1000px;
@@ -43,7 +43,6 @@
 @media only screen and (min-width: 20.063em) {
   
   .project-content {
-    height: 1600px;
 
     .case-study {
       border-bottom: 1px solid $rye-light-gray;
@@ -187,7 +186,7 @@
   .project-content {
 
     .case-study {
-      height: 860px;
+      height: 790px;
     }
   }
 }
