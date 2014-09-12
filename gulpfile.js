@@ -46,6 +46,24 @@ gulp.task('templates', function() {
 });
 
 
+/////////////////////
+//  jst templates  //
+/////////////////////
+
+// this task makes JST available in the global scope, which 
+// references the compiled template functions. During the build/deploy
+// process, all templates are shoved into main.js ... hopefully
+
+gulp.task('jst', function () {
+  gulp.src('src/templates/jst/*jade')
+    .pipe($.jade())
+    .pipe($.jstConcat('jst.js', {
+      renameKeys: ['^.*jst/(.*).html$', '$1']
+    }))
+    .pipe(gulp.dest('src/scripts'))
+})
+
+
 //          __        __         
 //    _____/ /___  __/ /__  _____
 //   / ___/ __/ / / / / _ \/ ___/

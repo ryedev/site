@@ -19,6 +19,8 @@ $(document).ready(function(){
   $('#sub-tag-text').fitText(3, { minFontSize: '11px', maxFontSize: '18px' });
   $('#main-content-hl').fitText(3, { minFontSize: '20px', maxFontSize: '56px' });
   $('#main-content-sub-hl').fitText(3, { minFontSize: '10px', maxFontSize: '18px'});
+
+  console.log("jst template:", JST['test'])
   
   // thanks to james padolsey for help with this cross-browswer doc height
   $.getDocHeight = function(){

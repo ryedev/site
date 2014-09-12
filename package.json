@@ -2,7 +2,8 @@
   "name": "rye-dev",
   "version": "0.0.0",
   "dependencies": {
-    "gulp-shell": "^0.2.9"
+    "gulp-shell": "^0.2.9",
+    "gulp-jst-concat": "0.0.1"
   },
   "devDependencies": {
     "connect": "^2.14.4",
