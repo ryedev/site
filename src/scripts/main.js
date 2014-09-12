@@ -20,7 +20,8 @@ $(document).ready(function(){
   $('#main-content-hl').fitText(3, { minFontSize: '20px', maxFontSize: '56px' });
   $('#main-content-sub-hl').fitText(3, { minFontSize: '10px', maxFontSize: '18px'});
 
-  console.log("jst template:", JST['test'])
+  var template = JST['test']
+  console.log("jst template:", template({cool: "wow it works"}))
   
   // thanks to james padolsey for help with this cross-browswer doc height
   $.getDocHeight = function(){
