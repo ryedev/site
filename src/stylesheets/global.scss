@@ -69,6 +69,8 @@ p {
   }
 
   a {
+    span {
+
     color: $rye-yellow;
     font-family: "Courier Prime";
     margin: 0 8px;
@@ -77,13 +79,12 @@ p {
     border-bottom: none;
     transition: border-bottom 1.2s ease;
   
-    &:hover{
-      border-bottom: 3px solid $rye-yellow;
-      transition: border-bottom 0.2s ease;
+      &:hover{
+        border-bottom: 3px solid $rye-yellow;
+        transition: border-bottom 0.2s ease;
+      }
     }
-
   }
-
 }
 
 // main content section of index
