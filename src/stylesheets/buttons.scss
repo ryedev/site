@@ -21,3 +21,16 @@
     -o-transition: background .6s;
   }
 }
+
+.button {
+  height: 40px;
+  background: $rye-red;
+  color: $white;
+  font-family: "CourierPrime";
+  text-transform: capitalize;
+  line-height: 8px;
+
+  &:hover {
+    background: $rye-dark-red;
+  }
+}
