@@ -37,3 +37,4 @@ $(document).ready(function(){
   //   $('.footer-bottom').find('.logo').css({display: 'inline-block'});
   // }
 });
+
