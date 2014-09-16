@@ -31,7 +31,7 @@ $(document).ready(function(){
   toggleGif();
 
   // removes border from last case study
-  $('.case-study:last-child').find('.row').css('border', 'none');
+  $('.case-study:last').find('.row').css('border', 'none');
 
   // if(docHeight > 1000) {
   //   $('.footer-bottom').find('.logo').css({display: 'inline-block'});
