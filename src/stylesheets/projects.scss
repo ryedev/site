@@ -13,63 +13,73 @@
     h1 {
       margin-top: 20px;
     }
-  }
 
-  .screenshot {
-    height: 250px;
-    width: 100%;
-    max-width: 350px;
-    margin-bottom: 24px;
-    background-size: cover;
-    box-shadow: 0px 0px 2px 6px #C8C3C2;
-    border-radius: 2px;
-    position: relative;
+    .screenshot {
+      height: 250px;
+      width: 100%;
+      max-width: 350px;
+      margin-bottom: 24px;
+      background-size: cover;
+      box-shadow: 0px 0px 2px 6px #C8C3C2;
+      border-radius: 2px;
+      position: relative;
 
-    .plus {
-      height: 28px;
-      width: 28px;
-      border-radius: 50%;
-      background: $white;
-      opacity: 0.5;
-      box-shadow: 0 0 2px 6px #C8C3C2;
-      position: absolute;
-      bottom: -16px;
-      right: -16px;
-      transition: all 0.3s ease;
+      .plus {
+        height: 28px;
+        width: 28px;
+        border-radius: 50%;
+        background: $white;
+        opacity: 0.5;
+        box-shadow: 0 0 2px 6px #C8C3C2;
+        position: absolute;
+        bottom: -16px;
+        right: -16px;
+        transition: all 0.3s ease;
 
-      &:hover {
-        box-shadow: 0 0 2px 6px #676767;
+        &:hover {
+          box-shadow: 0 0 2px 6px #676767;
+        }
 
-      }
+        .plus-sign {
+          img {
+            height: 20px;
+            position: relative;
+            top: 0.25em;
+            left: 0.3em;
+            opacity: 0.6;
+            transition: all 0.3s ease;
 
-      .plus-sign {
-        img {
-          height: 20px;
-          position: relative;
-          top: 0.25em;
-          left: 0.3em;
-          opacity: 0.6;
-          transition: all 0.3s ease;
-
-          &:hover {
-            cursor: pointer;
-            opacity: 1;
+            &:hover {
+              cursor: pointer;
+              opacity: 1;
+            }
           }
         }
       }
     }
-  }
 
-  .testimonial { 
-    .head-shot {
-      display: inline-block;
-      height: 80px;
-      width: 80px;
-      border-radius: 50%;
+    .testimonial { 
+      .head-shot {
+        display: inline-block;
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+      }
     }
   }
 }
 
+.cowboy {
+  .screenshot {
+    background: url('/images/case-study-cowboy-full.jpg');
+  }
+
+  .testimonial {
+    .head-shot {
+     
+    }
+  }
+}
 
 .sanfran {
   .screenshot {
