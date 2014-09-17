@@ -1,7 +1,6 @@
 .project-content {
   background: url('/images/backgrounds/paper.png');
   padding-bottom: 200px;
-  padding-top: 40px;
 
   .case-study {
 
@@ -14,9 +13,18 @@
       margin-top: 20px;
     }
 
+    p {
+      span {
+        color: $rye-yellow;
+        transition: all 0.3s ease;
+
+        &:hover {
+          color: $rye-yellow-hover;
+          border-bottom: 2px solid $rye-yellow;
+        }
+      }
+    }
     .screenshot {
-      height: 250px;
-      width: 100%;
       max-width: 350px;
       margin-bottom: 24px;
       background-size: cover;
@@ -64,6 +72,7 @@
         height: 80px;
         width: 80px;
         border-radius: 50%;
+        border: 1px solid red;
       }
     }
   }
@@ -71,7 +80,7 @@
 
 .cowboy {
   .screenshot {
-    background: url('/images/case-study-cowboy-full.jpg');
+    background: url('/images/case-study-cowboy-full.jpg') no-repeat;
   }
 
   .testimonial {
@@ -130,7 +139,66 @@
   .project-content {
 
     .case-study {
+
+      h1 {
+        margin-bottom: 6px;
+        line-height: 44px;
+      }
       
+      h5 {
+        font-size: 1.1em;
+      }
+
+      p {
+        font-size: 1.4em;
+      }
+
+      .screenshot {
+        height: 200px;
+        width: 97%;
+
+        .plus {
+          display: none;
+        }
+      }
+
+      .testimonial {
+
+        .head-shot {
+          display: block;
+          margin: 20px auto;
+        }
+
+        .blurb {
+          h4 {
+            font-size: 1em;
+          }
+
+          .client-name {
+            h5 {
+              font-size: 0.9em;
+              margin: 0;
+              margin-right: 0;
+              text-align: right;
+              // width: 70%;
+
+              &:nth-child(2) {
+                text-align: right;
+                padding-left: 17%;
+                margin: 0;
+              }
+            }
+          }
+        }
+      }
+
+      .conclusion {
+        margin-top: 20px;
+
+        h5 {
+          font-size: 1.2em;
+        }
+      }
     }
   }
 }
@@ -169,6 +237,14 @@
         font-size: 1.2em;
       }
 
+      .screenshot {
+        height: 250px;
+
+        .plus {
+          display: block;
+        }
+      }
+
       .testimonial {
         width: 100%;
         padding: 8px;
@@ -187,25 +263,7 @@
           }
 
           .client-name {
-            width: 50%;
-            display: inline-block;
-            float: right;
-            padding-right: 12px;
-            padding-top: 6px;
-
-            h5 {
-              font-size: 0.9em;
-              margin: 0;
-              margin-right: 0;
-              text-align: right;
-              // width: 70%;
-
-              &:nth-child(2) {
-                text-align: right;
-                padding-left: 17%;
-                margin: 0;
-              }
-            }
+           
           }
         }
       }
