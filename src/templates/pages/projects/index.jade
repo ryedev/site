@@ -4,8 +4,122 @@ block content
   include ../../includes/header
 
   .project-content 
-    .row
-      .small-12.column
-        h1 This page is currently under construction. 
-        h1 Check back soon to see some of the great work we have done.
+    .case-study.cowboy
+      .row
+        .small-12.column
+          h1 Cowboy Ventures
+          h5 Seed fund based in San Francisco, CA
+        .small-12.medium-6.column
+          p Cowboy Ventures is an amazing team of business minds located in the Bay Area that invests in rising companies. These companies are led by founders who are building products that re-imagine work and personal life; companies such as <a href="http://www.dollarshaveclub.com/" target="_blank"><span>Dollar Shave Club</span></a>, <a href="http://august.com/" target="_blank"><span>August</span></a>, <a href="https://www.styleseat.com/" target="_blank"><span>StyleSeat</span></a>, <a href="https://www.rise.us/" target="_blank"><span>Rise</span></a>, and the <a href="http://cowboy.vc/companies.html" target="_blank"><span>list</span></a> goes on.  
+          p Cowboy approached us wanting to polish up their existing site and implement a blog page to keep followers current when articles such as <a href="http://techcrunch.com/2014/08/15/what-studying-students-teaches-us-about-great-apps/?ncid=facebook_social_share" target=_blank""><span>this</span></a> go live on TechCrunch.
+          .screenshot
+            //- .plus
+            //-   .plus-sign
+            //-     img(src="/images/plus-sign.png")
+          p The solution was to implement a clean and simple Wordpress blog that the Cowboy VC team can curate that blends with the rest of the site design. Adding some nice UX touches throughout the site that complement not only the Cowboy VC brand, but also their portfolio companies, was crucial.
+        .small-12.medium-6.column
+          p In an industry that is constantly changing, we wanted to create a build that can hold up to the ever-evoloving landscape of the tech and venture world. A lot of care went into this project under-the-hood cleaning up and updating some of the existing code base to lay a solid foundation for future growth.
+          .testimonial
+            .head-shot
+            .blurb
+              h4 "Joe and his team did great work developing our site. Both in design and in execution, we were very pleased with the result and enjoyed working with them on the project."
+              .client-name
+                h5 - Noah Lichtenstein
+                h5 Partner
+          .conclusion
+            h5.text-left Return on Investment
+            p A strong web precense in the form of an enjoyable user experience goes a long way. Adding some TLC to a site returns lengthier site visits, higher click-through rates, and ultimately raises the bottom line. When keeping in touch with your network and followers is important to you, a blog is a great way to get your voice out. 
+          a(href='http://cowboy.vc' target="_blank")
+            .button launch site  
+    .case-study.sanfran
+      .row
+        .small-12.column
+          h1 San Francisco Rises
+          h5 User content driven real estate app
+        .small-12.medium-6.column
+          p In a city that moves as fast as San Francisco, with 20,000 new residents entering the city between 2010 and 2012 and 26,700 new jobs added last year, the demand for real estate is high.
+          p The folks over at <a href="http://smartrises.com/" target="_blank"><span>San Francisco Rises</span></a> wanted to solve the challenge of connecting people in search of high-rise residential properties with real estate in the area.        
+          .screenshot
+            //- .plus
+            //-   .plus-sign
+            //-     img(src="/images/plus-sign.png")
+          p When new buildings enter construction they will be posted to the app where users can find them easily, see what others are saying, and post updates and images as the buildings near completion.
+        .small-12.medium-6.column
+          p Knowing that a large percentage of new residents are in the tech industry, we designed the app to be easily navigable, clean and accessible across all devices.
+          //- .testimonial
+          //-   .head-shot
+          //-   .blurb
+          //-     h4 "Rye is so awesome to work with. I can't believe how amazing it was to work with them. Definitely calling back."
+          //-     .client-name
+          //-       h5 - Dirk Kinley
+          //-       h5 CEO
+          p The goal was to create a proof of concept application and begin user testing and collect feedback. Working within the project constraints, we executed a custom designed and developed application with post moderation capabilities and administrative content updates.
+          .conclusion
+            h5.text-left Coming Up
+            p The SFR team is working on content and ramping up for an initial marketing push. You can see the progress here:
+            a(href='http://sanfranciscorises.com/' target="_blank")
+              .button launch site
+    .case-study.tipi
+      .row
+        .small-12.column
+          h1 TIPI
+          h5 The Interactive Project Initiator
+        .small-12.medium-6.column
+          p The process of scoping and signing a project can be arduous. A lot is on the line between you and your client, and the terms defined here can result in success or failure.
+          p TIPI was conceived to address this important area of project management by giving users a single tool for defining the scope of work and templating documents including proposals, contracts and briefs.       
+          .screenshot
+            //- .plus
+            //-   .plus-sign
+            //-     img(src="/images/plus-sign.png")
+          p A stakeholder fills out a questionnaire and saves it to the database, creating a project planner. Next, users can review and edit the planner based on conversation with the client. Total cost and deposit are automatically calculated.
+        .small-12.medium-6.column
+          p Once published, a planner is injected in to a templatized proposal for signature and agreement, a legally binding contract, and a brief for project teams to kick off work.
+          .testimonial
+            .head-shot
+            .blurb
+              h4 "TIPI has already made project initiation easier. I can't wait to see how far the Rye team takes it!"
+              .client-name
+                h5 - Jeremiah Adkins
+                h5 UI Designer
+          p TIPI was built on the ember.js framework and connected to the firebase SDK. This setup provides two-way data binding, allowing users to work remotely with their clients and provide real-time updates to their project planner.
+          .conclusion
+            h5.text-left Next Steps
+            p TIPI is still in the initiation phase itself. We have big plans for growing the app and the business around it. Already, it has been met with enthusiasm in closed groups. More to come!
+            a(href='http://drewbot.github.io/tipi' target="_blank") 
+              .button Launch App
+    .case-study.waterford
+      .row
+        .small-12.column
+          h1 Waterford HOA
+          h5 Website and gated application
+        .small-12.medium-6.column
+          p The Home Owners Association of Waterford in Clemmons, NC not only needed a brochure style website, they also needed a password protected application for connecting the community.
+          p Our team created just that. On the surface it looks a lot like any other HOA website, with information about the area, the local government, schools, shopping and the like, but behind all of that lies a gated application for home owners to share ideas and events.       
+          .screenshot
+            //- a(data-reveal-id='myModal')
+            //-   .plus
+            //-     .plus-sign
+            //-       img(src="/images/plus-sign.png")
+          p Waterfordclemmons.com is an admin moderated and content manageable digital property built with two types of users in mind. 
+        .small-12.medium-6.column
+          p If you're new to the area and want to find out about the community you can access a regularly updated newsletter and a listing of local attractions and institutions. Waterford's swim team is locally recognized and has a central hub within the site for information and membership payment.
+          p If you're a homeowner you can create an account and log in to access an online community directory and a user content driven board where homeowners can post upcoming events, services and items for sale.
+          //- .testimonial
+          //-   .head-shot
+          //-   .blurb
+          //-     h4 "Rye is so awesome to work with. I can't believe how amazing it was to work with them. Definitely calling back."
+          //-     .client-name
+          //-       h5 - Martin Davidson
+          //-       h5 Global Creative Director, Krispy Kreme
+          .conclusion
+            h5.text-left The community speaks
+            p Waterford's site and application have been in use for over a year. We were able to meet the client's needs by architecting a unique experience that met and exceeded their goals. The residents love it as well!
+            a(href='http://www.waterfordclemmons.com' target="_blank") 
+              .button Launch Site
+
+    //- #myModal(data-reveal='data-reveal').reveal-modal
+    //-   h2 Awesome. I have it.
+    //-     p.lead Your couch.  It is mine.
+    //-     p I'm a cool paragraph that lives inside of an even cooler modal. Wins!
+    //-     a.close-reveal-modal 
 
