@@ -1,14 +1,134 @@
 .project-content {
   background: url('/images/backgrounds/paper.png');
-  padding-bottom: 200px;
-  padding-top: 40px;
+  padding-bottom: 160px;
 
-  h1 {
-    text-align: center;
-    margin-top: 12px;
+  .case-study {
+
+    .row {
+      border-bottom: 1px solid $rye-light-gray;
+      padding-bottom: 40px;
+    }
+
+    h1 {
+      margin-top: 20px;
+      font-weight: 600;
+    }
+
+    p {
+      span {
+        color: $rye-yellow;
+        transition: all 0.2s ease;
+
+        &:hover {
+          color: $rye-yellow-hover;
+          border-bottom: 1px solid $rye-yellow;
+        }
+      }
+    }
+    .screenshot {
+      max-width: 350px;
+      margin-bottom: 24px;
+      background-size: cover;
+      box-shadow: 0px 0px 2px 6px #C8C3C2;
+      border-radius: 2px;
+      position: relative;
+
+      .plus {
+        height: 28px;
+        width: 28px;
+        border-radius: 50%;
+        background: $white;
+        opacity: 0.5;
+        box-shadow: 0 0 2px 6px #C8C3C2;
+        position: absolute;
+        bottom: -16px;
+        right: -16px;
+        transition: all 0.3s ease;
+
+        &:hover {
+          box-shadow: 0 0 2px 6px #676767;
+        }
+
+        .plus-sign {
+          img {
+            height: 20px;
+            position: relative;
+            top: 0.25em;
+            left: 0.3em;
+            opacity: 0.6;
+            transition: all 0.3s ease;
+
+            &:hover {
+              cursor: pointer;
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+
+    .testimonial { 
+      .head-shot {
+        display: inline-block;
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+        border: 1px solid $rye-dark-gray;
+        box-shadow: 0 0 4px 4px $rye-light-gray;
+        background-size: contain;
+      }
+    }
   }
 }
 
+.cowboy {
+  .screenshot {
+    background: url('/images/case-study-cowboy-full.jpg') no-repeat;
+  }
+
+  .testimonial {
+    .head-shot {
+     background: url('/images/people/noah.jpg') no-repeat;
+    }
+  }
+}
+
+.sanfran {
+  .screenshot {
+    background: url('/images/case-study-sfrises.jpg');
+  }
+
+  .testimonial {
+    .head-shot {
+     
+    }
+  }
+}
+
+.tipi {
+  .screenshot {
+    background: url('/images/case-study-tipi.jpg');
+    background-size: cover;
+  }
+
+  .testimonial {
+    .head-shot {
+     background: url('/images/people/jerry.png');
+    }
+  }
+}
+
+.waterford {
+  .screenshot {
+    background: url('/images/case-study-waterford.jpg');
+  }
+
+  .testimonial {
+    .head-shot {
+     
+    }
+  }
+}
 
  //               _     _ _        __ _         _           
  //   /\/\   ___ | |__ (_) | ___  / _\ |_ _   _| | ___  ___ 
@@ -20,14 +140,77 @@
 @media only screen {
 
   .project-content {
-    height: 450px;
-  
-    h1 {
-      font-size: 2.3em;
 
+    .case-study {
+
+      h1 {
+        text-align: center;
+        margin-bottom: 6px;
+        line-height: 44px;
+        font-size: 3em;
+      }
+      
+      h5 {
+        font-size: 1em;
+        text-align: center;
+      }
+
+      p {
+        font-size: 1.4em;
+      }
+
+      .screenshot {
+        height: 200px;
+        width: 97%;
+
+        .plus {
+          display: none;
+        }
+      }
+
+      .testimonial {
+
+        .head-shot {
+          display: block;
+          margin: 20px auto;
+        }
+
+        .blurb {
+          h4 {
+            font-size: 1em;
+          }
+
+          .client-name {
+            h5 {
+              font-size: 0.9em;
+              margin: 0;
+              margin-right: 0;
+              text-align: right;
+              // width: 70%;
+
+              &:nth-child(2) {
+                text-align: right;
+                padding-left: 17%;
+                margin: 0;
+              }
+            }
+          }
+        }
+      }
+
+      .conclusion {
+        margin-top: 20px;
+
+        h5 {
+          font-size: 1.2em;
+        }
+      }
+
+      .button {
+
+      }
     }
   }
-
 }
 
 
@@ -39,12 +222,75 @@
 // \__/_| |_| |_|\__,_|_|_| \__/\___|_|  \___|\___|_| |_|___/
                                                           
 // Min-width 401px;
-@media only screen and (min-width: 20.063em) {
+@media only screen and (min-width: 401px) {
   
   .project-content {
-    height: 800px;
-  }
 
+    .case-study {
+
+      h1 {
+        font-size: 3em;
+        font-weight: 600;
+      }
+
+      h5 {
+        font-size: 1.1em;
+
+        &:nth-of-type(2){
+          text-align: left;
+        }
+      }
+
+      p {
+        font-size: 1.2em;
+      }
+
+      .screenshot {
+        height: 250px;
+
+        .plus {
+          display: block;
+        }
+      }
+
+      .testimonial {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 12px;
+        padding-left: 12%;
+
+        .head-shot {
+          display: inline-block;
+          margin: 10px 0;
+        }
+
+        .blurb {
+          width: 70%;
+          display: inline-block;
+          vertical-align: top;
+          margin: 10px 0 0 16px;
+
+          h4 {
+            font-size: 0.9em;
+            text-align: left;
+            margin-bottom: 0;
+          }
+
+          .client-name {
+           margin-top: 4px;
+          }
+        }
+      }
+
+      .conclusion {
+        margin-top: 28px;
+
+        h5 {
+          text-align: left;
+        }
+      }
+    }
+  }
 }
 
 
@@ -57,11 +303,51 @@
 // \/    \/\___|\__,_|_|\__,_|_| |_| |_| \__/\___|_|  \___|\___|_| |_|___/
                                                                        
 /* min-width 641px, medium screens */
-@media only screen and (min-width: 40.063em) {
+@media only screen and (min-width: 641px) {
   
   .project-content {
-    h1 {
-      font-size: 3em;
+    padding-top: 30px;
+
+    .case-study {
+
+      h1 {
+        text-align: left;
+        margin-bottom: 2px;
+        margin-top: 22px;
+      }
+
+      h5 {
+        text-align: left;
+        margin-top: 10px;
+      }
+
+      .testimonial {
+        padding: 0;
+        // height: 160px;
+
+        .head-shot {
+          display: block;
+          margin: 10px auto;
+        }
+
+        .blurb {
+          display: block;
+          width: 100%;
+  
+          .client-name {
+            width: 98%;
+          }
+        }
+      }
+
+      .conclusion {
+        // margin-top: 98px;
+      }
+
+      .button {
+        font-size: 0.9em;
+        line-height: 6px;
+      }
     }
   }
 }
@@ -76,10 +362,30 @@
 // \____/\__,_|_|  \__, |\___| \__/\___|_|  \___|\___|_| |_|___/
 //                 |___/                                        
 /* Min-width 1025px */
-@media only screen and (min-width: 60.063em) {
+@media only screen and (min-width: 1025px) {
   .project-content {
-    h1 {
-      margin-top: 60px;
+
+    .case-study {
+      padding-top: 40px;
+
+
+      .testimonial {
+
+        .head-shot {
+          display: inline-block;
+          margin-top: 28px;
+        }
+
+        .blurb {
+          display: inline-block;
+          width: 76%;
+        }
+      }
+
+      .button {
+        font-size: 0.9em;
+        line-height: 4px;
+      }
     }
   }
 }
