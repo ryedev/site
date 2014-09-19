@@ -4,6 +4,13 @@ block content
   include ../../includes/header
 
   .project-content 
+    .pagination-container.row
+      a.prev-page Previous
+      span.breadcrumb-carrot >
+      span.current-page
+        //- current page name appended here
+      a.next-page Next
+
     include ../../case-studies/cowboy-ventures
     include ../../case-studies/sanfran
     include ../../case-studies/tipi
