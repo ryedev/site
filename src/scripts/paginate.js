@@ -12,18 +12,16 @@ var paginate = {
     this.initEvents()
   },
   initNavigation: function(){
-    var currentHash = window.location.hash.split("#")[1]
-    console.log("initNavigation called, currentHash:", currentHash)
-    var currentIndex = _.indexOf(this.pages, currentHash)
+    this.currentHash = window.location.hash.split("#")[1]
+    console.log("initNavigation called, this.currentHash:", this.currentHash)
+    this.currentIndex = _.indexOf(this.pages, this.currentHash)
     // render current hash by default
-    $("*[data-paginate='"+this.pages[currentIndex]+"'").removeClass("disabled")
-    $(".current-page-title").text(this.pages[currentIndex])
+    $("*[data-paginate='"+this.pages[this.currentIndex]+"']").removeClass("disabled")
+    $(".current-page-title").text(this.pages[this.currentIndex])
   },
   navigate: function(bool){
-    console.log("navigate called")
-
     var currentHash = window.location.hash.split("#")[1]
-    console.log("initNavigation called, currentHash:", currentHash)
+    console.log("navigate called, currentHash:", currentHash)
     var currentIndex = _.indexOf(this.pages, currentHash)
     console.log("currentIndex:", currentIndex)
     this.nextPage = this.pages[(currentIndex + 1)] ? this.pages[(currentIndex + 1)] : this.pages[currentIndex]
@@ -31,7 +29,7 @@ var paginate = {
     console.log("prev and next:", this.prevPage, " ",this.nextPage )
 
     $(".case-study").addClass("disabled")
-    bool ? $("*[data-paginate='"+this.nextPage+"'").removeClass("disabled") : $("*[data-paginate='"+this.prevPage+"'").removeClass("disabled")
+    bool ? $("*[data-paginate='"+this.nextPage+"']").removeClass("disabled") : $("*[data-paginate='"+this.prevPage+"']").removeClass("disabled")
   },
   updateHash: function(bool){
     console.log("updateHash called")
