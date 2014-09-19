@@ -37,5 +37,6 @@ $(document).ready(function(){
   // if(docHeight > 1000) {
   //   $('.footer-bottom').find('.logo').css({display: 'inline-block'});
   // }
+  paginate.init()
 });
 

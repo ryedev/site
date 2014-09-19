@@ -2,8 +2,10 @@
   background: url('/images/backgrounds/paper.png');
   padding-bottom: 160px;
 
+  .disabled {
+    display: none;
+  }
   .case-study {
-
     .row {
       border-bottom: 1px solid $rye-light-gray;
       padding-bottom: 40px;
