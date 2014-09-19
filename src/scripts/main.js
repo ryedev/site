@@ -31,6 +31,7 @@ $(document).ready(function(){
   toggleGif();
 
   // removes border from last case study
+  // this is kinda gross and should be css instead of jquery
   $('.case-study:last').find('.row').css('border', 'none');
 
   // if(docHeight > 1000) {
