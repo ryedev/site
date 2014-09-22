@@ -8,8 +8,11 @@ var paginate = {
     if(window.location.hash == ""){
       window.location.hash = this.pages[0]
     }
+    this.currentHash = window.location.hash.split("#")[1]
     this.initNavigation()
     this.initEvents()
+    this.initNavPolyfill()
+    
   },
   initNavigation: function(){
     this.currentHash = window.location.hash.split("#")[1]
@@ -18,14 +21,33 @@ var paginate = {
     // render current hash by default
     $("*[data-paginate='"+this.pages[this.currentIndex]+"']").removeClass("disabled")
     $(".current-page-title").text(this.pages[this.currentIndex])
+
+  },
+  initNavPolyfill: function(){
+    var that = this
+    window.addEventListener("hashchange",function(event){
+      setTimeout(function(){
+        console.log("setTimeout fired")
+        // console.log("hashchange",event )
+        console.log("old url:", event.oldURL.split("#")[1])
+        console.log("currentHash:", window.location.hash.split("#")[1] )
+        if(event.oldURL.split("#")[1] == that.previousHash){
+          console.log(that.previousHash)
+          console.log("diff hash", event.oldURL.split("#")[1], window.location.hash.split("#")[1])
+          that.initNavigation()
+        }
+
+      }, 500)
+    } ,false)
   },
   navigate: function(bool){
-    var currentHash = window.location.hash.split("#")[1]
-    console.log("navigate called, currentHash:", currentHash)
-    var currentIndex = _.indexOf(this.pages, currentHash)
-    console.log("currentIndex:", currentIndex)
-    this.nextPage = this.pages[(currentIndex + 1)] ? this.pages[(currentIndex + 1)] : this.pages[currentIndex]
-    this.prevPage = this.pages[(currentIndex - 1)] ? this.pages[(currentIndex - 1)] : this.pages[currentIndex]
+    this.previousHash = this.currentHash
+    this.currentHash = window.location.hash.split("#")[1]
+    console.log("navigate called, this.currentHash:", this.currentHash)
+    this.currentIndex = _.indexOf(this.pages, this.currentHash)
+    console.log("this.currentIndex:", this.currentIndex)
+    this.nextPage = this.pages[(this.currentIndex + 1)] ? this.pages[(this.currentIndex + 1)] : this.pages[this.currentIndex]
+    this.prevPage = this.pages[(this.currentIndex - 1)] ? this.pages[(this.currentIndex - 1)] : this.pages[this.currentIndex]
     console.log("prev and next:", this.prevPage, " ",this.nextPage )
 
     $(".case-study").addClass("disabled")
