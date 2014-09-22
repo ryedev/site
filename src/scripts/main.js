@@ -20,6 +20,14 @@ $(document).ready(function(){
   $('#main-content-hl').fitText(3, { minFontSize: '20px', maxFontSize: '56px' });
   $('#main-content-sub-hl').fitText(3, { minFontSize: '10px', maxFontSize: '18px'});
   
+
+  $(".show-modal").click(function(event){
+    var imgSrc = $(event.currentTarget).data("image")
+    console.log("show-modal clicked, img src:", imgSrc )
+    $(document).foundation()
+
+  })
+
   // thanks to james padolsey for help with this cross-browswer doc height
   $.getDocHeight = function(){
        var D = document;
