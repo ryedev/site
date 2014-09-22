@@ -19,12 +19,12 @@ $(document).ready(function(){
   $('#sub-tag-text').fitText(3, { minFontSize: '11px', maxFontSize: '18px' });
   $('#main-content-hl').fitText(3, { minFontSize: '20px', maxFontSize: '56px' });
   $('#main-content-sub-hl').fitText(3, { minFontSize: '10px', maxFontSize: '18px'});
+  $(document).foundation()
   
 
   $(".show-modal").click(function(event){
     var imgSrc = $(event.currentTarget).data("image")
     console.log("show-modal clicked, img src:", imgSrc )
-    $(document).foundation()
 
   })
 
