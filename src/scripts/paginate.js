@@ -5,7 +5,7 @@ var paginate = {
     this.pages = CASESTUDIES
     console.log("paginate init, pages:", this.pages)
     // set default hash to first element of array when landing on "/projects/"
-    if(window.location.hash == ""){
+    if(window.location.hash == "" && window.location.href.split("/")[3] == "projects"){
       window.location.hash = this.pages[0]
     }
     this.currentHash = window.location.hash.split("#")[1]
