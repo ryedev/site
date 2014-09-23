@@ -8,8 +8,8 @@ block content
       a.prev-page Previous
       span.breadcrumb-carrot >
       span.current-page-title
-      span.breadcrumb-carrot >
         //- current page name appended here
+      span.breadcrumb-carrot >
       a.next-page Next
 
     include ../../case-studies/cowboy-ventures
@@ -18,11 +18,5 @@ block content
     include ../../case-studies/waterford
     //- include ../../case-studies/example
 
-
-    //- #myModal(data-reveal='data-reveal').reveal-modal
-    //-   h2 Awesome. I have it.
-    //-     p.lead Your couch.  It is mine.
-    //-     p I'm a cool paragraph that lives inside of an even cooler modal. Wins!
-    //-     a.close-reveal-modal 
-    div#screenshot-modal.reveal-modal.large(data-reveal)
-      img.screenshot-image
+    include ../../includes/screenshot-modal
+    

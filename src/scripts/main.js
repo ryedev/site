@@ -25,11 +25,8 @@ $(document).ready(function(){
   $(".show-modal").click(function(event){
     var imgSrc = $(event.currentTarget).data("image")
     console.log("show-modal clicked, img src:", imgSrc )
-    $('#screenshot-modal').foundation('reveal', 'open')
+    $('.screenshot-modal').foundation('reveal', 'open')
     $(".screenshot-image").attr( "src", imgSrc )
-
-
-
   })
 
   // thanks to james padolsey for help with this cross-browswer doc height
