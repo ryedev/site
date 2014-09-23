@@ -24,6 +24,9 @@ var paginate = {
 
   },
   initNavPolyfill: function(){
+    $(window).on("beforeunload", function(event){
+      console.log("beforeunload fired, event:", event)
+    })
     var that = this
     window.addEventListener("hashchange",function(event){
       setTimeout(function(){
