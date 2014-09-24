@@ -16,7 +16,7 @@ var paginate = {
   },
   initNavigation: function(){
     this.currentHash = window.location.hash.split("#")[1]
-    console.log("initNavigation called, this.currentHash:", this.currentHash)
+    console.log("initNavigation called, this.currentHash:", window.location)
     this.currentIndex = _.indexOf(this.pages, this.currentHash)
     // render current hash by default
     $("*[data-paginate='"+this.pages[this.currentIndex]+"']").removeClass("disabled")
@@ -24,27 +24,15 @@ var paginate = {
 
   },
   initNavPolyfill: function(){
-    $(window).on("beforeunload", function(event){
-      console.log("beforeunload fired, event:", event)
-    })
     var that = this
     window.addEventListener("hashchange",function(event){
-      setTimeout(function(){
-        console.log("setTimeout fired")
-        // console.log("hashchange",event )
-        console.log("old url:", event.oldURL.split("#")[1])
-        console.log("currentHash:", window.location.hash.split("#")[1] )
-        if(event.oldURL.split("#")[1] == that.previousHash){
-          console.log(that.previousHash)
-          console.log("diff hash", event.oldURL.split("#")[1], window.location.hash.split("#")[1])
-          that.initNavigation()
-        }
-
-      }, 500)
+      that.navigate(that.direction)
+      that.updateCaseStudyTitle(that.direction)
+      
     } ,false)
   },
   navigate: function(bool){
-    this.previousHash = this.currentHash
+    this.writeCurrentHash()
     this.currentHash = window.location.hash.split("#")[1]
     console.log("navigate called, this.currentHash:", this.currentHash)
     this.currentIndex = _.indexOf(this.pages, this.currentHash)
@@ -70,15 +58,13 @@ var paginate = {
     // pass 1 if next-page is clicked, 0 if prev-page is clicked
     $(".prev-page").click(function(){
       console.log("prev-page clicked, prevPage is", that.prevPage)
-      that.navigate(0)
       that.updateHash(0)
-      that.updateCaseStudyTitle(0)
+      that.direction = 0
     })
     $(".next-page").click(function(){
       console.log("next-page clicked, nextPage is", that.nextPage)
-      that.navigate(1)
+      that.direction = 1
       that.updateHash(1)
-      that.updateCaseStudyTitle(1)
     })
   }
 
