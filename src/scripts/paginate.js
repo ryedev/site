@@ -22,6 +22,8 @@ var paginate = {
     // render current hash by default
     $("*[data-paginate='"+this.pages[this.currentIndex]+"']").removeClass("disabled")
     $(".current-page-title").text(this.formattedTitles[this.currentIndex])
+    this.nextPage = this.pages[(this.currentIndex + 1)] ? this.pages[(this.currentIndex + 1)] : this.pages[this.currentIndex]
+    this.prevPage = this.pages[(this.currentIndex - 1)] ? this.pages[(this.currentIndex - 1)] : this.pages[this.currentIndex]
 
   },
   initHashchangeEvent: function(){
