@@ -47,9 +47,7 @@ $(document).ready(function(){
   //   $('.footer-bottom').find('.logo').css({display: 'inline-block'});
   // }
   if(window.location.href.split("/")[3] == "projects"){
-    console.log("true")
-    paginate.init()
-    
+    paginate.init()  
   }
 });
 
