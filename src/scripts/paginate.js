@@ -3,6 +3,7 @@ var paginate = {
   init: function(){
     // this is the array of case studies from config.js
     this.pages = CASESTUDIES
+    this.formattedTitles = FORMATTEDTITLES
     console.log("paginate init, pages:", this.pages)
     // set default hash to first element of array when landing on "/projects/"
     if(window.location.hash == "" && window.location.href.split("/")[3] == "projects"){
@@ -20,7 +21,7 @@ var paginate = {
     this.currentIndex = _.indexOf(this.pages, this.currentHash)
     // render current hash by default
     $("*[data-paginate='"+this.pages[this.currentIndex]+"']").removeClass("disabled")
-    $(".current-page-title").text(this.pages[this.currentIndex])
+    $(".current-page-title").text(this.formattedTitles[this.currentIndex])
 
   },
   initHashchangeEvent: function(){
@@ -48,7 +49,7 @@ var paginate = {
 
   },
   updateCaseStudyTitle: function(bool){
-    $(".current-page-title").text(this.currentHash)
+    $(".current-page-title").text(this.formattedTitles[this.currentIndex])
 
   },
   initEvents: function(){

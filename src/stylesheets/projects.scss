@@ -1,7 +1,15 @@
 .project-content {
   background: url('/images/backgrounds/paper.png');
   padding-bottom: 160px;
-
+  .pagination-container {
+    a {
+      color: $rye-medium-gray;
+      text-decoration: underline;
+      &:active {
+        color: $rye-dark-gray;
+      }
+    }
+  }
   .disabled {
     display: none;
   }
@@ -142,7 +150,22 @@
 @media only screen {
 
   .project-content {
-
+    .pagination-container {
+      a {
+        margin-top: 10px;
+      }
+      .prev-page {
+        float: left;
+        margin-left: 10px;
+      }
+      .next-page {
+        float: right;
+        margin-right: 10px;
+      }
+      span {
+        display: none;
+      }
+    }
     .case-study {
 
       h1 {
@@ -227,7 +250,22 @@
 @media only screen and (min-width: 401px) {
   
   .project-content {
-
+    .pagination-container {
+      a {
+        margin-top: 10px;
+      }
+      .prev-page {
+        float: left;
+        margin-left: 10px;
+      }
+      .next-page {
+        float: right;
+        margin-right: 10px;
+      }
+      span {
+        display: none;
+      }
+    }
     .case-study {
 
       h1 {
@@ -309,7 +347,23 @@
   
   .project-content {
     padding-top: 30px;
-
+    .pagination-container {
+      a, span {
+        margin-top: 10px;
+      }
+      .prev-page {
+        float: left;
+        margin-left: 10px;
+      }
+      .next-page {
+        float: right;
+        margin-right: 10px;
+      }
+      span {
+        display: block;
+        float: left;
+      }
+    }
     .case-study {
 
       h1 {
