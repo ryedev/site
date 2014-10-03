@@ -243,7 +243,7 @@ gulp.task('sitemap', function () {
 //                                       /_/            
 
 gulp.task('clean', function () {
-  return gulp.src(['.tmp', 'dist'], { read: false }).pipe($.rimraf());
+  return gulp.src(['.tmp', 'dist'], { read: false }).pipe($.clean());
 });
 
 
