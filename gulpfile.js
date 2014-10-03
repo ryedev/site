@@ -57,6 +57,7 @@ gulp.task('templates', function() {
 // in src/styles/main.scss and put them dist/styles
 gulp.task('styles', function () {
   return gulp.src('src/stylesheets/main.scss')
+    .pipe($.plumber())
     .pipe($.sass({
       // gulp-sass was blowing up without the next two line
       sourceComments: 'map', 
