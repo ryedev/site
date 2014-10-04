@@ -20,7 +20,7 @@ var paginate = {
     console.log("initNavigation called, this.currentHash:", window.location)
     this.currentIndex = _.indexOf(this.pages, this.currentHash)
     // render current hash by default
-    $("*[data-paginate='"+this.pages[this.currentIndex]+"']").removeClass("disabled")
+    $("*[data-paginate='"+this.pages[this.currentIndex]+"']").addClass("active")
     $(".current-page-title").text(this.formattedTitles[this.currentIndex])
     this.nextPage = this.pages[(this.currentIndex + 1)] ? this.pages[(this.currentIndex + 1)] : this.pages[this.currentIndex]
     this.prevPage = this.pages[(this.currentIndex - 1)] ? this.pages[(this.currentIndex - 1)] : this.pages[this.currentIndex]
