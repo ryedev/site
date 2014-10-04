@@ -4,13 +4,15 @@ block content
   include ../../includes/header
 
   .project-content 
-    .pagination-container.row
-      a.prev-page Previous
-      span.breadcrumb-carrot &nbsp; > &nbsp;
-      span.current-page-title
-        //- current page name appended here
-      //- span.breadcrumb-carrot &nbsp; > &nbsp;
-      a.next-page Next
+    .row
+      .small-12.column
+        .pagination-container
+          a.prev-page Previous
+          span.breadcrumb-carrot &nbsp; > &nbsp;
+          //- span.current-page-title
+            //- current page name appended here
+          //- span.breadcrumb-carrot &nbsp; > &nbsp;
+          a.next-page Next
 
     include ../../case-studies/cowboy-ventures
     include ../../case-studies/sanfran
