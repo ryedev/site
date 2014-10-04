@@ -1,7 +1,7 @@
 .project-content {
   background: url('/images/backgrounds/paper.png');
   padding-bottom: 160px;
-  min-height: 1000px;
+  min-height: 1200px;
 
   .pagination-container {
     padding-top: 16px;
@@ -13,7 +13,7 @@
       font-size: 1.2em;
 
       &:hover {
-        border-bottom: 1px solid $rye-medium-gray;
+        border-bottom: 2px solid $rye-light-gray;
       }
 
       &:active {
@@ -32,7 +32,7 @@
   .active {
     opacity: 1 !important;
     visibility: visible !important;
-    transition: all 0.4s;
+    transition: all 1s;
   }
 
   .active-first {
@@ -48,11 +48,9 @@
     opacity: 0;
     visibility: hidden;
     position: absolute;
-    left: -6px;
     top: 0;
 
     .row {
-      border-bottom: 1px solid $rye-light-gray;
       padding-bottom: 40px;
     }
 
@@ -222,6 +220,7 @@
       }
     }
     .case-study {
+      left: 4px;
 
       h1 {
         text-align: center;
@@ -327,6 +326,7 @@
     }
 
     .case-study {
+      left: -6px;
 
       h1 {
         font-size: 3em;
