@@ -20,7 +20,7 @@ var paginate = {
     console.log("initNavigation called, this.currentHash:", window.location)
     this.currentIndex = _.indexOf(this.pages, this.currentHash)
     // render current hash by default
-    $("*[data-paginate='"+this.pages[this.currentIndex]+"']").addClass("active")
+    $("*[data-paginate='"+this.pages[this.currentIndex]+"']").addClass("active-first")
     $(".current-page-title").text(this.formattedTitles[this.currentIndex])
     this.nextPage = this.pages[(this.currentIndex + 1)] ? this.pages[(this.currentIndex + 1)] : this.pages[this.currentIndex]
     this.prevPage = this.pages[(this.currentIndex - 1)] ? this.pages[(this.currentIndex - 1)] : this.pages[this.currentIndex]
@@ -44,6 +44,7 @@ var paginate = {
     console.log("prev and next:", this.prevPage, " ",this.nextPage )
 
     $(".case-study").removeClass("active")
+    $(".case-study").removeClass("active-first")
     $("*[data-paginate='"+this.currentHash+"']").addClass("active") 
   },
   updateHash: function(bool){
