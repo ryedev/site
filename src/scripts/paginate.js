@@ -43,8 +43,8 @@ var paginate = {
     this.prevPage = this.pages[(this.currentIndex - 1)] ? this.pages[(this.currentIndex - 1)] : this.pages[this.currentIndex]
     console.log("prev and next:", this.prevPage, " ",this.nextPage )
 
-    $(".case-study").addClass("disabled")
-    $("*[data-paginate='"+this.currentHash+"']").removeClass("disabled") 
+    $(".case-study").removeClass("active")
+    $("*[data-paginate='"+this.currentHash+"']").addClass("active") 
   },
   updateHash: function(bool){
     bool ? window.location.hash = this.nextPage : window.location.hash = this.prevPage

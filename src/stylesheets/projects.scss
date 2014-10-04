@@ -1,6 +1,7 @@
 .project-content {
   background: url('/images/backgrounds/paper.png');
   padding-bottom: 160px;
+  min-height: 1000px;
 
   .pagination-container {
     padding-top: 16px;
@@ -28,12 +29,20 @@
     }
   }
 
-  .disabled {
-    display: none;
+  .active {
+    opacity: 1 !important;
+    visibility: visible !important;
   }
-
+  .case-studies-container {
+    position: relative;
+  }
   .case-study {
-
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 2s linear;
     .row {
       border-bottom: 1px solid $rye-light-gray;
       padding-bottom: 40px;
