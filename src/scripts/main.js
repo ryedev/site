@@ -19,15 +19,15 @@ $(document).ready(function(){
   $('#sub-tag-text').fitText(3, { minFontSize: '11px', maxFontSize: '18px' });
   $('#main-content-hl').fitText(3, { minFontSize: '20px', maxFontSize: '56px' });
   $('#main-content-sub-hl').fitText(3, { minFontSize: '10px', maxFontSize: '18px'});
-  $(document).foundation()
+  // $(document).foundation()
   
 
-  $(".show-modal").click(function(event){
-    var imgSrc = $(event.currentTarget).data("image")
-    console.log("show-modal clicked, img src:", imgSrc )
-    $('.screenshot-modal').foundation('reveal', 'open')
-    $(".screenshot-image").attr( "src", imgSrc )
-  })
+  // $(".show-modal").click(function(event){
+  //   var imgSrc = $(event.currentTarget).data("image")
+  //   console.log("show-modal clicked, img src:", imgSrc )
+  //   $('.screenshot-modal').foundation('reveal', 'open')
+  //   $(".screenshot-image").attr( "src", imgSrc )
+  // })
 
   // thanks to james padolsey for help with this cross-browswer doc height
   $.getDocHeight = function(){

@@ -193,6 +193,7 @@
 
   .project-content {
     padding-top: 20px;
+    min-height: 1800px;
 
     .pagination-container {
       text-align: center;
@@ -307,6 +308,7 @@
 @media only screen and (min-width: 401px) {
   
   .project-content {
+    min-height: 1100px;
 
     .pagination-container {
 
@@ -481,7 +483,8 @@
 /* Min-width 1025px */
 @media only screen and (min-width: 1025px) {
   .project-content {
-
+    min-height: 1200px;
+    
     .case-study {
       padding-top: 0px;
 
