@@ -19,7 +19,16 @@ $(document).ready(function(){
   $('#sub-tag-text').fitText(3, { minFontSize: '11px', maxFontSize: '18px' });
   $('#main-content-hl').fitText(3, { minFontSize: '20px', maxFontSize: '56px' });
   $('#main-content-sub-hl').fitText(3, { minFontSize: '10px', maxFontSize: '18px'});
+  // $(document).foundation()
   
+
+  // $(".show-modal").click(function(event){
+  //   var imgSrc = $(event.currentTarget).data("image")
+  //   console.log("show-modal clicked, img src:", imgSrc )
+  //   $('.screenshot-modal').foundation('reveal', 'open')
+  //   $(".screenshot-image").attr( "src", imgSrc )
+  // })
+
   // thanks to james padolsey for help with this cross-browswer doc height
   $.getDocHeight = function(){
        var D = document;
@@ -31,10 +40,14 @@ $(document).ready(function(){
   toggleGif();
 
   // removes border from last case study
+  // this is kinda gross and should be css instead of jquery
   $('.case-study:last').find('.row').css('border', 'none');
 
   // if(docHeight > 1000) {
   //   $('.footer-bottom').find('.logo').css({display: 'inline-block'});
   // }
+  if(window.location.href.split("/")[3] == "projects"){
+    paginate.init()  
+  }
 });
 
