@@ -13,8 +13,9 @@ var paginate = {
     this.initNavigation()
     this.initEvents()
     this.initHashchangeEvent()
-    
+
   },
+
   initNavigation: function(){
     this.currentHash = window.location.hash.split("#")[1]
     console.log("initNavigation called, this.currentHash:", window.location)
@@ -25,7 +26,18 @@ var paginate = {
     this.nextPage = this.pages[(this.currentIndex + 1)] ? this.pages[(this.currentIndex + 1)] : this.pages[this.currentIndex]
     this.prevPage = this.pages[(this.currentIndex - 1)] ? this.pages[(this.currentIndex - 1)] : this.pages[this.currentIndex]
 
+    if(this.currentHash == (_.last(this.pages))){
+      console.log("hi")
+        $(".next-page").addClass("disabled")
+      } else if (this.currentHash == (_.first(this.pages))){
+        $(".prev-page").addClass("disabled")
+      } else {
+        $(".next-page").removeClass("disabled")
+        $(".prev-page").removeClass("disabled")
+      }
+
   },
+
   initHashchangeEvent: function(){
     var that = this
     window.addEventListener("hashchange",function(event){
@@ -34,6 +46,7 @@ var paginate = {
       
     } ,false)
   },
+
   navigate: function(bool){
     this.currentHash = window.location.hash.split("#")[1]
     console.log("navigate called, this.currentHash:", this.currentHash)
@@ -46,7 +59,9 @@ var paginate = {
     $(".case-study").removeClass("active")
     $(".case-study").removeClass("active-first")
     $("*[data-paginate='"+this.currentHash+"']").addClass("active") 
+
   },
+
   updateHash: function(bool){
     bool ? window.location.hash = this.nextPage : window.location.hash = this.prevPage
 
@@ -55,6 +70,7 @@ var paginate = {
     $(".current-page-title").text(this.formattedTitles[this.currentIndex])
 
   },
+
   initEvents: function(){
     var that = this
     // pass 1 if next-page is clicked, 0 if prev-page is clicked
