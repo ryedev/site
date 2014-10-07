@@ -1,0 +1,189 @@
+.referral-content {
+  background: url('/images/backgrounds/paper.png');
+  height: 800px;
+} 
+
+.contractor-content {
+  background: url('/images/backgrounds/paper.png');
+  height: 800px;
+}
+
+
+
+ //               _     _ _        __ _         _           
+ //   /\/\   ___ | |__ (_) | ___  / _\ |_ _   _| | ___  ___ 
+ //  /    \ / _ \| '_ \| | |/ _ \ \ \| __| | | | |/ _ \/ __|
+ // / /\/\ \ (_) | |_) | | |  __/ _\ \ |_| |_| | |  __/\__ \
+ // \/    \/\___/|_.__/|_|_|\___| \__/\__|\__, |_|\___||___/
+ //                                       |___/              
+
+@media only screen {
+
+  .referral-content {
+    padding-top: 30px;
+    text-align: center;
+
+    .button {
+      position: relative;
+      margin-bottom: 20px;
+
+      .bt-content {
+        height: 100%;
+
+        i {
+          width: 22%;
+          font-size: 2.6em;
+          position: relative;
+          bottom: 4px;
+          left: 10px;
+        }
+
+        .bt-title {
+          font-family: 'proxima-nova-extra-condensed';
+          display: inline-block;
+          width: 70%;
+          font-size: 1.8em;
+          line-height: 1em;
+          margin-top: 4px;
+        }
+      }
+    }
+  }
+
+  .contractor-content {
+    height: 1100px;
+    padding-top: 20px;
+
+    h2 {
+      text-align: center;
+    }
+
+    .button {
+      line-height: 2px;
+      padding: 6px;
+      display: block;
+      margin: 0 auto;
+
+      i {
+        font-size: 1.2em;
+        position: relative;
+        top: 18px;
+        margin-right: 6px;
+      }
+
+      span {
+        vertical-align: top;
+        font-size: 1.2em;
+        line-height: 1.9em;
+      }
+
+      &.submit-profile {
+        line-height: 1.3em;
+        min-width: 100px;
+      }
+    }
+  }
+}
+
+//  __                 _ _   __                              
+// / _\_ __ ___   __ _| | | / _\ ___ _ __ ___  ___ _ __  ___ 
+// \ \| '_ ` _ \ / _` | | | \ \ / __| '__/ _ \/ _ \ '_ \/ __|
+// _\ \ | | | | | (_| | | | _\ \ (__| | |  __/  __/ | | \__ \
+// \__/_| |_| |_|\__,_|_|_| \__/\___|_|  \___|\___|_| |_|___/
+                                                          
+@media only screen and (min-width: 401px) {
+
+  .referral-content {
+    padding-top: 40px;
+
+    .button {
+      margin-bottom: 40px;
+    }
+  }
+
+  .contractor-content {
+    text-align: left;
+    padding-top: 30px;
+
+    .button {
+      line-height: 2px;
+
+      i {
+        position: relative;
+        top: 20px;
+        margin-right: 6px;
+      }
+
+      span {
+        vertical-align: top;
+        font-size: 1.2em;
+        line-height: 2em;
+      }
+    }
+  }
+}
+
+
+//                  _ _                   __                              
+//   /\/\   ___  __| (_)_   _ _ __ ___   / _\ ___ _ __ ___  ___ _ __  ___ 
+//  /    \ / _ \/ _` | | | | | '_ ` _ \  \ \ / __| '__/ _ \/ _ \ '_ \/ __|
+// / /\/\ \  __/ (_| | | |_| | | | | | | _\ \ (__| | |  __/  __/ | | \__ \
+// \/    \/\___|\__,_|_|\__,_|_| |_| |_| \__/\___|_|  \___|\___|_| |_|___/
+                                                                       
+@media only screen and (min-width: 641px) {
+
+  .referral-content {
+
+    .button {
+      display: inline-block;
+    }
+  }
+
+  .contractor-content {
+    .button {
+      &.submit-profile {
+        margin-top: 26px;
+      }
+    }
+  }
+}
+
+//    __                        __                              
+//   / /  __ _ _ __ __ _  ___  / _\ ___ _ __ ___  ___ _ __  ___ 
+//  / /  / _` | '__/ _` |/ _ \ \ \ / __| '__/ _ \/ _ \ '_ \/ __|
+// / /__| (_| | | | (_| |  __/ _\ \ (__| | |  __/  __/ | | \__ \
+// \____/\__,_|_|  \__, |\___| \__/\___|_|  \___|\___|_| |_|___/
+//                 |___/                                        
+
+@media only screen and (min-width: 1025px) {
+
+  .referral-content {
+
+    .button {
+
+      span {
+        font-size: 1.2em;
+      }
+    }
+  }
+
+  .contractor-content {
+    .button {
+      
+      i {
+        font-size: 0.9em;
+      }
+
+      span {
+        line-height: 2.2em;
+        font-size: 0.9em;
+      }
+
+      &.submit-profile {
+        margin-top: 30px;
+        line-height: 1.2em;
+      }
+    }
+  }
+
+}

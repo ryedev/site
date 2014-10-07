@@ -1,0 +1,64 @@
+extends ../../layouts/main
+block content
+  
+  include ../../includes/header
+
+  .contractor-content
+    .row
+      .small-12.column
+        h2 Quick Project Questionnaire
+        .button.medium.display-share-button
+          i.ss-icon.ss-mail
+          span share link
+
+      .display-share-container-outer
+        .display-share-container-inner
+          .display-share-form
+            .half-width.padded
+              label(for='profile-recipient') Recipient's Email Address
+              input#profile-recipient(type='email', name='profile_recipient')
+            .half-width
+              label(for='profile-subject') Subject
+              input#profile-subject(type='text', value='Contractor Profile', name='profile_subject')
+            label(for='profile-message') Message
+            textarea#profile-message(name='profile_message')
+              | Thank you for your interest in The Iron Yard and Rye Development's contractor network. Please take a moment to fill out a Contractor Profile here: www.ryedev.com/referral/contractor
+            a#profile-send-link(href='#')
+              button Send
+
+      form(action='https://docs.google.com/forms/d/1qKZS2cQW_kP7SgBaeKAPinbQiXRjCILSbyHkxetOZDE/formResponse' method='post' target='hidden_iframe' onsubmit='submitted=true;')
+        .small-12.column
+          label(for='entry_387577468') Referring Iron Yard Employee*
+          input(type='text', name='entry.387577468', value='' id='entry_387577468', aria-label='Referring Iron Yard Employee First and Last Name ', aria-required='true', required='')
+          #150918420_errorMessage.error-message
+        .small-12.column
+          label(for='entry_214667053') Client Name*
+          input(type='text', name='entry.214667053', value='', id='entry_214667053', aria-label='Client Name First and Last ', aria-required='true', required='')
+          #1451106846_errorMessage.error-message
+        .small-12.medium-6.column
+          label(for='entry_715378609') Client Email*
+          input(type='email', name='entry.715378609', value='', id='entry_715378609', aria-label='Client Email  ' aria-required='true', required='')
+          #1558617673_errorMessage.error-message
+        .small-12.medium-6.column
+          label(for='entry_446168114') Client Phone Number*
+          input(type='tel', name='entry.446168114', value='' id='entry_446168114', aria-label='Client Phone Number (Area Code) Phone Number ', aria-required='true', required='')
+          #769073566_errorMessage.error-message
+        .small-12.column
+          label(for='entry_1656247290') Client Company Name*
+          input(type='text', name='entry.1656247290', value='', id='entry_1656247290', aria-label='Client Company Name  ', aria-required='true', required='')
+          #685946975_errorMessage.error-message
+        .small-12.column
+          label(for='entry_448136552') Description of the project*
+          textarea(name='entry.448136552' id='entry_448136552' aria-label='Description of the project  ' aria-required='true' required='') 
+          #1300293891_errorMessage.error-message
+        .small-12.column
+          label(for='entry_576179902') Technology to be used
+          input(type='text', name='entry.576179902' value='' id='entry_576179902' aria-label='Technology to be used (If Applicable) ')
+        .small-12.column
+          label(for='entry_1457078572') Student Recommendation
+          textarea(type='text', name='entry.1457078572' value='' id='entry_1457078572' aria-label='Student Recommendation (If Applicable) ')  
+        .small-3.end.column
+          .button.submit-profile submit
+      .small-12.column
+
+      .small-12.column

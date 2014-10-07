@@ -1,0 +1,53 @@
+form {
+  padding-top: 180px;
+
+  label {
+    font-family: 'proxima-nova-extra-condensed';
+    font-size: 1.3em;
+  }
+
+  input {
+    width: 100%;
+    height: 34px;
+    margin-bottom: 16px;
+    margin-top: 6px;
+    border-radius: 2px;
+    border: 1px solid $rye-light-gray;
+    font-family: 'CourierPrime';
+  }
+
+  textarea {
+    width: 100%;
+    margin-bottom: 16px;
+    border-radius: 2px;
+    margin-top: 6px;
+    border: 1px solid $rye-light-gray;
+    font-family: 'CourierPrime';
+  }
+}
+
+@media only screen {
+  form {
+
+    input {
+      padding-left: 6px;
+      padding-top: 4px;
+    }
+  }
+}
+
+@media only screen and (min-width: 401px) {
+  form {
+
+    input {
+    }
+  }
+}
+
+@media only screen and (min-width: 641px) {
+  form {
+
+    input {
+    }
+  }
+}

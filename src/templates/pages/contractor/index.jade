@@ -1,0 +1,61 @@
+extends ../../layouts/main
+block content
+  
+  include ../../includes/header
+
+  .contractor-content
+    .row
+      .small-12.column
+        h2 Contractor Profile
+        .button.medium.display-share-button
+          i.ss-icon.ss-mail
+          span share link
+
+      .display-share-container-outer
+        .display-share-container-inner
+          .display-share-form
+            .half-width.padded
+              label(for='profile-recipient') Recipient's Email Address
+              input#profile-recipient(type='email', name='profile_recipient')
+            .half-width
+              label(for='profile-subject') Subject
+              input#profile-subject(type='text', value='Contractor Profile', name='profile_subject')
+            label(for='profile-message') Message
+            textarea#profile-message(name='profile_message')
+              | Thank you for your interest in The Iron Yard and Rye Development's contractor network. Please take a moment to fill out a Contractor Profile here: www.ryedev.com/referral/contractor
+            a#profile-send-link(href='#')
+              button Send
+
+      form(action='https://docs.google.com/forms/d/1xiihr_u_NR50NKbGZhtfyEUo6uBKdYIULdkoGg1NzAE/formResponse', method='post', target='hidden_iframe', onsubmit='submitted=true;')
+        .small-12.column
+          label(for='entry_1322654167') First and Last Name
+          input(type='text', name='entry.1322654167', value='', aria-label='Name First and Last ', aria-required='true', required='')
+        .small-12.medium-6.column
+          label(for='entry_471669452') Email*
+          input(type='email', name='entry.1322654167', value='', aria-label='Email ', aria-required='true', required='')
+        .small-12.medium-6.column
+          label(for='entry_1322654167') Phone Number*
+          input(type='tel', name='entry.530463103', value='', aria-label='Phone Number (Area Code) Phone Number ', aria-required='true', required='')
+        .small-12.column
+          label(for='entry_1322654167') Your Location
+          input(type='text', name='entry.992273885', value='', aria-label='Your Location ', aria-required='true', required='')
+        .small-12.column
+          label(for='entry_1322654167') Skills
+          input(type='text', name='entry.1663397154', value='', aria-label='Skills eg: Photoshop, HTML, CSS, JS, Rails, Frameworks  ', aria-required='true', required='')
+        .small-12.column
+          label(for='entry_1322654167') What sets you apart?
+          textarea(type='text', name='entry.819716712', value='', aria-label='What sets you apart? What are the one or two things that you do best? ', aria-required='true', required='')  
+        .small-12.medium-6.column
+          label(for='entry_1322654167') Portfolio Link
+          input(type='text', name='entry.699985999', value='', aria-label=' ', aria-required='true', required='')
+        .small-12.medium-6.column
+          label(for='entry_1322654167') GitHub Profile Link
+          input(type='text', name='entry.1835488332', value='', aria-label='', aria-required='true', required='')
+        .small-12.medium-6.column
+          label(for='entry_1322654167') Asking Hourly Rate
+          input(type='text', name='entry.1221814373', value='', aria-label='Asking hourly rate ', aria-required='true', required='')
+        .small-3.end.column
+          .button.submit-profile submit
+      .small-12.column
+
+      .small-12.column
