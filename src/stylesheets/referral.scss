@@ -3,7 +3,7 @@
   height: 800px;
 } 
 
-.contractor-content {
+.contractor-content, .clients-content {
   background: url('/images/backgrounds/paper.png');
   height: 800px;
 }
@@ -50,7 +50,7 @@
     }
   }
 
-  .contractor-content {
+  .contractor-content, .clients-content {
     height: 1100px;
     padding-top: 20px;
 
@@ -101,7 +101,7 @@
     }
   }
 
-  .contractor-content {
+  .contractor-content, .clients-content {
     text-align: left;
     padding-top: 30px;
 
@@ -139,7 +139,7 @@
     }
   }
 
-  .contractor-content {
+  .contractor-content, .clients-content {
     .button {
       &.submit-profile {
         margin-top: 26px;
@@ -158,6 +158,7 @@
 @media only screen and (min-width: 1025px) {
 
   .referral-content {
+    height: 1400px;
 
     .button {
 
@@ -167,7 +168,8 @@
     }
   }
 
-  .contractor-content {
+  .contractor-content, .clients-content {
+    height: 1400px;
     .button {
       
       i {
