@@ -162,8 +162,15 @@
 
     .button {
 
-      span {
-        font-size: 1.2em;
+      .bt-content {
+
+        i {
+          font-size: 2em;
+        }
+
+        .bt-title {
+          font-size: 1.5em;
+        }
       }
     }
   }

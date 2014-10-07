@@ -28,10 +28,21 @@
   color: $white;
   font-family: "CourierPrime";
   text-transform: capitalize;
-  line-height: 8px;
+  border-radius: 4px;
 
   &:hover {
     background: $rye-dark-red;
+  }
+
+  &.medium {
+    width: 190px;
+    height: 50px;
+  }
+
+  &.extra-large {
+    width: 260px;
+    height: 100px; 
+    color: $white;
   }
 }
 
