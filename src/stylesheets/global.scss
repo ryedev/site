@@ -5,10 +5,10 @@ body {
   height: 100%;
 }
 
-#wrapper {
-  min-height: 100%;
-  position: relative;
-}
+// #wrapper {
+//   min-height: 100%;
+//   position: relative;
+// }
 
 .row{
   padding: 0 2%;
@@ -152,7 +152,6 @@ p {
 // sub content work with and case study section
 .sub-content {
   padding: 20px 30px 16px;
-  height: 520px;
 
   .case-studies{
     padding: 0;

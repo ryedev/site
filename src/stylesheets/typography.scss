@@ -3,6 +3,11 @@
   src: url('/fonts/Courier_Prime_Bold.ttf') format('truetype')
 }
 
+@font-face {
+  font-family: 'CourierPrimeReg';
+  src: url('/fonts/Courier_Prime.ttf') format('truetype')
+}
+
 h1, h2, h3, p {
   font-family: 'proxima-nova-extra-condensed';
   color: $rye-dark-gray;

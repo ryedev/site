@@ -3,30 +3,37 @@ block content
   
   include ../../includes/header
 
+  script(type='text/javascript')
+    | var submitted=false
+
   .clients-content
     .row
       .small-12.column
-        h2 Quick Project Questionnaire
-        .button.medium.display-share-button
+        h2 Project Questionnaire
+        .button.medium.share-link-button
           i.ss-icon.ss-mail
-          span share link
+          span share
 
-      .display-share-container-outer
-        .display-share-container-inner
-          .display-share-form
-            .half-width.padded
-              label(for='profile-recipient') Recipient's Email Address
-              input#profile-recipient(type='email', name='profile_recipient')
-            .half-width
-              label(for='profile-subject') Subject
-              input#profile-subject(type='text', value='Contractor Profile', name='profile_subject')
-            label(for='profile-message') Message
-            textarea#profile-message(name='profile_message')
-              | Thank you for your interest in The Iron Yard and Rye Development's contractor network. Please take a moment to fill out a Contractor Profile here: www.ryedev.com/referral/contractor
-            a#profile-send-link(href='#')
-              button Send
+    .row
+      form.send-form.clearfix
+        .small-12.medium-6.end.column  
+          label(for='profile-recipient') Recipient's Email Address
+          input#profile-recipient(type='email', name='profile_recipient')
+        .small-12.medium-6.end.column
+          label(for='profile-subject') Subject
+          input#profile-subject(type='text', value='Contractor Profile', name='profile_subject')
+        .small-12.column
+          label(for='profile-message') Message
+          textarea#profile-message(name='profile_message')
+            | Thank you for your interest in The Iron Yard and Rye Development's contractor network. Please take a moment to fill out a Contractor Profile at www.ryedev.com/clients.
+        .small-4.meidum-2.end.column
+          a#profile-send-link(href='#')
+            .button Send
 
-      form(action='https://docs.google.com/forms/d/1qKZS2cQW_kP7SgBaeKAPinbQiXRjCILSbyHkxetOZDE/formResponse' method='post' target='hidden_iframe' onsubmit='submitted=true;')
+      iframe#hidden_iframe(name='hidden_iframe', style='display: none;', onload='if(submitted){window.location=\'http://google.com\';}')
+
+
+      form(class='clearfix', action='https://docs.google.com/forms/d/1qKZS2cQW_kP7SgBaeKAPinbQiXRjCILSbyHkxetOZDE/formResponse' method='post' target='hidden_iframe' onsubmit='submitted=true;')
         .small-12.column
           label(for='entry_387577468') Referring Iron Yard Employee*
           input(type='text', name='entry.387577468', value='' id='entry_387577468', aria-label='Referring Iron Yard Employee First and Last Name ', aria-required='true', required='')
@@ -56,9 +63,11 @@ block content
           input(type='text', name='entry.576179902' value='' id='entry_576179902' aria-label='Technology to be used (If Applicable) ')
         .small-12.column
           label(for='entry_1457078572') Student Recommendation
-          textarea(type='text', name='entry.1457078572' value='' id='entry_1457078572' aria-label='Student Recommendation (If Applicable) ')  
-        .small-3.end.column
-          .button.submit-profile submit
-      .small-12.column
+          input(type='text', name='entry.1457078572' value='' id='entry_1457078572' aria-label='Student Recommendation (If Applicable) ')
+          input(type='hidden', name='draftResponse', value='[,,"-1721882903337719561"]')
+          input(type='hidden', name='pageHistory', value='0')
+          input(type='hidden', name='fbzx', value='-1721882903337719561')
+        .small-3.medium-2.end.column
+          input(class='button submit-form submit-profile submit',type='submit', name='submit', value='Submit')
 
       .small-12.column

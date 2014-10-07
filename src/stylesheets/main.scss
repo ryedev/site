@@ -37,6 +37,10 @@
   border: none !important;
 }
 
+.block {
+  display: block;
+}
+
 .inline-block {
   display: inline-block;
 }
@@ -44,4 +48,8 @@
 .spacer {
   display: inline-block;
   width: 2px;
+}
+
+.visible {
+  visibility: visible;
 }

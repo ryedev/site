@@ -49,5 +49,58 @@ $(document).ready(function(){
   if(window.location.href.split("/")[3] == "projects"){
     paginate.init()  
   }
+
+  $('.send-form').hide()
+
+  $('.share-link-button').click(function(){
+    console.log('clicked share link')
+    if ($('.send-form').hasClass('visible')) {
+      $('.share-link-button span').text('share')
+      $('.send-form').slideUp(500)
+      $('.send-form').removeClass('visible')
+    } else {
+      $('.share-link-button span').text('hide')
+      $('.send-form').slideDown(500)
+      $('.send-form').addClass('visible')
+    }
+  })
+
 });
 
+// Show share option on click
+$('.display-share-button').click(function(){
+// Toggle display class in css
+$('.display-share-form').toggleClass('display-share-form-show')
+})
+
+// Send a link to the Contractor profile
+$('#profile-send-link button').click(function() {
+// If there is no recipient alert to fill in that field
+  if (!$('#profile-recipient').val()) {
+  alert('You must enter a recipient\'s email address to send')
+  } else {
+  // Add input values to a mailto
+  var profileRecipient = $('#profile-recipient').val();
+  var profileSubject = $('#profile-subject').val();
+  var profileMessage = $('#profile-message').val();
+      $("#profile-send-link").attr('href',"mailto:" + profileRecipient + "?subject=" + profileSubject + "&body=" + profileMessage);
+      // Clear recipient field
+      $('#profile-recipient').val('');
+  }
+})
+
+// Send a link to the Quick Project Questionnaire
+$('#project-send-link button').click(function() {
+  // If there is no recipient alert to fill in that field
+  if (!$('#project-recipient').val()) {
+  alert('You must enter a recipient\'s email address to send')
+  } else {
+  // Add input values to a mailto
+  var projectRecipient = $('#project-recipient').val();
+  var projectSubject = $('#project-subject').val();
+  var projectMessage = $('#project-message').val();
+      $("#project-send-link").attr('href',"mailto:" + projectRecipient + "?subject=" + projectSubject + "&body=" + projectMessage);
+      // Clear recipient field
+      $('#project-recipient').val('');
+  }
+})

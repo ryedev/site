@@ -1,5 +1,4 @@
 form {
-  padding-top: 180px;
 
   label {
     font-family: 'proxima-nova-extra-condensed';
@@ -7,39 +6,75 @@ form {
   }
 
   input {
+    font-family: 'CourierPrimeReg';
+    border: 1px solid $rye-light-gray;
     width: 100%;
     height: 34px;
     margin-bottom: 16px;
     margin-top: 6px;
     border-radius: 2px;
-    border: 1px solid $rye-light-gray;
-    font-family: 'CourierPrime';
+
+    &:focus {
+      outline: 1px solid $rye-red;
+    }
   }
 
   textarea {
+    font-family: 'CourierPrimeReg';
+    border: 1px solid $rye-light-gray;
     width: 100%;
     margin-bottom: 16px;
     border-radius: 2px;
     margin-top: 6px;
-    border: 1px solid $rye-light-gray;
-    font-family: 'CourierPrime';
+  }
+}
+
+.send-form {
+  display: none;
+  background: lighten($rye-light-gray, 20%);
+  border-radius: 4px;
+
+  .button {
+    width: 100px;
+    float: left;
   }
 }
 
 @media only screen {
   form {
+    margin-top: 30px;
 
+    &.send-form {
+      padding: 16px 4px;
+    }
+    
     input {
       padding-left: 6px;
-      padding-top: 4px;
+      padding-top: 6px;
     }
+
+    textarea {
+      padding: 8px 6px;
+      height: 100px;
+    }
+
   }
 }
 
 @media only screen and (min-width: 401px) {
   form {
+    margin-top: 60px;
+
+    &.send-form {
+      padding: 20px 10px;
+    }
 
     input {
+    }
+
+    textarea {
+      padding: 17px;
+      line-height: 1.4em;
     }
   }
 }
@@ -48,6 +83,14 @@ form {
   form {
 
     input {
+      font-size: 1em;
+      color: $rye-light-gray;
+    }
+
+    textarea {
+      font-size: 1em;
+      color: $rye-light-gray;
+      height: 120px;
     }
   }
 }
