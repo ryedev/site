@@ -15,20 +15,20 @@ block content
           span share
 
     .row
-      form.send-form.clearfix
+      .send-form.clearfix
         .small-12.medium-6.end.column  
           label(for='profile-recipient') Recipient's Email Address
-          input#profile-recipient(type='email', name='profile_recipient')
+          input.recipient(type='email', name='profile_recipient')
         .small-12.medium-6.end.column
           label(for='profile-subject') Subject
-          input#profile-subject(type='text', value='Contractor Profile', name='profile_subject')
+          input.subject(type='text', value='Contractor Profile', name='profile_subject')
         .small-12.column
           label(for='profile-message') Message
-          textarea#profile-message(name='profile_message')
+          textarea.message(name='profile_message')
             | Thank you for your interest in The Iron Yard and Rye Development's contractor network. Please take a moment to fill out a Contractor Profile at www.ryedev.com/clients.
         .small-4.meidum-2.end.column
-          a#profile-send-link(href='#')
-            .button Send
+          a.send-link
+            button Send
 
       iframe#hidden_iframe(name='hidden_iframe', style='display: none;', onload='if(submitted){window.location=\'http://ryedev.com/referral\';}')
 

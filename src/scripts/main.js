@@ -67,18 +67,25 @@ $(document).ready(function(){
 
 
 // Send a link to the Contractor profile
-$('#profile-send-link button').click(function() {
+$('.send-link button').click(function() {
 // If there is no recipient alert to fill in that field
-  if (!$('#profile-recipient').val()) {
-  alert('You must enter a recipient\'s email address to send')
+  function testEmail(email){
+    var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(email);
+  }
+  var emailIsGood = testEmail($('.recipient').val())
+  if (!emailIsGood) {
+  alert('You must enter a valid recipient\'s email address to send')
   } else {
+    console.log("email good, else entered")
   // Add input values to a mailto
-  var profileRecipient = $('#profile-recipient').val();
-  var profileSubject = $('#profile-subject').val();
-  var profileMessage = $('#profile-message').val();
-      $("#profile-send-link").attr('href',"mailto:" + profileRecipient + "?subject=" + profileSubject + "&body=" + profileMessage);
+  var profileRecipient = $('.recipient').val();
+  var profileSubject = $('.subject').val();
+  var profileMessage = $('.message').val();
+      $(".send-link").attr('href',"mailto:" + profileRecipient + "?subject=" + profileSubject + "&body=" + profileMessage);
       // Clear recipient field
-      $('#profile-recipient').val('');
+      $('.recipient').val('');
+      console.log(profileMessage + " " + profileRecipient + " " + profileSubject)
   }
 })
 
