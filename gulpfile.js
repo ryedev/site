@@ -204,6 +204,18 @@ gulp.task('fonts', function () {
     .pipe($.size());
 });
 
+//     ______            _                
+//    / ____/___ __   __(_)________  ____ 
+//   / /_  / __ `/ | / / / ___/ __ \/ __ \
+//  / __/ / /_/ /| |/ / / /__/ /_/ / / / /
+// /_/    \__,_/ |___/_/\___/\____/_/ /_/ 
+                                       
+
+gulp.task('favicon', function () {
+  return gulp.src('app/favicon.ico')
+    .pipe(gulp.dest('dist'));
+});
+
 
                                  
 //   _________  ____ _____ ___  ___ 
@@ -258,6 +270,7 @@ gulp.task('build-step-1', ['clean'], function(){
   gulp.start('cname');
   gulp.start('asset-build-promise');
   gulp.start('fonts');
+  gulp.start('favicon');
   return assetsPromise.promise;
 
 });
