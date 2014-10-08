@@ -28,10 +28,9 @@ block content
             | Thank you for your interest in The Iron Yard and Rye Development's contractor network. Please take a moment to fill out a Contractor Profile at www.ryedev.com/clients.
         .small-4.meidum-2.end.column
           a.send-link
-            button Send
+            button.button Send
 
       iframe#hidden_iframe(name='hidden_iframe', style='display: none;', onload='if(submitted){window.location=\'http://ryedev.com/referral\';}')
-
 
       form(class='clearfix', action='https://docs.google.com/forms/d/1qKZS2cQW_kP7SgBaeKAPinbQiXRjCILSbyHkxetOZDE/formResponse' method='post' target='hidden_iframe' onsubmit='submitted=true;')
         .small-12.column
@@ -70,5 +69,3 @@ block content
           input(type='hidden', name='fbzx', value='-1721882903337719561')
         .small-3.medium-2.end.column
           input(class='button submit-form submit-profile submit',type='submit', name='submit', value='Submit')
-
-      .small-12.column

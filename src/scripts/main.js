@@ -89,18 +89,4 @@ $('.send-link button').click(function() {
   }
 })
 
-// Send a link to the Quick Project Questionnaire
-$('#project-send-link button').click(function() {
-  // If there is no recipient alert to fill in that field
-  if (!$('#project-recipient').val()) {
-  alert('You must enter a recipient\'s email address to send')
-  } else {
-  // Add input values to a mailto
-  var projectRecipient = $('#project-recipient').val();
-  var projectSubject = $('#project-subject').val();
-  var projectMessage = $('#project-message').val();
-      $("#project-send-link").attr('href',"mailto:" + projectRecipient + "?subject=" + projectSubject + "&body=" + projectMessage);
-      // Clear recipient field
-      $('#project-recipient').val('');
-  }
-})
+

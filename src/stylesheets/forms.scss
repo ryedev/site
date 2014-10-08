@@ -1,4 +1,4 @@
-form {
+form, .send-form {
 
   label {
     font-family: 'proxima-nova-extra-condensed';
@@ -41,7 +41,7 @@ form {
 }
 
 @media only screen {
-  form {
+  form, .send-form {
     margin-top: 30px;
 
     &.send-form {
@@ -67,7 +67,7 @@ form {
 }
 
 @media only screen and (min-width: 401px) {
-  form {
+  form, .send-form {
     margin-top: 60px;
 
     &.send-form {
@@ -90,7 +90,7 @@ form {
 }
 
 @media only screen and (min-width: 641px) {
-  form {
+  form, .send-form {
 
     input {
       font-size: 1em;
