@@ -38,7 +38,7 @@ $(document).ready(function(){
   // if(docHeight > 1000) {
   //   $('.footer-bottom').find('.logo').css({display: 'inline-block'});
   // }
-  
+
   if(window.location.href.split("/")[3] == "projects"){
     paginate.init()  
   }
@@ -65,11 +65,6 @@ $(document).ready(function(){
   
 });
 
-// Show share option on click
-$('.display-share-button').click(function(){
-// Toggle display class in css
-$('.display-share-form').toggleClass('display-share-form-show')
-})
 
 // Send a link to the Contractor profile
 $('#profile-send-link button').click(function() {
