@@ -57,6 +57,7 @@ gulp.task('templates', function() {
 // in src/styles/main.scss and put them dist/styles
 gulp.task('styles', function () {
   return gulp.src('src/stylesheets/main.scss')
+    .pipe($.plumber())
     .pipe($.sass({
       // gulp-sass was blowing up without the next two line
       sourceComments: 'map', 
@@ -243,7 +244,7 @@ gulp.task('sitemap', function () {
 //                                       /_/            
 
 gulp.task('clean', function () {
-  return gulp.src(['.tmp', 'dist'], { read: false }).pipe($.rimraf());
+  return gulp.src(['.tmp', 'dist'], { read: false }).pipe($.clean());
 });
 
 

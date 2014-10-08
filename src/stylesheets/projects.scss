@@ -1,20 +1,66 @@
 .project-content {
   background: url('/images/backgrounds/paper.png');
   padding-bottom: 160px;
+  min-height: 1200px;
+
+  .pagination-container {
+    padding-top: 16px;
+
+    .prev-page, .next-page {
+      color: $rye-medium-gray;
+      font-family: 'CourierPrime';
+      margin-right: 6px;
+      font-size: 1.2em;
+
+      &:hover {
+        border-bottom: 2px solid $rye-light-gray;
+      }
+
+      &:active {
+        color: $rye-light-gray;
+      }
+    }
+
+    .breadcrumb-carrot {
+      font-family: 'CourierPrime';
+      color: $rye-light-gray;
+      line-height: 0;
+      margin-right: 6px;
+    }
+  }
+
+  .active {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transition: all 1s;
+  }
+
+  .active-first {
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+
+  .case-studies-container {
+    position: relative;
+  }
 
   .case-study {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 0;
 
     .row {
-      border-bottom: 1px solid $rye-light-gray;
       padding-bottom: 40px;
     }
 
     h1 {
-      margin-top: 20px;
+      margin-top: 10px;
       font-weight: 600;
     }
 
     p {
+
       span {
         color: $rye-yellow;
         transition: all 0.2s ease;
@@ -25,6 +71,7 @@
         }
       }
     }
+
     .screenshot {
       max-width: 350px;
       margin-bottom: 24px;
@@ -81,7 +128,12 @@
   }
 }
 
+.screenshot-image { 
+  width: 100%;
+}
+
 .cowboy {
+
   .screenshot {
     background: url('/images/case-study-cowboy-full.jpg') no-repeat;
   }
@@ -140,12 +192,40 @@
 @media only screen {
 
   .project-content {
+    padding-top: 20px;
+    min-height: 1800px;
 
+    .pagination-container {
+      text-align: center;
+
+      a {
+        margin-top: 10px;
+      }
+
+      .breadcrumb-carrot {
+        line-height: 2px;
+      }
+
+      .prev-page {
+        margin-left: 10px;
+      }
+
+      .next-page {
+        margin-right: 10px;
+      }
+
+      span {
+        display: inline-block;
+        font-family: 'CourierPrime';
+        width: 10px;
+      }
+    }
     .case-study {
+      left: 4px;
 
       h1 {
         text-align: center;
-        margin-bottom: 6px;
+        margin-bottom: 0px;
         line-height: 44px;
         font-size: 3em;
       }
@@ -153,6 +233,8 @@
       h5 {
         font-size: 1em;
         text-align: center;
+        margin-top: 0;
+        margin-bottom: 24px;
       }
 
       p {
@@ -162,6 +244,7 @@
       .screenshot {
         height: 200px;
         width: 97%;
+        margin: 30px auto;
 
         .plus {
           display: none;
@@ -225,16 +308,38 @@
 @media only screen and (min-width: 401px) {
   
   .project-content {
+    min-height: 1100px;
+
+    .pagination-container {
+
+      .breadcrumb-carrot {
+        line-height: 0;
+      }
+
+      a {
+        margin-top: 10px;
+      }
+      .prev-page {
+
+      }
+      .next-page {
+
+      }
+    }
 
     .case-study {
+      left: -6px;
 
       h1 {
         font-size: 3em;
         font-weight: 600;
+        margin-bottom: 0;
       }
 
       h5 {
         font-size: 1.1em;
+        margin-top: 0;
+        margin-bottom: 16px;
 
         &:nth-of-type(2){
           text-align: left;
@@ -249,7 +354,7 @@
         height: 250px;
 
         .plus {
-          display: block;
+          
         }
       }
 
@@ -308,6 +413,17 @@
   .project-content {
     padding-top: 30px;
 
+    .pagination-container {
+      text-align: left;
+
+      a, span {
+        margin-top: 10px;
+      }
+
+      .next-page, .prev-page {
+        margin-left: 0;
+      }
+    }
     .case-study {
 
       h1 {
@@ -318,7 +434,10 @@
 
       h5 {
         text-align: left;
-        margin-top: 10px;
+      }
+
+      .screenshot {
+        margin: 30px 0;
       }
 
       .testimonial {
@@ -364,9 +483,10 @@
 /* Min-width 1025px */
 @media only screen and (min-width: 1025px) {
   .project-content {
-
+    min-height: 1200px;
+    
     .case-study {
-      padding-top: 40px;
+      padding-top: 0px;
 
 
       .testimonial {

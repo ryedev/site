@@ -19,21 +19,13 @@ $(document).ready(function(){
   $('#sub-tag-text').fitText(3, { minFontSize: '11px', maxFontSize: '18px' });
   $('#main-content-hl').fitText(3, { minFontSize: '20px', maxFontSize: '56px' });
   $('#main-content-sub-hl').fitText(3, { minFontSize: '10px', maxFontSize: '18px'});
-  // $(document).foundation()
-  
-
-  // $(".show-modal").click(function(event){
-  //   var imgSrc = $(event.currentTarget).data("image")
-  //   console.log("show-modal clicked, img src:", imgSrc )
-  //   $('.screenshot-modal').foundation('reveal', 'open')
-  //   $(".screenshot-image").attr( "src", imgSrc )
-  // })
 
   // thanks to james padolsey for help with this cross-browswer doc height
   $.getDocHeight = function(){
        var D = document;
        return Math.max(Math.max(D.body.scrollHeight,    D.documentElement.scrollHeight), Math.max(D.body.offsetHeight, D.documentElement.offsetHeight), Math.max(D.body.clientHeight, D.documentElement.clientHeight));
   };
+  
   var docHeight = $.getDocHeight();
   
   // runs function to toggle gif on main page
@@ -46,6 +38,7 @@ $(document).ready(function(){
   // if(docHeight > 1000) {
   //   $('.footer-bottom').find('.logo').css({display: 'inline-block'});
   // }
+  
   if(window.location.href.split("/")[3] == "projects"){
     paginate.init()  
   }
@@ -65,6 +58,11 @@ $(document).ready(function(){
     }
   })
 
+  // runs pagination script if at /projects
+  if(window.location.href.split("/")[3] == "projects"){
+    paginate.init()  
+  }
+  
 });
 
 // Show share option on click
