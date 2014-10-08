@@ -76,6 +76,7 @@
 
       &.submit-profile {
         line-height: 1.3em;
+        height: 42px;
         min-width: 100px;
       }
     }
@@ -153,7 +154,9 @@
   .contractor-content, .clients-content {
     .button {
       &.submit-profile {
-        margin-top: 26px;
+        height: 44px;
+        line-height: 1.6em;
+        margin-top: 16px;
       }
     }
   }
@@ -202,8 +205,8 @@
       }
 
       &.submit-profile {
-        margin-top: 10px;
-        line-height: 1.2em;
+        // margin-top: 10px;
+        // line-height: 1.2em;
       }
     }
   }

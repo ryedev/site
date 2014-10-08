@@ -56,11 +56,11 @@ $(document).ready(function(){
     console.log('clicked share link')
     if ($('.send-form').hasClass('visible')) {
       $('.share-link-button span').text('share')
-      $('.send-form').slideUp(500)
+      $('.send-form').slideUp(600)
       $('.send-form').removeClass('visible')
     } else {
       $('.share-link-button span').text('hide')
-      $('.send-form').slideDown(500)
+      $('.send-form').slideDown(600)
       $('.send-form').addClass('visible')
     }
   })

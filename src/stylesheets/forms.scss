@@ -46,10 +46,15 @@ form {
 
     &.send-form {
       padding: 16px 4px;
+
+      .button {
+        height: 36px;
+        line-height: 1.6em;
+      }
     }
     
     input {
-      padding-left: 6px;
+      padding-left: 8px;
       padding-top: 6px;
     }
 
@@ -67,6 +72,11 @@ form {
 
     &.send-form {
       padding: 20px 10px;
+
+      .button {
+        height: 42px;
+        line-height: 1.5em;
+      }
     }
 
     input {
@@ -85,6 +95,7 @@ form {
     input {
       font-size: 1em;
       color: $rye-light-gray;
+      padding-left: 17px;
     }
 
     textarea {
