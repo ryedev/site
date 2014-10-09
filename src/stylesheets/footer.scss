@@ -42,27 +42,34 @@
             a {
               color: $white;
               font-family: "CourierPrime";
+              transition: all 0.3s ease;
 
               &:hover {
-                color: $white;
-                border-bottom: 2px solid $white;
+                color: $rye-yellow;
               }
             }
           }
         }
       }
 
-      .phone-icon {
-        color: $white;
-        display: inline-block;
-        position: relative;
-        top: 4px;
-      }
+      .phone-number {
+        color: $rye-yellow;
 
-      h5 {
-        color: $white;
-        display: inline-block;
-        margin: 0;
+        a {
+          color: $white;
+          font-family: "CourierPrime";
+          transition: all 0.3s ease;
+
+          &:hover {
+            color: $rye-yellow;
+          }
+          
+          .phone-icon {
+            display: inline-block;
+            position: relative;
+            top: 4px;
+          }
+        }
       }
     }
 
@@ -151,14 +158,8 @@
 
             }
             a {
-              color: $white;
               font-size: 1.5em;
               font-family: "CourierPrime";
-
-              &:hover {
-                color: $white;
-                border-bottom: 2px solid $white;
-              }
             }
           }
         }
@@ -182,11 +183,14 @@
 
       .phone-number {
         margin-top: 8px;
+
         h5 {
           font-size: 1.3em;
         }
+        
         .phone-icon {
-          font-size: 1.3em;
+          font-size: 0.9em;
+          margin-right: 4px;
         }
       }
 
@@ -230,7 +234,6 @@
       .mobile-nav {
         display: block;
         text-align: center;
-        font-family: "Courier Prime";
       }
 
       .links {
@@ -252,14 +255,7 @@
               display:inline-block;
 
               a {
-                color: $white;
                 font-size: 1em;
-                font-family: "CourierPrime";
-
-                &:hover {
-                  color: $white;
-                  border-bottom: 2px solid $white;
-                }
               }
             }
           }

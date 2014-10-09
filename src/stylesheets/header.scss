@@ -39,10 +39,12 @@ header {
         a {
           color: $white;
           font-size: 1em;
+          transition: all 0.3s ease;
 
           &:hover {
             color: $white;
-            border-bottom: 2px solid $rye-medium-gray;
+            border-bottom: 2px solid $rye-red;
+            transition: all 0.3s ease;
           }
         }
       }
