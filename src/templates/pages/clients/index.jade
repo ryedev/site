@@ -21,11 +21,11 @@ block content
           input.recipient(type='email', name='profile_recipient')
         .small-12.medium-6.end.column
           label(for='profile-subject') Subject
-          input.subject(type='text', value='Contractor Profile', name='profile_subject')
+          input.subject(type='text', value='RyeDev Client Questionnaire', name='profile_subject')
         .small-12.column
           label(for='profile-message') Message
           textarea.message(name='profile_message')
-            | Thank you for your interest in The Iron Yard and Rye Development's contractor network. Please take a moment to fill out a Contractor Profile at www.ryedev.com/clients.
+            | Thank you for your interest in working with Rye Development. Please take a moment to fill out a short questionnaire at www.ryedev.com/clients.
         .small-4.meidum-2.end.column
           a.send-link
             button.button Send
@@ -33,10 +33,6 @@ block content
       iframe#hidden_iframe(name='hidden_iframe', style='display: none;', onload='if(submitted){window.location=\'http://ryedev.com/referral\';}')
 
       form(class='clearfix', action='https://docs.google.com/forms/d/1qKZS2cQW_kP7SgBaeKAPinbQiXRjCILSbyHkxetOZDE/formResponse' method='post' target='hidden_iframe' onsubmit='submitted=true;')
-        .small-12.column
-          label(for='entry_387577468') Referring Iron Yard Employee*
-          input(type='text', name='entry.387577468', value='' id='entry_387577468', aria-label='Referring Iron Yard Employee First and Last Name ', aria-required='true', required='')
-          #150918420_errorMessage.error-message
         .small-12.column
           label(for='entry_214667053') Client Name*
           input(type='text', name='entry.214667053', value='', id='entry_214667053', aria-label='Client Name First and Last ', aria-required='true', required='')
@@ -46,8 +42,8 @@ block content
           input(type='email', name='entry.715378609', value='', id='entry_715378609', aria-label='Client Email  ' aria-required='true', required='')
           #1558617673_errorMessage.error-message
         .small-12.medium-6.column
-          label(for='entry_446168114') Client Phone Number*
-          input(type='tel', name='entry.446168114', value='' id='entry_446168114', aria-label='Client Phone Number (Area Code) Phone Number ', aria-required='true', required='')
+          label(for='entry_446168114') Client Phone Number
+          input(type='tel', name='entry.446168114', value='' id='entry_446168114', aria-label='Client Phone Number (Area Code) Phone Number ')
           #769073566_errorMessage.error-message
         .small-12.column
           label(for='entry_1656247290') Client Company Name*
@@ -62,7 +58,13 @@ block content
             | Technology to be used (if applicable)
           input(type='text', name='entry.576179902' value='' id='entry_576179902' aria-label='Technology to be used (If Applicable) ')
         .small-12.column
-          label(for='entry_1457078572') Student Recommendation
+          label(for='entry_387577468') 
+            | Referring Iron Yard Employee (if applicable)
+          input(type='text', name='entry.387577468', value='' id='entry_387577468', aria-label='Referring Iron Yard Employee First and Last Name ')
+          #150918420_errorMessage.error-message
+        .small-12.column
+          label(for='entry_1457078572') 
+            | Student Recommendation (if applicable)
           input(type='text', name='entry.1457078572' value='' id='entry_1457078572' aria-label='Student Recommendation (If Applicable) ')
           input(type='hidden', name='draftResponse', value='[,,"-1721882903337719561"]')
           input(type='hidden', name='pageHistory', value='0')

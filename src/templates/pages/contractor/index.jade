@@ -21,11 +21,11 @@ block content
           input.recipient(type='email', name='profile_recipient')
         .small-12.medium-6.end.column      
           label(for='profile-subject') Subject
-          input.subject(type='text', value='Contractor Profile', name='profile_subject')
+          input.subject(type='text', value='RyeDev Contractor Profile', name='profile_subject')
         .small-12.column
           label(for='profile-message') Message
           textarea.message(name='profile_message')
-            | Thank you for your interest in The Iron Yard and Rye Development's contractor network. Please take a moment to fill out a Contractor Profile at www.ryedev.com/contractor.
+            | Thank you for your interest in Rye Development's contractor network. Please take a moment to fill out a Contractor Profile at www.ryedev.com/contractor.
         .small-4.meidum-2.end.column
           a.send-link
             button.button Send
@@ -34,7 +34,7 @@ block content
 
       form(class="clearfix" action='https://docs.google.com/forms/d/1xiihr_u_NR50NKbGZhtfyEUo6uBKdYIULdkoGg1NzAE/formResponse', method='post', target='hidden_iframe', onsubmit='submitted=true;')
         .small-12.column
-          label(for='entry_1322654167') First and Last Name
+          label(for='entry_1322654167') Contractor Name*
           input(type='text', name='entry.1322654167', value='', aria-label='Name First and Last ', aria-required='true', required='')
         .small-12.medium-6.column
           label(for='entry_471669452') Email*
@@ -43,23 +43,23 @@ block content
           label(for='entry_530463103') Phone Number*
           input(type='tel', name='entry.530463103', value='', aria-label='Phone Number (Area Code) Phone Number ', aria-required='true', required='')
         .small-12.column
-          label(for='entry_992273885') Your Location
+          label(for='entry_992273885') Your Location*
           input(type='text', name='entry.992273885', value='', aria-label='Your Location ', aria-required='true', required='')
         .small-12.column
-          label(for='entry_1663397154') Skills
+          label(for='entry_1663397154') Skills*
           input(type='text', name='entry.1663397154', value='', aria-label='Skills eg: Photoshop, HTML, CSS, JS, Rails, Frameworks  ', aria-required='true', required='')
         .small-12.column
           label(for='entry_819716712') What sets you apart?
           textarea(type='text', name='entry.819716712', value='', aria-label='What sets you apart? What are the one or two things that you do best? ', aria-required='true', required='')  
         .small-12.medium-6.column
           label(for='entry_699985999') Portfolio Link
-          input(type='text', name='entry.699985999', value='', aria-label=' ', aria-required='true', required='')
+          input(type='text', name='entry.699985999', value='', aria-label=' ')
         .small-12.medium-6.column
           label(for='entry_1835488332') GitHub Profile Link
-          input(type='text', name='entry.1835488332', value='', aria-label='', aria-required='true', required='')
+          input(type='text', name='entry.1835488332', value='', aria-label='')
         .small-12.medium-6.end.column
           label(for='entry_1221814373') Asking Hourly Rate
-          input(type='text', name='entry.1221814373', value='', aria-label='Asking hourly rate ', aria-required='true', required='')
+          input(type='text', name='entry.1221814373', value='', aria-label='Asking hourly rate ')
         .small-12.column.no-padding
           .small-3.medium-2.end.column
             input(class='button submit-form submit-profile submit',type='submit', name='submit', value='Submit')

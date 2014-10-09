@@ -52,6 +52,10 @@
   .contractor-content, .clients-content {
     padding: 30px 16px;
 
+    .row {
+      margin-bottom: 6px;
+    }
+
     h2 {
       text-align: center;
     }
@@ -110,6 +114,10 @@
     text-align: left;
     padding: 30px;
 
+    .row {
+      margin-bottom: 6px;
+    }
+
     .button {
       line-height: 1.1em;
 
@@ -152,6 +160,11 @@
   }
 
   .contractor-content, .clients-content {
+
+    .row {
+      margin-bottom: 10px;
+    }
+
     .button {
       &.submit-profile {
         height: 44px;
