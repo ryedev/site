@@ -212,7 +212,7 @@ gulp.task('fonts', function () {
                                        
 
 gulp.task('favicon', function () {
-  return gulp.src('app/favicon.ico')
+  return gulp.src('src/favicon.ico')
     .pipe(gulp.dest('dist'));
 });
 
