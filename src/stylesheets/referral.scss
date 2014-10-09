@@ -1,5 +1,14 @@
 .referral-content {
   background: url('/images/backgrounds/paper.png');
+
+  a {
+    color: $rye-red;
+    transition: all 0.3s ease;
+
+    &:hover {
+      border-bottom: 1px solid $rye-red;
+    }
+  }
 } 
 
 .contractor-content, .clients-content {
@@ -18,9 +27,22 @@
 @media only screen {
 
   .referral-content {
-    height: 700px;
     padding-top: 30px;
     text-align: center;
+    padding-bottom: 40px;
+
+    p {
+      font-size: 1.3em;
+      text-align: left;
+    }
+
+    .ref-buttons {
+      padding-top: 10px;
+
+      .medium-7 {
+
+      }
+    }
 
     .button {
       position: relative;
@@ -98,6 +120,10 @@
   .referral-content {
     padding-top: 40px;
 
+    .ref-buttons {
+
+    }
+
     .button {
 
       .bt-content {
@@ -146,6 +172,25 @@
 @media only screen and (min-width: 641px) {
 
   .referral-content {
+    height: 800px;
+
+    .ref-buttons {
+      padding-top: 76px;
+      padding-left: 26px;
+
+      .medium-7 {
+        margin-bottom: 40px;
+      }
+    }
+
+    p {
+      font-size: 1.1em;
+      text-align: left;
+    }
+
+    h2 {
+      text-align: left;
+    }
 
     .button {
       display: inline-block;
@@ -185,6 +230,10 @@
 @media only screen and (min-width: 1025px) {
 
   .referral-content {
+
+    .ref-buttons {
+      padding-left: 76px;
+    }
 
     .button {
 
