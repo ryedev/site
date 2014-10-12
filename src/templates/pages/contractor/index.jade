@@ -32,34 +32,46 @@ block content
       
       iframe#hidden_iframe(name='hidden_iframe', style='display: none;', onload='if(submitted){window.location=\'http://ryedev.com/referral\';}')
 
-      form(class="clearfix" action='https://docs.google.com/forms/d/1xiihr_u_NR50NKbGZhtfyEUo6uBKdYIULdkoGg1NzAE/formResponse', method='post', target='hidden_iframe', onsubmit='submitted=true;')
+      form(class="clearfix" action='https://docs.google.com/forms/d/1xiihr_u_NR50NKbGZhtfyEUo6uBKdYIULdkoGg1NzAE/formResponse', method='post', id="ss-form", target='hidden_iframe', onsubmit='submitted=true;')
         .small-12.column
           label(for='entry_1322654167') Contractor Name*
-          input(type='text', name='entry.1322654167', value='', aria-label='Name First and Last ', aria-required='true', required='')
+          input(type='text', name='entry.1322654167', value='', id="entry_1322654167", aria-label='Name First and Last ', aria-required='true', required='')
+          #868704383_errorMessage.error-message
         .small-12.medium-6.column
           label(for='entry_471669452') Email*
-          input(type='email', name='entry.471669452', value='', aria-label='Email ', aria-required='true', required='')
+          input(type='email', name='entry.471669452', value='', id="entry_471669452", aria-label='Email ', aria-required='true', required='')
+          #2067135602_errorMessage.error-message
         .small-12.medium-6.column
           label(for='entry_530463103') Phone Number*
-          input(type='tel', name='entry.530463103', value='', aria-label='Phone Number (Area Code) Phone Number ', aria-required='true', required='')
+          input(type='tel', name='entry.530463103', value='', id="entry_530463103", aria-label='Phone Number (Area Code) Phone Number ', aria-required='true', required='')
+          #1704940094_errorMessage.error-message
         .small-12.column
           label(for='entry_992273885') Your Location*
-          input(type='text', name='entry.992273885', value='', aria-label='Your Location ', aria-required='true', required='')
+          input(type='text', name='entry.992273885', value='', id="entry_992273885", aria-label='Your Location ', aria-required='true', required='')
+          #1432402116_errorMessage.error-message
         .small-12.column
           label(for='entry_1663397154') Skills*
-          input(type='text', name='entry.1663397154', value='', aria-label='Skills eg: Photoshop, HTML, CSS, JS, Rails, Frameworks  ', aria-required='true', required='')
+          input(type='text', name='entry.1663397154', value='', id="entry_1663397154", aria-label='Skills eg: Photoshop, HTML, CSS, JS, Rails, Frameworks  ', aria-required='true', required='')
+          #520601706_errorMessage.error-message
         .small-12.column
           label(for='entry_819716712') What sets you apart?
-          textarea(type='text', name='entry.819716712', value='', aria-label='What sets you apart? What are the one or two things that you do best? ', aria-required='true', required='')  
+          textarea(type='text', name='entry.819716712', value='', id="entry_819716712", aria-label='What sets you apart? What are the one or two things that you do best? ', aria-required='true', required='')  
+          #1960438285_errorMessage.error-message
         .small-12.medium-6.column
           label(for='entry_699985999') Portfolio Link
-          input(type='text', name='entry.699985999', value='', aria-label=' ')
+          input(type='text', name='entry.699985999', value='', id="entry_699985999", aria-label=' ')
+          #1969693348_errorMessage.error-message
         .small-12.medium-6.column
           label(for='entry_1835488332') GitHub Profile Link
-          input(type='text', name='entry.1835488332', value='', aria-label='')
+          input(type='text', name='entry.1835488332', value='', id="entry_1835488332", aria-label='')
+          #1219971471_errorMessage.error-message
         .small-12.medium-6.end.column
-          label(for='entry_1221814373') Asking Hourly Rate
-          input(type='text', name='entry.1221814373', value='', aria-label='Asking hourly rate ')
+          label(for='entry_1221814373') Asking Hourly Rate*
+          input(type='text', name='entry.1221814373', value='', id="entry_1221814373", aria-label='Asking hourly rate ', aria-required='trye', required='')
+          input(type='hidden', name='draftResponse', value='[,,"-5783184108172939838"]')
+          input(type='hidden', name='pageHistory', value='0')
+          input(type='hidden', name='fbzx', value='-5783184108172939838')
+          #895604106_errorMessage.error-message
         .small-12.column.no-padding
           .small-3.medium-2.end.column
             input(class='button submit-form submit-profile submit',type='submit', name='submit', value='Submit')
