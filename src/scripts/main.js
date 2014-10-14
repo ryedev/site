@@ -1,18 +1,10 @@
 'use strict';
+// preload the gif and image
+var img = new Image();
+img.src = '/images/gif-still.png';
+var gif = new Image();
+gif.src = '/images/doughertygif.png';
 
-function toggleGif(){
-  var img = '/images/gif-still.png';
-  var gif = 'https://s3.amazonaws.com/uploads.hipchat.com/31349/802592/UlOyMX96CY22HHC/Success.gif';
-
-  $('.play-gif').click(function(){
-    if (($(this).attr('src')) === img) {
-      $(this).attr('src', gif);
-    }
-    else if (($(this).attr('src')) === gif) {
-      $(this).attr('src', img);
-    }
-  });
-}
 
 $(document).ready(function(){
   $('#tagline').fitText(1.1, { minFontSize: '30px', maxFontSize: '72px' });
@@ -27,10 +19,19 @@ $(document).ready(function(){
   };
   
   var docHeight = $.getDocHeight();
-  
-  // runs function to toggle gif on main page
-  toggleGif();
 
+  // since the gif and img are both in memory, we can swap out 
+  // the html of the container to reference the awesome dougherty gif
+  // without that weird delay
+  $('.gif-wrapper').click(function(event){
+    if($(event.currentTarget).data("gif") == "inactive") {
+      $(".gif-wrapper").html(gif)
+      $(event.currentTarget).data("gif", "active")
+    } else {
+      $(".gif-wrapper").html(img)
+      $(event.currentTarget).data("gif", "inactive")
+    }
+  });
   // removes border from last case study
   // this is kinda gross and should be css instead of jquery
   $('.case-study:last').find('.row').css('border', 'none');
