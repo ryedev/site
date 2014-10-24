@@ -296,12 +296,8 @@ gulp.task('build-step-2', ['build-step-1'], function(){
 // 
 // deploy script from: https://github.com/X1011/git-directory-deploy
 gulp.task('deploy', ['build-step-2'], function() {
-  var deployPromise = Q.defer();
-  exec('sh deploy.sh', function(){
-    deployPromise.resolve();
-  });
-
-  return deployPromise.promise;
+  return gulp.src('./dist/**/*')
+    .pipe($.ghPages({message: "deployed to gh-pages branch"}));
 });
 
 
