@@ -1,17 +1,13 @@
-| <!--[if !IE]> <html lang="en" class="not-ie"> <![endif]-->
-| <!--[if lt IE 10]> <html lang="en" class="lt-ie10"> <![endif]-->
-| <!--[if gt IE 10]> <html lang="en" class="gt-ie10"> <![endif]-->
+html
+  head
+    include ../includes/head
 
-head
-  include ../includes/head
+  //- Your cool stuff here.
+  body
+    //- #wrapper
+    block content
+    include ../includes/footer
+  //- include /includes/footer
+  include ../includes/closing-scripts
+  block scripts
 
-//- Your cool stuff here.
-body
-  //- #wrapper
-  block content
-  include ../includes/footer
-//- include /includes/footer
-include ../includes/closing-scripts
-block scripts
-
-| </html>

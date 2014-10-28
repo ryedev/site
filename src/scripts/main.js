@@ -40,9 +40,7 @@ $(document).ready(function(){
   //   $('.footer-bottom').find('.logo').css({display: 'inline-block'});
   // }
 
-  if(window.location.href.split("/")[3] == "projects"){
-    paginate.init()  
-  }
+
 
   $('.send-form').hide()
 
@@ -59,9 +57,23 @@ $(document).ready(function(){
     }
   })
 
+  function isIE() {
+    var ua = window.navigator.userAgent;
+    var msie = ua.indexOf("MSIE ");
+
+    if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./))      // If Internet Explorer, return version number
+      return true
+    else  // If another browser, return 0
+      return false    
+  }
+
   // runs pagination script if at /projects
-  if(window.location.href.split("/")[3] == "projects"){
+  if(window.location.href.split("/")[3] == "projects" && !isIE()){
     paginate.init()  
+  } else {
+    $(".case-study").addClass("active")
+    $(".case-study").addClass("ie-fallback")
+    $(".pagination-container").hide()
   }
   
 });
