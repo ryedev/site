@@ -20,7 +20,12 @@
  // | | | | | __| | | | | | | | __| | |  / _ \ / __|
  // | |_| | | |_  | | | | | | | |_  | | |  __/ \__ \
  //  \___/   \__| |_| |_| |_|  \__| |_|  \___| |___/
-                                                 
+     
+
+.ie-fallback {
+  position: relative !important;
+  display: block !important;
+}                                            
 
 .no-padding {
   padding: 0;
