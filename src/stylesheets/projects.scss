@@ -19,6 +19,13 @@
       &:active {
         color: $rye-light-gray;
       }
+      &.disabled-nav {
+        color: #999999;
+        &:hover {
+          border-bottom: none;
+          cursor: default;
+        }
+      }
     }
 
     .breadcrumb-carrot {
