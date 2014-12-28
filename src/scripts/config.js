@@ -1,14 +1,16 @@
 var CASESTUDIES = [
   "cowboy-ventures",
-  "sanfran",
-  "tipi",
-  "waterford",
+  "the-iron-yard",
+  // "sanfran",
+  // "tipi",
+  // "waterford"
   // "example",
 ]
 
 var FORMATTEDTITLES = [
   "Cowboy Ventures",
-  "Sanfransisco Rises", 
-  "Tipi",
-  "Waterford",
+  "The Iron Yard"
+  // "Sanfransisco Rises", 
+  // "Tipi",
+  // "Waterford"
 ]

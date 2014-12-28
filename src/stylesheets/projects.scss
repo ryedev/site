@@ -145,27 +145,40 @@
   }
 }
 
-.sanfran {
-  .screenshot {
-    background: url('/images/case-study-sfrises.jpg');
-  }
+// .sanfran {
+//   .screenshot {
+//     background: url('/images/case-study-sfrises.jpg');
+//   }
 
-  .testimonial {
-    .head-shot {
+//   .testimonial {
+//     .head-shot {
      
-    }
-  }
-}
+//     }
+//   }
+// }
 
-.tipi {
+// .tipi {
+//   .screenshot {
+//     background: url('/images/case-study-tipi.jpg');
+//     background-size: cover;
+//   }
+
+//   .testimonial {
+//     .head-shot {
+//      background: url('/images/people/jerry.png');
+//     }
+//   }
+// }
+
+.the-iron-yard {
   .screenshot {
-    background: url('/images/case-study-tipi.jpg');
+    background: url('/images/case-study-tiy.jpg');
     background-size: cover;
   }
 
   .testimonial {
-    .head-shot {
-     background: url('/images/people/jerry.png');
+    .head-shot{
+      background: url('/images/people/eric-dodds.jpg')
     }
   }
 }
