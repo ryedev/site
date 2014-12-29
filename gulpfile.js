@@ -355,9 +355,5 @@ gulp.task('watch', ['connect', 'serve'], function () {
 gulp.task('sendit', shell.task([
   'gulp build-step-2',
   'gulp bower-components', // this step should be incorporated in one of the previous build steps. works for now though.
-  'git -C dist init',
-  'git -C dist remote add origin git@github.com:ryedev/ryedev.github.io.git',
-  'git -C dist add --all',
-  'git -C dist commit -m \'wow, cool site bro\'',
-  'git -C dist push --force origin master'
+  'git subtree push --prefix dist origin gh-pages'
 ]))
