@@ -360,5 +360,5 @@ gulp.task('sendit', shell.task([
   'git -C dist checkout -b gh-pages',
   'git -C dist add --all',
   'git -C dist commit -m \'wow, cool site bro\'',
-  'git -C dist push --force origin master'
+  'git -C dist push --force origin gh-pages'
 ]))
