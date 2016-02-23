@@ -1,6 +1,7 @@
 var CASESTUDIES = [
   "cowboy-ventures",
   "the-iron-yard",
+  "nav-vc"
   // "sanfran",
   // "tipi",
   // "waterford"
@@ -9,7 +10,8 @@ var CASESTUDIES = [
 
 var FORMATTEDTITLES = [
   "Cowboy Ventures",
-  "The Iron Yard"
+  "The Iron Yard",
+  "NAC.VC"
   // "Sanfransisco Rises", 
   // "Tipi",
   // "Waterford"
