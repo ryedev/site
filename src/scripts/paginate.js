@@ -27,7 +27,6 @@ var paginate = {
     this.prevPage = this.pages[(this.currentIndex - 1)] ? this.pages[(this.currentIndex - 1)] : this.pages[this.currentIndex]
 
     if(this.currentHash == (_.last(this.pages))){
-      console.log("hi")
         $(".next-page").addClass("disabled")
       } else if (this.currentHash == (_.first(this.pages))){
         $(".prev-page").addClass("disabled")

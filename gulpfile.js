@@ -359,6 +359,6 @@ gulp.task('sendit', shell.task([
   'git -C dist remote add origin git@github.com:ryedev/site.git',
   'git -C dist checkout -b gh-pages',
   'git -C dist add --all',
-  'git -C dist commit -m \'wow, cool site bro\'',
+  'git -C dist commit -m \'site deployed\'',
   'git -C dist push --force origin gh-pages'
 ]))
